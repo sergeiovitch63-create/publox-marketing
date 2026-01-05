@@ -11,6 +11,7 @@ const routes = [
   'contacto',
   'reclutamiento',
   'privacy',
+  'publox', // Page marque PUBLOX
   // Marketing & Captación
   'marketing',
   'marketing/adquisicion',
@@ -54,13 +55,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         // Home page - highest priority
         priority = 1.0;
       } else if (
-        // Main sections: Impresión, Sitio Web, Marketing, Reclutamiento, Contacto
+        // Main sections: Impresión, Sitio Web, Marketing, Reclutamiento, Contacto, Publox
         route === 'impresion' ||
         route === 'sitio-web' ||
         route === 'marketing' ||
         route === 'reclutamiento' ||
         route === 'contacto' ||
-        route === 'necesitas'
+        route === 'necesitas' ||
+        route === 'publox'
       ) {
         // Main sections - high priority
         priority = 0.9;

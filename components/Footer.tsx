@@ -41,6 +41,12 @@ export default function Footer() {
                 {t('privacy')}
               </Link>
               <Link
+                href={`/${locale}/publox`}
+                className="text-text-secondary hover:text-text-primary text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-pastel-blue focus:ring-offset-2 rounded"
+              >
+                PUBLOX
+              </Link>
+              <Link
                 href={`/${locale}/404`}
                 className="text-text-secondary hover:text-text-primary text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-pastel-blue focus:ring-offset-2 rounded"
               >
