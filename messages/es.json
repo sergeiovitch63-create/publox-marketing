@@ -1,0 +1,620 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "impresion": "Impresión",
+    "sitioWeb": "Sitio Web",
+    "marketing": "Marketing & Captación de Clientes",
+    "reclutamiento": "Reclutamiento",
+    "contacto": "Contacto"
+  },
+  "footer": {
+    "title": "PUBLOX",
+    "description": "PUBLOX ayuda a negocios locales a atraer más clientes\nmediante publicidad,\nautomatización y sistemas\ndigitales\nenfocados en resultados\nreales.",
+    "information": "INFORMATION",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "notFound": "404",
+    "copyright": "© 2025 PUBLOX. Created by Egor Lunev"
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "contact": "Contactar",
+    "back": "Volver",
+    "loading": "Cargando..."
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "titleLine1": "La solución para hacer",
+        "titleLine2": "crecer tu negocio",
+        "titleLine3": "local.",
+        "subtitle": "Ayudamos a negocios locales a crecer con una estrategia clara de\ncaptación, visibilidad y automatización.",
+        "cta": "Desarrollar mi negocio"
+      },
+      "services": {
+        "captacion": {
+          "title": "Captación",
+          "text1": "Atrae más clientes con estrategias de marketing digital enfocadas en resultados reales.",
+          "text2": "Desarrollamos campañas personalizadas que conectan tu negocio con tu audiencia objetivo.",
+          "text3": "Medición y optimización continua para maximizar el retorno de inversión."
+        },
+        "automatizacion": {
+          "title": "Automatización",
+          "text1": "Simplifica tus procesos con sistemas automatizados que trabajan 24/7.",
+          "text2": "Desde respuestas automáticas hasta gestión de clientes, optimizamos tu operación diaria.",
+          "text3": "Más tiempo para lo que realmente importa: hacer crecer tu negocio."
+        },
+        "redesSociales": {
+          "title": "Redes Sociales",
+          "text1": "Presencia profesional en las principales plataformas sociales.",
+          "text2": "Contenido estratégico que genera engagement y construye una comunidad fiel.",
+          "text3": "Gestión integral de tu marca digital con resultados medibles."
+        },
+        "sitioWeb": {
+          "title": "Sitio Web",
+          "text1": "Diseño web profesional adaptado a tu negocio local.",
+          "text2": "Sitios rápidos, optimizados y pensados para convertir visitantes en clientes.",
+          "text3": "Desde sitios corporativos hasta tiendas online completas."
+        },
+        "impresion": {
+          "title": "Impresión Profesional",
+          "text1": "Material gráfico de alta calidad para tu negocio.",
+          "text2": "Tarjetas de visita, flyers, dípticos y más, diseñados para impactar.",
+          "text3": "Impresión profesional que refleja la calidad de tu marca."
+        }
+      },
+      "solucion": {
+        "titleLine1": "Una solución pensada para",
+        "titleLine2": "negocios locales",
+        "card1": {
+          "title": "Estrategia enfocada en resultados",
+          "text": "No vendemos promesas vacías. Cada estrategia está diseñada para generar resultados medibles y tangibles para tu negocio local."
+        },
+        "card2": {
+          "title": "Procesos simples y eficaces",
+          "text": "Tecnología al servicio de la simplicidad. Herramientas intuitivas que cualquier negocio puede usar sin complicaciones técnicas."
+        },
+        "card3": {
+          "title": "Visibilidad y credibilidad online",
+          "text": "Construimos tu presencia digital desde cero, asegurando que tu negocio sea encontrado y confiable en línea."
+        },
+        "card4": {
+          "title": "Solución adaptable a tu negocio",
+          "text": "Cada negocio es único. Adaptamos nuestras soluciones a tus necesidades específicas y presupuesto."
+        },
+        "card5": {
+          "title": "Automatización inteligente",
+          "text": "Sistemas que trabajan mientras duermes, gestionando clientes, respuestas y procesos de forma automática."
+        }
+      },
+      "oportunidad": {
+        "title": "Una oportunidad real",
+        "subtitle": "COLABORA CON UNA SOLUCIÓN QUE YA FUNCIONA PARA NEGOCIOS LOCALES.",
+        "card": {
+          "title": "Gana hasta un 20% de comisión",
+          "text1": "Únete a nuestro programa de afiliados y ayuda a negocios locales a crecer mientras generas ingresos recurrentes.",
+          "text2": "Cada negocio que refieras y que se convierta en cliente te genera una comisión basada en resultados reales.",
+          "text3": "Sin límites, sin restricciones. Cuantos más negocios ayudes, más ganas."
+        },
+        "vignette1": {
+          "title": "Sin conocimientos técnicos",
+          "text": "No necesitas ser experto en marketing o tecnología. Solo necesitas conectar negocios con PUBLOX."
+        },
+        "vignette2": {
+          "title": "Tu misión es conectar",
+          "text": "Tu misión es conectar negocios con PUBLOX. Nosotros hacemos el resto."
+        },
+        "vignette3": {
+          "title": "Sistema de comisión",
+          "text": "Sistema de comisión basado en resultados y colaboración a largo plazo."
+        }
+      }
+    },
+    "necesitas": {
+      "hero": {
+        "title": "¿Qué necesitas para hacer crecer tu negocio?"
+      },
+      "marketing": {
+        "title": "Marketing & Captación de Clientes",
+        "intro": "Implementamos estrategias completas de captación de clientes, adaptadas a negocios locales:",
+        "list1": "Publicidad en Google Ads y Google Maps",
+        "list2": "Publicidad en Instagram & Facebook Ads",
+        "list3": "Optimización Google Business Profile (SEO local)",
+        "list4": "Generación de leads (formularios, WhatsApp, llamadas)",
+        "list5": "Automatización de mensajes y seguimiento de clientes",
+        "list6": "Estrategia personalizada según tu sector y ciudad",
+        "conclusion": "Nuestro objetivo es simple: más visibilidad, más contactos y más ventas.",
+        "cta": "Elegir esta opción"
+      },
+      "sitioWeb": {
+        "title": "Sitio Web",
+        "intro": "Creamos todo tipo de sitios web, adaptados a tus objetivos:",
+        "list1": "Sitio vitrina (presentación del negocio)",
+        "list2": "Tienda online (venta de productos)",
+        "list3": "Sistema de reservas y citas",
+        "list4": "Landing pages para publicidad",
+        "list5": "Sitios multi-idioma",
+        "list6": "Integración con WhatsApp, pagos y automatizaciones",
+        "conclusion": "Cada sitio está diseñado para convertir visitantes en clientes, rápido, moderno y optimizado para móvil.",
+        "cta": "Elegir esta opción"
+      },
+      "impresion": {
+        "title": "Impresión profesional para tu negocio local",
+        "intro": "Diseñamos y producimos todo el material físico que tu negocio necesita para atraer y convertir clientes:",
+        "list1": "Tarjetas de visita personalizadas",
+        "list2": "Flyers y folletos promocionales",
+        "list3": "Carteles y pósters publicitarios",
+        "list4": "Pegatinas con QR (WhatsApp, Google Maps, web)",
+        "list5": "Menús, tarjetas regalo y soportes impresos",
+        "list6": "Diseño + impresión + entrega listos para usar",
+        "conclusion": "Cada soporte está pensado para reforzar tu imagen, generar confianza y llevar clientes a tu WhatsApp o Google Maps.",
+        "cta": "Elegir esta opción"
+      },
+      "separator": "• PUBLOX",
+      "badge": {
+        "tenerife": "Tenerife"
+      }
+    },
+    "marketing": {
+      "hero": {
+        "title": "Marketing & Captación de Clientes",
+        "subtitle1": "Impulsa el crecimiento de tu negocio local con una estrategia clara y rentable.",
+        "subtitle2": "Marketing, visibilidad y automatización pensados para generar clientes reales."
+      },
+      "pack1": {
+        "title": "Pack Adquisición",
+        "description": "Creamos un sistema de captación pensado para que tu negocio aparezca en Google, genere contactos reales y sea comprensible tanto para clientes como para Google.",
+        "cta": "Elegir este pack",
+        "faq": {
+          "q1": "¿Cuánto tiempo tarda en verse resultados?",
+          "a1": "Depende del sector y la competencia, pero normalmente se ven señales en 7–14 días y resultados más estables en 3–6 semanas.",
+          "q2": "¿Necesito invertir en publicidad?",
+          "a2": "Sí, si activamos campañas. La inversión es aparte y se ajusta según ciudad y objetivos.",
+          "q3": "¿Qué necesito entregaros para empezar?",
+          "a3": "Información del negocio, ubicación, servicios y un canal de contacto (WhatsApp/teléfono).",
+          "q4": "¿Qué pasa si ya tengo Google Business Profile?",
+          "a4": "Lo auditamos y lo optimizamos para mejorar visibilidad y conversiones."
+        }
+      },
+      "pack2": {
+        "title": "Pack Branding + Adquisición",
+        "description": "Este pack incluye todo lo que está en el pack de Adquisición de Clientes, más un trabajo completo de branding y presencia visual para reforzar la confianza y la imagen del negocio.",
+        "cta": "Elegir este pack",
+        "faq": {
+          "q1": "¿Incluye logo y diseño visual?",
+          "a1": "Incluye mejora y coherencia visual. Un logo nuevo completo se define aparte si es necesario.",
+          "q2": "¿En qué mejora el branding mis resultados?",
+          "a2": "Aumenta la confianza y mejora la conversión de visitas en contactos.",
+          "q3": "¿Puedo mantener mi estilo actual?",
+          "a3": "Sí. Se profesionaliza sin perder identidad.",
+          "q4": "¿Qué entregables recibo?",
+          "a4": "Guía visual básica y aplicación del branding en los canales trabajados."
+        }
+      },
+      "pack3": {
+        "title": "Pack Automatización + Adquisición + Branding",
+        "description1": "Este pack incluye todo lo que está en los packs de Adquisición de Clientes y Branding, más la implementación de sistemas de automatización para convertir contactos en clientes sin perder tiempo.",
+        "description2": "Está pensado para negocios locales que quieren un sistema que funcione de forma fluida, incluso cuando no están disponibles.",
+        "cta": "Elegir este pack",
+        "faq": {
+          "q1": "¿Qué automatizaciones se pueden implementar?",
+          "a1": "Mensajes automáticos, seguimiento, formularios, clasificación de leads y flujos de contacto.",
+          "q2": "¿Necesito herramientas externas?",
+          "a2": "A veces sí. Siempre se valida antes y se busca la opción más simple.",
+          "q3": "¿Funciona aunque no responda rápido?",
+          "a3": "Sí. El sistema captura y responde automáticamente para no perder oportunidades.",
+          "q4": "¿Se puede escalar a varios servicios o ciudades?",
+          "a4": "Sí. El sistema está pensado para crecer."
+        }
+      },
+      "faqGeneral": {
+        "title": "Preguntas frecuentes",
+        "items": {
+          "q1": "¿Para qué tipo de negocios funciona PUBLOX?",
+          "a1": "Negocios locales de servicios, turismo, salud, belleza, restauración y más.",
+          "q2": "¿Trabajáis con contratos largos?",
+          "a2": "No es obligatorio. Se recomienda continuidad para mejores resultados.",
+          "q3": "¿Garantizáis clientes?",
+          "a3": "No prometemos números falsos. Trabajamos con resultados medibles reales.",
+          "q4": "¿Qué diferencia a PUBLOX de una agencia normal?",
+          "a4": "Sistema completo: captación + presencia + automatización.",
+          "q5": "¿Cuál es el presupuesto mínimo de publicidad?",
+          "a5": "Depende del sector y la ciudad. Se define de forma estratégica.",
+          "q6": "¿Puedo mantener mi web actual?",
+          "a6": "Sí. Se optimiza lo existente si es viable.",
+          "q7": "¿Cómo se miden los resultados?",
+          "a7": "Leads, mensajes, llamadas, reservas y evolución mensual.",
+          "q8": "¿Qué necesito para empezar?",
+          "a8": "Información básica del negocio y acceso a canales necesarios.",
+          "q9": "¿Trabajáis solo en España?",
+          "a9": "No. El sistema se adapta por ciudad y país.",
+          "q10": "¿Puedo cambiar de pack más adelante?",
+          "a10": "Sí. Los packs están pensados para evolucionar."
+        }
+      },
+      "separator": "• PUBLOX"
+    },
+    "marketingAdquisicion": {
+      "titleLines": ["Pack", "Adquisición"],
+      "intro": "Implementamos estrategias completas de captación de clientes, adaptadas a negocios locales:",
+      "bullets": [
+        "Configuración de campañas Google Ads locales (búsquedas reales, intención de compra)",
+        "Optimización SEO básica y local (estructura, contenidos, visibilidad en Google)",
+        "Configuración de Google Business Profile y coherencia de presencia online",
+        "Redirección hacia WhatsApp, formularios o landing page",
+        "Implementación de QR codes para captar clientes offline",
+        "Estrategia personalizada según tu sector y ciudad"
+      ],
+      "note": "Servicio de lanzamiento. Sin gestión mensual obligatoria.",
+      "price": "150€",
+      "cta": "Póngase en contacto con nosotros"
+    },
+    "marketingBrandingAdquisicion": {
+      "titleLines": ["Pack", "Branding +", "Adquisición"],
+      "intro1": "Todo el sistema de adquisición de clientes (Google Ads, SEO local básico, Google Business Profile, WhatsApp, QR, estructura de captación)",
+      "bullets": [
+        "Definición y alineación de la identidad visual",
+        "Optimización visual de Google Maps (imagen, coherencia, presentación)",
+        "Creación de contenido para redes sociales",
+        "Producción de 3–4 vídeos Reels enfocados en imagen y credibilidad",
+        "Refuerzo de la reputación y presencia local"
+      ],
+      "note": "Servicio de lanzamiento. Sin gestión mensual obligatoria.",
+      "price": "250€",
+      "cta": "Póngase en contacto con nosotros"
+    },
+    "marketingAutomatizacion": {
+      "titleLines": ["Pack", "Automatización", "Adquisición +", "Branding"],
+      "intro1": "Todo el pack de Adquisición de Clientes (Google Ads, SEO local básico, Google Business Profile, WhatsApp, QR, estructura de captación)",
+      "intro2": "Todo el pack de Branding y Visibilidad (identidad visual, Google Maps, contenido, 3–4 vídeos Reels, reputación local)",
+      "bullets": [
+        "Automatización de WhatsApp (respuestas automáticas, mensajes de bienvenida)",
+        "Formularios inteligentes y captura de leads",
+        "Respuestas automáticas según la acción del cliente",
+        "Estructura de seguimiento de clientes para no perder oportunidades",
+        "Sistema listo para funcionar de forma autónoma"
+      ],
+      "note": "Servicio de lanzamiento. Sin gestión mensual obligatoria.",
+      "price": "400€",
+      "cta": "Póngase en contacto con nosotros"
+    },
+    "sitioWeb": {
+      "hero": {
+        "title": "Sitio Web"
+      },
+      "corporativo": {
+        "title": "Sitio Web Corporativo",
+        "description": "Ideal para presentar tu negocio de forma clara, profesional y creíble.",
+        "cta": "Elegir este pack",
+        "faq": {
+          "q1": "¿Para qué tipo de negocio es ideal un sitio web corporativo?",
+          "a1": "Es ideal para negocios locales y empresas que quieren presentar sus servicios de forma clara, profesional y generar confianza.",
+          "q2": "¿El sitio web incluye versión móvil?",
+          "a2": "Sí. Está optimizado para móvil, tablet y ordenador.",
+          "q3": "¿Puedo mostrar mis servicios y contacto?",
+          "a3": "Sí. El sitio está pensado para explicar servicios y facilitar el contacto por WhatsApp o formulario.",
+          "q4": "¿El sitio está optimizado para Google?",
+          "a4": "Sí. Incluye una estructura SEO básica y local."
+        }
+      },
+      "tiendaOnline": {
+        "title": "Tienda Online",
+        "description": "Para vender productos o servicios directamente desde tu sitio web.",
+        "cta": "Elegir este pack",
+        "faq": {
+          "q1": "¿Puedo vender productos y servicios desde la web?",
+          "a1": "Sí. La tienda permite vender productos físicos, digitales o servicios.",
+          "q2": "¿Incluye pagos online?",
+          "a2": "Sí. Se pueden integrar pagos online seguros según la solución elegida.",
+          "q3": "¿Puedo gestionar productos y pedidos fácilmente?",
+          "a3": "Sí. La gestión está pensada para ser simple e intuitiva.",
+          "q4": "¿La tienda es escalable?",
+          "a4": "Sí. Puedes empezar pequeño y ampliar cuando tu negocio crezca."
+        }
+      },
+      "faqGeneral": {
+        "title": "Preguntas frecuentes",
+        "items": {
+          "q1": "¿Cuánto tiempo tarda en estar listo el sitio web?",
+          "a1": "Depende del tipo de sitio, pero se busca una entrega rápida y funcional.",
+          "q2": "¿Necesito tener textos e imágenes preparados?",
+          "a2": "No. Se puede estructurar primero y añadir contenidos después.",
+          "q3": "¿El sitio será multilingüe?",
+          "a3": "Sí. Español (por defecto), inglés y francés.",
+          "q4": "¿Puedo conectar el sitio con WhatsApp?",
+          "a4": "Sí. El sitio puede redirigir directamente a WhatsApp.",
+          "q5": "¿Puedo usar el sitio para publicidad?",
+          "a5": "Sí. Es una base ideal para Google Ads y redes sociales.",
+          "q6": "¿El sitio es rápido y moderno?",
+          "a6": "Sí. Está optimizado para velocidad y experiencia de usuario.",
+          "q7": "¿Puedo modificar el contenido más adelante?",
+          "a7": "Sí. El sitio está pensado para evolucionar.",
+          "q8": "¿Incluye mantenimiento mensual obligatorio?",
+          "a8": "No. El servicio es de lanzamiento.",
+          "q9": "¿El sitio ayuda a generar clientes?",
+          "a9": "Sí. Está diseñado para convertir visitas en contactos.",
+          "q10": "¿Puedo empezar simple y ampliar después?",
+          "a10": "Sí. El sitio es una base escalable."
+        }
+      }
+    },
+    "sitioWebCorporativo": {
+      "titleLines": ["Sitio Web", "Corporativo"],
+      "bullets": [
+        "Sitio vitrina moderno y responsive",
+        "Presentación de servicios y actividad",
+        "Página de contacto con WhatsApp",
+        "Optimización básica para Google",
+        "Diseño limpio y profesional",
+        "Refuerzo de la reputación y presencia local"
+      ],
+      "note": "Perfecto para negocios que quieren existir y ser encontrados online.",
+      "price": "Desde 300€",
+      "cta": "Póngase en contacto con nosotros"
+    },
+    "sitioWebTiendaOnline": {
+      "titleLines": ["Tienda Online"],
+      "bullets": [
+        "Tienda online completa",
+        "Gestión de productos",
+        "Carrito de compra y proceso de pedido",
+        "Optimización básica para Google",
+        "Pagos en línea",
+        "Integración con WhatsApp",
+        "Sitio seguro y responsive"
+      ],
+      "note": "Perfecto para negocios que quieren existir y ser encontrados online.",
+      "price": "Desde 900€",
+      "cta": "Póngase en contacto con nosotros"
+    },
+    "impresion": {
+      "hero": {
+        "title": "Impresión"
+      },
+      "block1": {
+        "title": "Tarjetas de Visita Profesionales (Doble Cara)",
+        "bullets": [
+          "Diseño personalizado",
+          "Tarjetas de visita de alta calidad",
+          "Impresión profesional",
+          "Opciones con QR (WhatsApp, Google Maps, web)"
+        ],
+        "conclusion": "Ideal para contactos rápidos y primera impresión.",
+        "cta": "Elegir este",
+        "faq": {
+          "q1": "¿Qué información puedo incluir en las tarjetas?",
+          "a1": "Nombre, contacto, servicios, logo y opcionalmente QR para WhatsApp, Google Maps o web.",
+          "q2": "¿Incluye diseño?",
+          "a2": "Sí. Diseño personalizado incluido según tu identidad visual.",
+          "q3": "¿Qué acabados están disponibles?",
+          "a3": "Papel de alta calidad con opciones de acabado según necesidades.",
+          "q4": "¿Cuánto tarda la entrega?",
+          "a4": "Depende de la cantidad y acabados, normalmente 5-10 días laborables."
+        }
+      },
+      "block2": {
+        "title": "Flyers Promocionales (Doble Cara) A5",
+        "bullets": [
+          "Diseño gráfico incluido",
+          "Flyer doble cara",
+          "Formato promocional",
+          "Enfoque en llamada a la acción",
+          "Opción QR integrada"
+        ],
+        "conclusion": "Perfecto para promociones locales y distribución física.",
+        "cta": "Elegir este",
+        "faq": {
+          "q1": "¿Qué tamaño tienen los flyers?",
+          "a1": "Formato A5 estándar, doble cara para máximo impacto.",
+          "q2": "¿Puedo incluir QR codes?",
+          "a2": "Sí. Se puede integrar QR para WhatsApp, Google Maps o landing page.",
+          "q3": "¿Incluye diseño completo?",
+          "a3": "Sí. Diseño gráfico profesional incluido con llamada a la acción.",
+          "q4": "¿Para qué tipo de promociones es ideal?",
+          "a4": "Ideal para ofertas, eventos, lanzamientos y promociones locales."
+        }
+      },
+      "block3": {
+        "title": "Dípticos / Trípticos Informativos A5",
+        "bullets": [
+          "Diseño de díptico (2/3 pliegues)",
+          "Presentación clara de servicios",
+          "Ideal para explicar una oferta o actividad",
+          "Diseño profesional y legible"
+        ],
+        "conclusion": "Ideal para presentar tu negocio de forma estructurada.",
+        "cta": "Elegir este",
+        "faq": {
+          "q1": "¿Cuál es la diferencia entre díptico y tríptico?",
+          "a1": "Díptico tiene 2 pliegues, tríptico tiene 3. Ambos permiten presentar información estructurada.",
+          "q2": "¿Qué contenido puedo incluir?",
+          "a2": "Servicios, ofertas, información del negocio, contacto y más, organizados de forma clara.",
+          "q3": "¿Incluye diseño?",
+          "a3": "Sí. Diseño profesional y legible incluido.",
+          "q4": "¿Para qué negocios es ideal?",
+          "a4": "Ideal para negocios que necesitan explicar servicios o ofertas de forma detallada."
+        }
+      },
+      "block4": {
+        "title": "Caballete (Doble Cara)",
+        "bullets": [
+          "Diseño doble cara",
+          "Perfecto para promociones, QR o mensajes directos"
+        ],
+        "conclusion": "Muy visible en puntos de contacto con clientes.",
+        "cta": "Elegir este",
+        "faq": {
+          "q1": "¿Qué tamaño tiene el caballete?",
+          "a1": "Tamaño estándar de caballete, doble cara para máxima visibilidad.",
+          "q2": "¿Puedo incluir QR codes?",
+          "a2": "Sí. Perfecto para incluir QR que dirijan a WhatsApp, Google Maps o web.",
+          "q3": "¿Dónde se usa típicamente?",
+          "a3": "En puntos de contacto: recepción, mostradores, eventos, locales comerciales.",
+          "q4": "¿Incluye diseño?",
+          "a4": "Sí. Diseño profesional doble cara incluido."
+        }
+      },
+      "faqGeneral": {
+        "title": "Preguntas frecuentes",
+        "items": {
+          "q1": "¿Cuáles son los plazos de entrega?",
+          "a1": "Depende del producto y cantidad. Normalmente entre 5-15 días laborables desde la validación del diseño.",
+          "q2": "¿Qué formatos están disponibles?",
+          "a2": "A5 para flyers y dípticos, formatos estándar para tarjetas y caballetes. Otros formatos bajo consulta.",
+          "q3": "¿Qué calidad de papel y acabados ofrecéis?",
+          "a3": "Papel de alta calidad con opciones de acabado según el producto. Se define según necesidades.",
+          "q4": "¿Puedo incluir QR codes en todos los productos?",
+          "a4": "Sí. QR codes se pueden integrar en tarjetas, flyers y caballetes para dirigir a WhatsApp, Google Maps o web.",
+          "q5": "¿El diseño está incluido?",
+          "a5": "Sí. Diseño profesional incluido para todos los productos, adaptado a tu identidad visual.",
+          "q6": "¿Hay cantidades mínimas?",
+          "a6": "Depende del producto. Se define según necesidades y presupuesto.",
+          "q7": "¿Cómo envío mi logo y contenido?",
+          "a7": "Se puede enviar por email o compartir acceso. Formatos preferidos: logo en vectorial o alta resolución.",
+          "q8": "¿Hay revisión antes de imprimir?",
+          "a8": "Sí. Siempre se envía una prueba para validación antes de la impresión final.",
+          "q9": "¿Cómo se realiza la entrega?",
+          "a9": "Entrega o recogida según ubicación. Se coordina una vez validado el diseño.",
+          "q10": "¿Puedo hacer cambios o reimprimir?",
+          "a10": "Sí. Cambios antes de la impresión final. Reimpresiones bajo consulta según necesidades."
+        }
+      }
+    },
+    "impresionTarjetas": {
+      "titleLines": [
+        "Tarjetas de Visita",
+        "Profesionales"
+      ],
+      "bullets": [
+        "Diseño personalizado",
+        "Tarjetas de visita de alta calidad",
+        "Impresión profesional",
+        "Opciones con QR (WhatsApp, Google Maps, web)"
+      ],
+      "conclusion": "Perfecto para contactos rápidos y primera impresión.",
+      "blueActions": [
+        {
+          "label": "Precio 1 cara",
+          "href": "https://drive.google.com/file/d/1HOXpZigkVEyfVu1G5Rw9JCegGfPQ98dM/view"
+        },
+        {
+          "label": "Precio 2 cara",
+          "href": "https://drive.google.com/file/d/1iYo_93VjWks7JzGsYDu99wNPCeUPpfjW/view"
+        }
+      ],
+      "contactCta": "Póngase en contacto con nosotros"
+    },
+    "impresionFlyers": {
+      "titleLines": [
+        "Flyers Promocionales"
+      ],
+      "bullets": [
+        "Diseño gráfico incluido",
+        "Flyer recto / verso",
+        "Formato promocional",
+        "Enfoque en llamada a la acción",
+        "Opción QR integrada"
+      ],
+      "conclusion": "Perfecto para promociones locales y distribución física.",
+      "blueActions": [
+        {
+          "label": "Precio A6 1 cara (10,5 x 14,8cm)",
+          "href": "https://drive.google.com/file/d/1yrsYWAieuwvKoHRmyxUjlP5KA5A4UvE-/view"
+        },
+        {
+          "label": "Precio A6 2 cara (10,5 x 14,8cm)",
+          "href": "https://drive.google.com/file/d/1YeKpcvsJkkysZ16jfN4_5zDDyoigZ1v7/view"
+        },
+        {
+          "label": "Precio A5 1 cara (14,8 x 21cm)",
+          "href": "https://drive.google.com/file/d/10Zi2E_08qorIYzXeVBiWxaeVn8Lw5y3N/view"
+        },
+        {
+          "label": "Precio A5 2 cara (14,8 x 21cm)",
+          "href": "https://drive.google.com/file/d/14xrt_aH1ARBS0CwfFxMlSH8Lf93WQAxi/view"
+        }
+      ],
+      "contactCta": "Póngase en contacto con nosotros"
+    },
+    "impresionDipticos": {
+      "titleLines": [
+        "PACK DÍPTICOS / TRÍPTICOS"
+      ],
+      "bullets": [
+        "Diseño de díptico (2/3 pliegues)",
+        "Presentación clara de servicios",
+        "Impresión profesional",
+        "Opciones con QR (WhatsApp, Google Maps, web)"
+      ],
+      "conclusion": "Ideal para presentar tu negocio de forma estructurada.",
+      "blueActions": [
+        {
+          "label": "Precio A5 (14,8 x 21 cm)",
+          "href": "https://drive.google.com/file/d/1jfl-dzggoU5JWCahHKnaNk3MQQrTUguB/view"
+        }
+      ],
+      "contactCta": "Póngase en contacto con nosotros"
+    },
+    "impresionCaballete": {
+      "titleLines": [
+        "Caballete (Doble Cara)"
+      ],
+      "bullets": [
+        "Diseño doble cara",
+        "Impresión profesional",
+        "Perfecto para promociones, QR o mensajes directos"
+      ],
+      "conclusion": "Muy visible en puntos de contacto con clientes.",
+      "extraPricesTextLines": [
+        "100 x 70 = 180€",
+        "70 x 50 = 130€"
+      ],
+      "contactCta": "Póngase en contacto con nosotros"
+    },
+    "reclutamiento": {
+      "hero": {
+        "title": "Una oportunidad real",
+        "subtitle": "Colabora con una solución que ya funciona para negocios locales."
+      },
+      "mainSection": {
+        "title": "Gana hasta un 20% de comisión",
+        "paragraph1": "Como colaborador de PUBLOX, recibes una comisión por cada negocio local que entra gracias a ti.",
+        "paragraph2": "Tu rol es sencillo: identificar negocios que necesitan más clientes y ponerlos en contacto con nuestro equipo.",
+        "paragraph3": "PUBLOX se encarga de todo: estrategia, publicidad, automatización, seguimiento y soporte al cliente.",
+        "paragraph4": "La comisión puede llegar hasta el 20 %, según el tipo de colaboración y la duración del cliente.",
+        "paragraph5": "No hay límites fijos ni falsas promesas: todo se basa en resultados reales y relaciones a largo plazo. Sin inversión inicial. Sin objetivos obligatorios. Sin riesgo."
+      },
+      "advantages": {
+        "card1": {
+          "caption": "Sin conocimientos técnicos"
+        },
+        "card2": {
+          "caption": "Tu misión es conectar negocios con PUBLOX. Nosotros hacemos el resto."
+        },
+        "card3": {
+          "caption": "Sistema de comisión basado en resultados y colaboración a largo plazo."
+        }
+      }
+    },
+    "contacto": {
+      "title": "Contacto",
+      "subtitle": "Elige tu método de contacto y te respondemos lo antes posible.",
+      "whatsapp": {
+        "label": "WhatsApp"
+      },
+      "email": {
+        "label": "Email"
+      }
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "description": "Política de privacidad de PUBLOX"
+    },
+    "notFound": {
+      "title": "Página no encontrada",
+      "description": "La página que buscas no existe",
+      "backHome": "Volver al inicio"
+    }
+  }
+}
+

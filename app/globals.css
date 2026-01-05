@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-bg: #eeeeee;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --button-primary-bg: #1e1e1e;
+  --pastel-blue: #93bee9;
+  --warm-beige: #eddfd0;
+  --soft-beige: #edeae7;
+  --blue-grey: #bbcdde;
+  --offwhite-card: #f0eae5;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-primary);
+}
+

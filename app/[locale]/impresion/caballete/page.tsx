@@ -1,0 +1,26 @@
+import { getTranslations } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
+import PrintProductDetailPage from '@/components/PrintProductDetailPage';
+
+export default async function ImpresionCaballetePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('pages.impresionCaballete');
+
+  return (
+    <PrintProductDetailPage
+      titleLines={t.raw('titleLines') as string[]}
+      bullets={t.raw('bullets') as string[]}
+      conclusion={t('conclusion')}
+      extraPricesTextLines={t.raw('extraPricesTextLines') as string[]}
+      contactCtaLabel={t('contactCta')}
+      contactHref={`/${locale}/contacto`}
+      imageRatio="16:9"
+      videoSrc="/media/videos/Caballete-(Doble Cara).mp4"
+    />
+  );
+}
