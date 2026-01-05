@@ -361,10 +361,14 @@ export default async function HomePage({
           <FadeIn delay={0.1}>
             <Card className="max-w-4xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
               <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div className="relative aspect-square rounded-image overflow-hidden bg-warm-beige flex items-center justify-center">
-                  <p className="text-text-secondary text-sm text-center px-4">
-                    {t('affiliates.mainCard.placeholder')}
-                  </p>
+                <div className="relative aspect-square rounded-image overflow-hidden bg-warm-beige p-4">
+                  <Image
+                    src="/media/images/groupe-holding.jpg"
+                    alt={locale === 'es' ? 'Logo del grupo y holding' : locale === 'en' ? 'Group and holding logo' : 'Logo du groupe et holding'}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                  />
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold mb-6 text-text-primary">
@@ -390,13 +394,22 @@ export default async function HomePage({
 
           {/* Affiliate Cards Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {[1, 2, 3, 4].map((i) => (
+            {[
+              { src: '/media/images/affilier-1.jpg', alt: { es: 'Logo empresa afiliada 1', en: 'Affiliate company logo 1', fr: 'Logo entreprise affiliée 1' } },
+              { src: '/media/images/affilier-2.jpg', alt: { es: 'Logo empresa afiliada 2', en: 'Affiliate company logo 2', fr: 'Logo entreprise affiliée 2' } },
+              { src: '/media/images/affilier-3.png', alt: { es: 'Logo empresa afiliada 3', en: 'Affiliate company logo 3', fr: 'Logo entreprise affiliée 3' } },
+              { src: '/media/images/affilier-4.jpg', alt: { es: 'Logo empresa afiliada 4', en: 'Affiliate company logo 4', fr: 'Logo entreprise affiliée 4' } },
+            ].map((item, i) => (
               <FadeIn key={i} delay={0.2 + i * 0.1}>
                 <Card className="p-6 hover:shadow-soft-lg transition-shadow">
-                  <div className="aspect-square bg-warm-beige rounded-image flex items-center justify-center mb-4">
-                    <p className="text-text-secondary text-xs text-center px-2 whitespace-pre-line">
-                      {t('affiliates.affiliatePlaceholder')}
-                    </p>
+                  <div className="relative aspect-square bg-warm-beige rounded-image overflow-hidden p-4 mb-4">
+                    <Image
+                      src={item.src}
+                      alt={item.alt[locale as 'es' | 'en' | 'fr'] || item.alt.es}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 50vw, 200px"
+                    />
                   </div>
                 </Card>
               </FadeIn>
