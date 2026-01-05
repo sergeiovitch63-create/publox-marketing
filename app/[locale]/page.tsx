@@ -6,7 +6,6 @@ import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
-import FrameImage from '@/components/FrameImage';
 import HeroMedia from '@/components/HeroMedia';
 import VideoPlaceholder from '@/components/VideoPlaceholder';
 
@@ -235,97 +234,6 @@ export default async function HomePage({
               </div>
             </div>
           </FadeIn>
-        </Container>
-      </Section>
-
-      {/* SOLUCIÓN SECTION */}
-      <Section bgColor="soft-beige" className="py-20 md:py-24 lg:py-28">
-        <Container>
-          <FadeIn>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-text-primary">
-              {t('solucion.titleLine1')}
-              <br />
-              {t('solucion.titleLine2')}
-            </h2>
-          </FadeIn>
-
-          {/* Row 1: 2 large cards */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <FadeIn>
-              <Card className="p-8 hover:shadow-soft-lg transition-shadow">
-                <h3 className="text-2xl font-bold mb-4 text-text-primary">
-                  {t('solucion.card1.title')}
-                </h3>
-                <div className="mb-6 relative aspect-square max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
-                  <Image
-                    src="/media/images/commission-system.png"
-                    alt={locale === 'es' ? 'Estrategia enfocada en resultados' : locale === 'en' ? 'Results-focused strategy' : 'Stratégie axée sur les résultats'}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 320px"
-                  />
-                </div>
-                <p className="text-text-secondary text-lg">
-                  {t('solucion.card1.text')}
-                </p>
-              </Card>
-            </FadeIn>
-
-            <FadeIn delay={0.1}>
-              <Card className="p-8 hover:shadow-soft-lg transition-shadow">
-                <h3 className="text-2xl font-bold mb-4 text-text-primary">
-                  {t('solucion.card2.title')}
-                </h3>
-                <div className="grid grid-cols-3 gap-4 mb-6">
-                  {[1, 2, 3, 4, 5, 6].map((i) => (
-                    <div
-                      key={i}
-                      className="aspect-square bg-warm-beige rounded-image"
-                    />
-                  ))}
-                </div>
-                <p className="text-text-secondary text-lg">
-                  {t('solucion.card2.text')}
-                </p>
-              </Card>
-            </FadeIn>
-          </div>
-
-          {/* Row 2: 3 small cards */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <FadeIn>
-              <Card className="p-6 hover:shadow-soft-lg transition-shadow">
-                <h3 className="text-xl font-bold mb-3 text-text-primary">
-                  {t('solucion.card3.title')}
-                </h3>
-                <p className="text-text-secondary">
-                  {t('solucion.card3.text')}
-                </p>
-              </Card>
-            </FadeIn>
-
-            <FadeIn delay={0.1}>
-              <Card className="p-6 hover:shadow-soft-lg transition-shadow">
-                <h3 className="text-xl font-bold mb-3 text-text-primary">
-                  {t('solucion.card4.title')}
-                </h3>
-                <p className="text-text-secondary">
-                  {t('solucion.card4.text')}
-                </p>
-              </Card>
-            </FadeIn>
-
-            <FadeIn delay={0.2}>
-              <Card className="p-6 hover:shadow-soft-lg transition-shadow">
-                <h3 className="text-xl font-bold mb-3 text-text-primary">
-                  {t('solucion.card5.title')}
-                </h3>
-                <p className="text-text-secondary">
-                  {t('solucion.card5.text')}
-                </p>
-              </Card>
-            </FadeIn>
-          </div>
         </Container>
       </Section>
 
