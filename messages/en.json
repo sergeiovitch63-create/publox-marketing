@@ -108,6 +108,18 @@
           "title": "Commission system",
           "text": "Commission system based on results and long-term collaboration."
         }
+      },
+      "affiliates": {
+        "title": "Our trusted affiliates and partners",
+        "subtitle": "Companies and brands collaborating with us within our professional ecosystem.",
+        "mainCard": {
+          "title": "Group & Holding",
+          "text1": "PUBLOX is part of a business group focused on digital development, marketing, and automation for local businesses.",
+          "text2": "This ecosystem allows us to deliver solid, scalable solutions driven by real results.",
+          "placeholder": "Group / holding logo (coming soon)"
+        },
+        "gridTitle": "Affiliates and partner companies",
+        "affiliatePlaceholder": "Affiliate company logo\n(Coming soon)"
       }
     },
     "necesitas": {

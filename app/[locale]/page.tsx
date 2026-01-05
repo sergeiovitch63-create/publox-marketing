@@ -436,6 +436,66 @@ export default async function HomePage({
           </div>
         </Container>
       </Section>
+
+      {/* AFFILIATES / PARTNERS SECTION */}
+      <Section className="py-20 md:py-24 lg:py-28">
+        <Container>
+          <FadeIn>
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-text-primary">
+              {t('affiliates.title')}
+            </h2>
+            <p className="text-text-secondary text-center mb-12 text-lg max-w-2xl mx-auto">
+              {t('affiliates.subtitle')}
+            </p>
+          </FadeIn>
+
+          {/* Main Card - Grupo & Holding */}
+          <FadeIn delay={0.1}>
+            <Card className="max-w-4xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="relative aspect-square rounded-image overflow-hidden bg-warm-beige flex items-center justify-center">
+                  <p className="text-text-secondary text-sm text-center px-4">
+                    {t('affiliates.mainCard.placeholder')}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold mb-6 text-text-primary">
+                    {t('affiliates.mainCard.title')}
+                  </h3>
+                  <p className="text-text-secondary mb-4 text-lg">
+                    {t('affiliates.mainCard.text1')}
+                  </p>
+                  <p className="text-text-secondary text-lg">
+                    {t('affiliates.mainCard.text2')}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </FadeIn>
+
+          {/* Grid Title */}
+          <FadeIn delay={0.2}>
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-text-primary">
+              {t('affiliates.gridTitle')}
+            </h3>
+          </FadeIn>
+
+          {/* Affiliate Cards Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[1, 2, 3, 4].map((i) => (
+              <FadeIn key={i} delay={0.2 + i * 0.1}>
+                <Card className="p-6 hover:shadow-soft-lg transition-shadow">
+                  <div className="aspect-square bg-warm-beige rounded-image flex items-center justify-center mb-4">
+                    <p className="text-text-secondary text-xs text-center px-2 whitespace-pre-line">
+                      {t('affiliates.affiliatePlaceholder')}
+                    </p>
+                  </div>
+                </Card>
+              </FadeIn>
+            ))}
+          </div>
+        </Container>
+      </Section>
     </>
   );
 }

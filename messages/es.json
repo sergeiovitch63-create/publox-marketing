@@ -108,6 +108,18 @@
           "title": "Sistema de comisión",
           "text": "Sistema de comisión basado en resultados y colaboración a largo plazo."
         }
+      },
+      "affiliates": {
+        "title": "Nuestros afiliados y partners de confianza",
+        "subtitle": "Empresas y marcas que colaboran con nosotros dentro de nuestro ecosistema profesional.",
+        "mainCard": {
+          "title": "Grupo & Holding",
+          "text1": "PUBLOX forma parte de un grupo empresarial dedicado al desarrollo digital, marketing y automatización de negocios locales.",
+          "text2": "Este ecosistema nos permite ofrecer soluciones sólidas, escalables y orientadas a resultados reales.",
+          "placeholder": "Logo del grupo / holding (próximamente)"
+        },
+        "gridTitle": "Afiliados y empresas colaboradoras",
+        "affiliatePlaceholder": "Logo de empresa afiliada\n(Próximamente)"
       }
     },
     "necesitas": {
