@@ -1,10 +1,10 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Card from '@/components/Card';
-import MediaPlaceholder from '@/components/MediaPlaceholder';
 
 export default async function ReclutamientoPage({
   params,
@@ -44,9 +44,15 @@ export default async function ReclutamientoPage({
           <FadeIn>
             <Card className="max-w-5xl mx-auto p-8 md:p-12 hover:shadow-soft-lg transition-shadow">
               <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                {/* Image placeholder - gauche */}
-                <div className="order-2 md:order-1">
-                  <MediaPlaceholder ratio="3:4" rounded />
+                {/* Image - gauche */}
+                <div className="order-2 md:order-1 relative aspect-[3/4] rounded-image overflow-hidden bg-warm-beige">
+                  <Image
+                    src="/media/images/affiliate-20-commission.png"
+                    alt={locale === 'es' ? 'Gana hasta un 20% de comisión' : locale === 'en' ? 'Earn up to 20% commission' : 'Gagnez jusqu\'à 20% de commission'}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                  />
                 </div>
 
                 {/* Texte - droite */}
@@ -75,8 +81,14 @@ export default async function ReclutamientoPage({
             {/* Card 1 */}
             <FadeIn>
               <Card className="bg-warm-beige hover:shadow-soft-lg transition-shadow text-center p-6 md:p-8">
-                <div className="mb-6">
-                  <MediaPlaceholder ratio="1:1" rounded className="max-w-[200px] mx-auto" />
+                <div className="mb-6 relative aspect-square max-w-[200px] mx-auto rounded-image overflow-hidden bg-white">
+                  <Image
+                    src="/media/images/no-tech-knowledge.png"
+                    alt={locale === 'es' ? 'Sin conocimientos técnicos' : locale === 'en' ? 'No technical knowledge required' : 'Aucune connaissance technique requise'}
+                    fill
+                    className="object-cover"
+                    sizes="200px"
+                  />
                 </div>
                 <p className="text-text-secondary text-lg">{t('advantages.card1.caption')}</p>
               </Card>
@@ -85,8 +97,14 @@ export default async function ReclutamientoPage({
             {/* Card 2 */}
             <FadeIn delay={0.1}>
               <Card className="bg-warm-beige hover:shadow-soft-lg transition-shadow text-center p-6 md:p-8">
-                <div className="mb-6">
-                  <MediaPlaceholder ratio="1:1" rounded className="max-w-[200px] mx-auto" />
+                <div className="mb-6 relative aspect-square max-w-[200px] mx-auto rounded-image overflow-hidden bg-white">
+                  <Image
+                    src="/media/images/your-mission-connect.png"
+                    alt={locale === 'es' ? 'Tu misión es conectar negocios con PUBLOX' : locale === 'en' ? 'Your mission is to connect businesses with PUBLOX' : 'Votre mission est de connecter les entreprises avec PUBLOX'}
+                    fill
+                    className="object-cover"
+                    sizes="200px"
+                  />
                 </div>
                 <p className="text-text-secondary text-lg">{t('advantages.card2.caption')}</p>
               </Card>
@@ -95,8 +113,14 @@ export default async function ReclutamientoPage({
             {/* Card 3 */}
             <FadeIn delay={0.2}>
               <Card className="bg-warm-beige hover:shadow-soft-lg transition-shadow text-center p-6 md:p-8">
-                <div className="mb-6">
-                  <MediaPlaceholder ratio="1:1" rounded className="max-w-[200px] mx-auto" />
+                <div className="mb-6 relative aspect-square max-w-[200px] mx-auto rounded-image overflow-hidden bg-white">
+                  <Image
+                    src="/media/images/commission-system.png"
+                    alt={locale === 'es' ? 'Sistema de comisión basado en resultados' : locale === 'en' ? 'Results-based commission system' : 'Système de commission basé sur les résultats'}
+                    fill
+                    className="object-cover"
+                    sizes="200px"
+                  />
                 </div>
                 <p className="text-text-secondary text-lg">{t('advantages.card3.caption')}</p>
               </Card>

@@ -1,12 +1,12 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import FrameImage from '@/components/FrameImage';
-import MediaPlaceholder from '@/components/MediaPlaceholder';
 import HeroMedia from '@/components/HeroMedia';
 import VideoPlaceholder from '@/components/VideoPlaceholder';
 
@@ -256,8 +256,14 @@ export default async function HomePage({
                 <h3 className="text-2xl font-bold mb-4 text-text-primary">
                   {t('solucion.card1.title')}
                 </h3>
-                <div className="mb-6">
-                  <MediaPlaceholder ratio="1:1" rounded className="max-w-xs mx-auto" />
+                <div className="mb-6 relative aspect-square max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
+                  <Image
+                    src="/media/images/commission-system.png"
+                    alt={locale === 'es' ? 'Estrategia enfocada en resultados' : locale === 'en' ? 'Results-focused strategy' : 'Stratégie axée sur les résultats'}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 320px"
+                  />
                 </div>
                 <p className="text-text-secondary text-lg">
                   {t('solucion.card1.text')}
@@ -339,8 +345,14 @@ export default async function HomePage({
           <FadeIn>
             <Card className="p-8 md:p-12 bg-blue-grey/30 backdrop-blur-sm mb-12">
               <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <MediaPlaceholder ratio="3:4" rounded />
+                <div className="relative aspect-[3/4] rounded-image overflow-hidden bg-warm-beige">
+                  <Image
+                    src="/media/images/affiliate-20-commission.png"
+                    alt={locale === 'es' ? 'Gana hasta un 20% de comisión' : locale === 'en' ? 'Earn up to 20% commission' : 'Gagnez jusqu\'à 20% de commission'}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                  />
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold mb-6 text-text-primary">
@@ -364,7 +376,15 @@ export default async function HomePage({
           <div className="grid md:grid-cols-3 gap-8">
             <FadeIn>
               <div className="text-center">
-                <MediaPlaceholder ratio="1:1" rounded className="mb-4 max-w-xs mx-auto" />
+                <div className="relative aspect-square mb-4 max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
+                  <Image
+                    src="/media/images/no-tech-knowledge.png"
+                    alt={locale === 'es' ? 'Sin conocimientos técnicos' : locale === 'en' ? 'No technical knowledge required' : 'Aucune connaissance technique requise'}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 320px"
+                  />
+                </div>
                 <h4 className="font-bold mb-2 text-text-primary">
                   {t('oportunidad.vignette1.title')}
                 </h4>
@@ -376,7 +396,15 @@ export default async function HomePage({
 
             <FadeIn delay={0.1}>
               <div className="text-center">
-                <MediaPlaceholder ratio="1:1" rounded className="mb-4 max-w-xs mx-auto" />
+                <div className="relative aspect-square mb-4 max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
+                  <Image
+                    src="/media/images/your-mission-connect.png"
+                    alt={locale === 'es' ? 'Tu misión es conectar negocios con PUBLOX' : locale === 'en' ? 'Your mission is to connect businesses with PUBLOX' : 'Votre mission est de connecter les entreprises avec PUBLOX'}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 320px"
+                  />
+                </div>
                 <h4 className="font-bold mb-2 text-text-primary">
                   {t('oportunidad.vignette2.title')}
                 </h4>
@@ -388,7 +416,15 @@ export default async function HomePage({
 
             <FadeIn delay={0.2}>
               <div className="text-center">
-                <MediaPlaceholder ratio="1:1" rounded className="mb-4 max-w-xs mx-auto" />
+                <div className="relative aspect-square mb-4 max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
+                  <Image
+                    src="/media/images/commission-system.png"
+                    alt={locale === 'es' ? 'Sistema de comisión basado en resultados' : locale === 'en' ? 'Results-based commission system' : 'Système de commission basé sur les résultats'}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 320px"
+                  />
+                </div>
                 <h4 className="font-bold mb-2 text-text-primary">
                   {t('oportunidad.vignette3.title')}
                 </h4>
