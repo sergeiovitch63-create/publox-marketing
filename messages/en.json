@@ -26,17 +26,18 @@
     "home": {
       "hero": {
         "titleLine1": "The solution to make",
-        "titleLine2": "your local business",
+        "titleLine2": "your business",
         "titleLine3": "grow.",
-        "subtitle": "We help local businesses grow with a clear strategy of\nacquisition, visibility and automation.",
+        "subtitle": "We help businesses grow with a clear strategy of\nacquisition, visibility and automation.",
         "cta": "Develop my business"
       },
+      "solutionsTitle": "Our solutions",
       "services": {
         "captacion": {
-          "title": "Customer Acquisition",
-          "text1": "Attract more customers with digital marketing strategies focused on real results.",
-          "text2": "We develop personalized campaigns that connect your business with your target audience.",
-          "text3": "Continuous measurement and optimization to maximize return on investment."
+          "title": "Marketing Block",
+          "text1": "Grow your visibility and customer base with a complete marketing system built for local businesses.",
+          "text2": "We set up a turnkey structure that attracts clients, strengthens your brand image, and automates the first interactions.",
+          "text3": "From acquisition to conversion, everything is optimized to generate real results — without mandatory monthly management."
         },
         "automatizacion": {
           "title": "Automation",
@@ -70,7 +71,8 @@
           "title": "Earn up to 20% commission",
           "text1": "Join our affiliate program and help local businesses grow while generating recurring income.",
           "text2": "Each business you refer that becomes a client generates a commission based on real results.",
-          "text3": "No limits, no restrictions. The more businesses you help, the more you earn."
+          "text3": "No limits, no restrictions. The more businesses you help, the more you earn.",
+          "cta": "Join the program"
         },
         "vignette1": {
           "title": "No technical knowledge required",

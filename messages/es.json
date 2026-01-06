@@ -27,16 +27,17 @@
       "hero": {
         "titleLine1": "La solución para hacer",
         "titleLine2": "crecer tu negocio",
-        "titleLine3": "local.",
-        "subtitle": "Ayudamos a negocios locales a crecer con una estrategia clara de\ncaptación, visibilidad y automatización.",
+        "titleLine3": "",
+        "subtitle": "Ayudamos a negocios a crecer con una estrategia clara de\ncaptación, visibilidad y automatización.",
         "cta": "Desarrollar mi negocio"
       },
+      "solutionsTitle": "Nuestras soluciones",
       "services": {
         "captacion": {
-          "title": "Captación",
-          "text1": "Atrae más clientes con estrategias de marketing digital enfocadas en resultados reales.",
-          "text2": "Desarrollamos campañas personalizadas que conectan tu negocio con tu audiencia objetivo.",
-          "text3": "Medición y optimización continua para maximizar el retorno de inversión."
+          "title": "Bloque de Marketing",
+          "text1": "Aumenta tu visibilidad y tu cartera de clientes con un sistema de marketing completo pensado para negocios locales.",
+          "text2": "Implementamos una estructura llave en mano que atrae clientes, refuerza tu marca y automatiza los primeros contactos.",
+          "text3": "De la adquisición a la conversión, todo está optimizado para generar resultados reales, sin gestión mensual obligatoria."
         },
         "automatizacion": {
           "title": "Automatización",
@@ -70,7 +71,8 @@
           "title": "Gana hasta un 20% de comisión",
           "text1": "Únete a nuestro programa de afiliados y ayuda a negocios locales a crecer mientras generas ingresos recurrentes.",
           "text2": "Cada negocio que refieras y que se convierta en cliente te genera una comisión basada en resultados reales.",
-          "text3": "Sin límites, sin restricciones. Cuantos más negocios ayudes, más ganas."
+          "text3": "Sin límites, sin restricciones. Cuantos más negocios ayudes, más ganas.",
+          "cta": "Unirse al programa"
         },
         "vignette1": {
           "title": "Sin conocimientos técnicos",

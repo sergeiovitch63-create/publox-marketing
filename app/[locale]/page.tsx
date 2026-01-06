@@ -58,12 +58,23 @@ export default async function HomePage({
         </Container>
       </section>
 
+      {/* SOLUTIONS TITLE SECTION */}
+      <Section className="py-12 md:py-16">
+        <Container>
+          <FadeIn>
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary">
+              {t('solutionsTitle')}
+            </h2>
+          </FadeIn>
+        </Container>
+      </Section>
+
       {/* SERVICES SECTION */}
       <Section className="py-20 md:py-24 lg:py-28">
         <Container>
-          {/* Service 1: Captación - Image left, Text right */}
+          {/* Service 1: Marketing Block - Image left, Text right */}
           <FadeIn>
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-20 md:mb-28">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-20 md:mb-28">
               <div className="relative">
                 <div className="absolute inset-0 bg-pastel-blue rounded-image -z-10" />
                 <div className="absolute inset-[2px] bg-warm-beige rounded-image -z-10" />
@@ -75,89 +86,21 @@ export default async function HomePage({
                   />
                 </div>
               </div>
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary">
+              <div className="max-w-[520px]">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-text-primary">
                   {t('services.captacion.title')}
                 </h2>
-                <p className="text-text-secondary mb-4 text-lg">
-                  {t('services.captacion.text1')}
-                </p>
-                <p className="text-text-secondary mb-4 text-lg">
-                  {t('services.captacion.text2')}
-                </p>
-                <p className="text-text-secondary mb-6 text-lg">
-                  {t('services.captacion.text3')}
-                </p>
-                <Button href={`/${locale}/necesitas`} variant="primary">
-                  {t('hero.cta')}
-                </Button>
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* Service 2: Automatización - Text left, Image right */}
-          <FadeIn>
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-20 md:mb-28">
-              <div className="order-2 md:order-1">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary">
-                  {t('services.automatizacion.title')}
-                </h2>
-                <p className="text-text-secondary mb-4 text-lg">
-                  {t('services.automatizacion.text1')}
-                </p>
-                <p className="text-text-secondary mb-4 text-lg">
-                  {t('services.automatizacion.text2')}
-                </p>
-                <p className="text-text-secondary mb-6 text-lg">
-                  {t('services.automatizacion.text3')}
-                </p>
-                <Button href={`/${locale}/necesitas`} variant="primary">
-                  {t('hero.cta')}
-                </Button>
-              </div>
-              <div className="order-1 md:order-2">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-pastel-blue rounded-image -z-10" />
-                  <div className="absolute inset-[2px] bg-warm-beige rounded-image -z-10" />
-                  <div className="relative rounded-image overflow-hidden">
-                    <VideoPlaceholder
-                      src="/media/videos/Automatización.mp4"
-                      ratio="4:3"
-                      rounded={false}
-                    />
-                  </div>
+                <div className="space-y-5 text-text-secondary text-lg leading-relaxed">
+                  <p>
+                    {t('services.captacion.text1')}
+                  </p>
+                  <p>
+                    {t('services.captacion.text2')}
+                  </p>
+                  <p className="mb-8">
+                    {t('services.captacion.text3')}
+                  </p>
                 </div>
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* Service 3: Redes Sociales - Image left, Text right */}
-          <FadeIn>
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-20 md:mb-28">
-              <div className="relative">
-                <div className="absolute inset-0 bg-pastel-blue rounded-image -z-10" />
-                <div className="absolute inset-[2px] bg-warm-beige rounded-image -z-10" />
-                <div className="relative rounded-image overflow-hidden">
-                  <VideoPlaceholder
-                    src="/media/videos/Redes-sociales.mp4"
-                    ratio="4:3"
-                    rounded={false}
-                  />
-                </div>
-              </div>
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary">
-                  {t('services.redesSociales.title')}
-                </h2>
-                <p className="text-text-secondary mb-4 text-lg">
-                  {t('services.redesSociales.text1')}
-                </p>
-                <p className="text-text-secondary mb-4 text-lg">
-                  {t('services.redesSociales.text2')}
-                </p>
-                <p className="text-text-secondary mb-6 text-lg">
-                  {t('services.redesSociales.text3')}
-                </p>
                 <Button href={`/${locale}/necesitas`} variant="primary">
                   {t('hero.cta')}
                 </Button>
@@ -165,7 +108,7 @@ export default async function HomePage({
             </div>
           </FadeIn>
 
-          {/* Service 4: Sitio Web - Text left, Image right */}
+          {/* Service 2: Sitio Web - Text left, Image right */}
           <FadeIn>
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20 md:mb-28">
               <div className="order-2 md:order-1">
@@ -201,7 +144,7 @@ export default async function HomePage({
             </div>
           </FadeIn>
 
-          {/* Service 5: Impresión - Image left, Text right */}
+          {/* Service 3: Impresión - Image left, Text right */}
           <FadeIn>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative">
@@ -272,149 +215,16 @@ export default async function HomePage({
                   <p className="text-text-secondary mb-4 text-lg">
                     {t('oportunidad.card.text2')}
                   </p>
-                  <p className="text-text-secondary text-lg">
+                  <p className="text-text-secondary mb-6 text-lg">
                     {t('oportunidad.card.text3')}
                   </p>
+                  <Button href={`/${locale}/reclutamiento`} variant="primary">
+                    {t('oportunidad.card.cta')}
+                  </Button>
                 </div>
               </div>
             </Card>
           </FadeIn>
-
-          {/* 3 vignettes */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <FadeIn>
-              <div className="text-center">
-                <div className="relative aspect-square mb-4 max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
-                  <Image
-                    src="/media/images/no-tech-knowledge.png"
-                    alt={locale === 'es' ? 'Sin conocimientos técnicos' : locale === 'en' ? 'No technical knowledge required' : 'Aucune connaissance technique requise'}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 320px"
-                  />
-                </div>
-                <h4 className="font-bold mb-2 text-text-primary">
-                  {t('oportunidad.vignette1.title')}
-                </h4>
-                <p className="text-text-secondary text-sm">
-                  {t('oportunidad.vignette1.text')}
-                </p>
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={0.1}>
-              <div className="text-center">
-                <div className="relative aspect-square mb-4 max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
-                  <Image
-                    src="/media/images/your-mission-connect.png"
-                    alt={locale === 'es' ? 'Tu misión es conectar negocios con PUBLOX' : locale === 'en' ? 'Your mission is to connect businesses with PUBLOX' : 'Votre mission est de connecter les entreprises avec PUBLOX'}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 320px"
-                  />
-                </div>
-                <h4 className="font-bold mb-2 text-text-primary">
-                  {t('oportunidad.vignette2.title')}
-                </h4>
-                <p className="text-text-secondary text-sm">
-                  {t('oportunidad.vignette2.text')}
-                </p>
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={0.2}>
-              <div className="text-center">
-                <div className="relative aspect-square mb-4 max-w-xs mx-auto rounded-image overflow-hidden bg-warm-beige">
-                  <Image
-                    src="/media/images/commission-system.png"
-                    alt={locale === 'es' ? 'Sistema de comisión basado en resultados' : locale === 'en' ? 'Results-based commission system' : 'Système de commission basé sur les résultats'}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 320px"
-                  />
-                </div>
-                <h4 className="font-bold mb-2 text-text-primary">
-                  {t('oportunidad.vignette3.title')}
-                </h4>
-                <p className="text-text-secondary text-sm">
-                  {t('oportunidad.vignette3.text')}
-                </p>
-              </div>
-            </FadeIn>
-          </div>
-        </Container>
-      </Section>
-
-      {/* AFFILIATES / PARTNERS SECTION */}
-      <Section className="py-20 md:py-24 lg:py-28">
-        <Container>
-          <FadeIn>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-text-primary">
-              {t('affiliates.title')}
-            </h2>
-            <p className="text-text-secondary text-center mb-12 text-lg max-w-2xl mx-auto">
-              {t('affiliates.subtitle')}
-            </p>
-          </FadeIn>
-
-          {/* Main Card - Grupo & Holding */}
-          <FadeIn delay={0.1}>
-            <Card className="max-w-4xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
-              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div className="relative aspect-square rounded-image overflow-hidden bg-warm-beige p-4">
-                  <Image
-                    src="/media/images/groupe-holding.jpg"
-                    alt={locale === 'es' ? 'Logo del grupo y holding' : locale === 'en' ? 'Group and holding logo' : 'Logo du groupe et holding'}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100vw, 400px"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-3xl font-bold mb-6 text-text-primary">
-                    {t('affiliates.mainCard.title')}
-                  </h3>
-                  <p className="text-text-secondary mb-4 text-lg">
-                    {t('affiliates.mainCard.text1')}
-                  </p>
-                  <p className="text-text-secondary text-lg">
-                    {t('affiliates.mainCard.text2')}
-                  </p>
-                </div>
-              </div>
-            </Card>
-          </FadeIn>
-
-          {/* Grid Title */}
-          <FadeIn delay={0.2}>
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-text-primary">
-              {t('affiliates.gridTitle')}
-            </h3>
-          </FadeIn>
-
-          {/* Affiliate Cards Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {[
-              { src: '/media/images/affilier-1.jpg', alt: { es: 'Logo empresa afiliada 1', en: 'Affiliate company logo 1', fr: 'Logo entreprise affiliée 1' } },
-              { src: '/media/images/affilier-2.jpg', alt: { es: 'Logo empresa afiliada 2', en: 'Affiliate company logo 2', fr: 'Logo entreprise affiliée 2' } },
-              { src: '/media/images/affilier-3.png', alt: { es: 'Logo empresa afiliada 3', en: 'Affiliate company logo 3', fr: 'Logo entreprise affiliée 3' } },
-              { src: '/media/images/affilier-4.jpg', alt: { es: 'Logo empresa afiliada 4', en: 'Affiliate company logo 4', fr: 'Logo entreprise affiliée 4' } },
-            ].map((item, i) => (
-              <FadeIn key={i} delay={0.2 + i * 0.1}>
-                <Card className="p-6 hover:shadow-soft-lg transition-shadow">
-                  <div className="relative aspect-square bg-warm-beige rounded-image overflow-hidden p-4 mb-4">
-                    <Image
-                      src={item.src}
-                      alt={item.alt[locale as 'es' | 'en' | 'fr'] || item.alt.es}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 50vw, 200px"
-                    />
-                  </div>
-                </Card>
-              </FadeIn>
-            ))}
-          </div>
         </Container>
       </Section>
     </>

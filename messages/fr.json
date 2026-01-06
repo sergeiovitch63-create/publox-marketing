@@ -27,16 +27,17 @@
       "hero": {
         "titleLine1": "La solution pour faire",
         "titleLine2": "croître votre entreprise",
-        "titleLine3": "locale.",
-        "subtitle": "Nous aidons les entreprises locales à croître avec une stratégie claire de\nacquisition, visibilité et automatisation.",
+        "titleLine3": "",
+        "subtitle": "Nous aidons les entreprises à croître avec une stratégie claire de\nacquisition, visibilité et automatisation.",
         "cta": "Développer mon entreprise"
       },
+      "solutionsTitle": "Nos solutions",
       "services": {
         "captacion": {
-          "title": "Acquisition de Clients",
-          "text1": "Attirez plus de clients avec des stratégies de marketing digital axées sur des résultats réels.",
-          "text2": "Nous développons des campagnes personnalisées qui connectent votre entreprise à votre audience cible.",
-          "text3": "Mesure et optimisation continues pour maximiser le retour sur investissement."
+          "title": "Block Marketing",
+          "text1": "Développez votre visibilité et votre clientèle grâce à un système marketing complet pensé pour les entreprises.",
+          "text2": "Nous mettons en place une structure clé en main qui attire des clients, renforce votre image de marque et automatise les premiers contacts.",
+          "text3": "De l'acquisition à la conversion, tout est optimisé pour générer des résultats concrets, sans gestion mensuelle obligatoire."
         },
         "automatizacion": {
           "title": "Automatisation",
@@ -70,7 +71,8 @@
           "title": "Gagnez jusqu'à 20% de commission",
           "text1": "Rejoignez notre programme d'affiliation et aidez les entreprises locales à croître tout en générant des revenus récurrents.",
           "text2": "Chaque entreprise que vous référez et qui devient cliente vous génère une commission basée sur des résultats réels.",
-          "text3": "Sans limites, sans restrictions. Plus vous aidez d'entreprises, plus vous gagnez."
+          "text3": "Sans limites, sans restrictions. Plus vous aidez d'entreprises, plus vous gagnez.",
+          "cta": "Rejoindre le programme"
         },
         "vignette1": {
           "title": "Sans connaissances techniques",
