@@ -90,20 +90,22 @@ export default async function HomePage({
                 <h2 className="text-3xl md:text-4xl font-bold mb-8 text-text-primary">
                   {t('services.captacion.title')}
                 </h2>
-                <div className="space-y-5 text-text-secondary text-lg leading-relaxed">
+                <div className="space-y-5 text-text-secondary text-lg leading-relaxed mb-8">
                   <p>
                     {t('services.captacion.text1')}
                   </p>
                   <p>
                     {t('services.captacion.text2')}
                   </p>
-                  <p className="mb-8">
+                  <p>
                     {t('services.captacion.text3')}
                   </p>
                 </div>
-                <Button href={`/${locale}/necesitas`} variant="primary">
-                  {t('hero.cta')}
-                </Button>
+                <div className="mt-8">
+                  <Button href={`/${locale}/necesitas`} variant="primary">
+                    {t('hero.cta')}
+                  </Button>
+                </div>
               </div>
             </div>
           </FadeIn>
@@ -225,6 +227,144 @@ export default async function HomePage({
               </div>
             </Card>
           </FadeIn>
+        </Container>
+      </Section>
+
+      {/* WHO WE ARE SECTION */}
+      <Section className="py-20 md:py-24 lg:py-28">
+        <Container>
+          <FadeIn>
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-text-primary">
+              {t('whoWeAre.title')}
+            </h2>
+            <p className="text-sm uppercase text-center text-text-secondary mb-12 tracking-wider">
+              {t('whoWeAre.subtitle')}
+            </p>
+          </FadeIn>
+
+          {/* Large Card */}
+          <FadeIn delay={0.1}>
+            <Card className="max-w-4xl mx-auto p-8 md:p-12 mb-12 hover:shadow-soft-lg transition-shadow">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                {/* Left: NOVIRA Placeholder */}
+                <div className="relative aspect-square rounded-image overflow-hidden bg-warm-beige border-2 border-warm-beige/50 flex items-center justify-center">
+                  <div className="text-text-secondary text-xl font-semibold">NOVIRA</div>
+                </div>
+                {/* Right: Text Content */}
+                <div>
+                  <h3 className="text-3xl font-bold mb-6 text-text-primary">
+                    {t('whoWeAre.card.heading')}
+                  </h3>
+                  <p className="text-text-secondary text-lg leading-relaxed">
+                    {t('whoWeAre.card.paragraph')}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </FadeIn>
+
+          {/* Mini Cards Grid */}
+          <div className="w-full flex justify-center">
+            <div className="flex md:grid md:grid-cols-3 gap-4 max-w-3xl overflow-x-auto md:overflow-visible snap-x md:snap-none scrollbar-hide">
+            <FadeIn delay={0.2}>
+              <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
+                <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                  <span className="text-text-secondary text-sm font-medium">{t('whoWeAre.miniCards.novira')}</span>
+                </div>
+              </Card>
+            </FadeIn>
+
+            <FadeIn delay={0.3}>
+              <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
+                <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                  <span className="text-text-secondary text-sm font-medium">{t('whoWeAre.miniCards.tenerifeActivity')}</span>
+                </div>
+              </Card>
+            </FadeIn>
+
+            <FadeIn delay={0.4}>
+              <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
+                <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                  <span className="text-text-secondary text-sm font-medium">{t('whoWeAre.miniCards.marinaMasaje')}</span>
+                </div>
+              </Card>
+            </FadeIn>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* PARTNERS CAROUSEL SECTION */}
+      <Section className="py-20 md:py-24 lg:py-28">
+        <Container>
+          <div className="mx-auto max-w-4xl">
+            <FadeIn>
+              <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-text-primary">
+                {t('partners.title')}
+              </h2>
+              <p className="text-sm uppercase text-center text-text-secondary mb-12 tracking-wider">
+                {t('partners.subtitle')}
+              </p>
+            </FadeIn>
+
+            {/* 2-Row Carousel */}
+            <FadeIn delay={0.1}>
+              <div className="relative overflow-hidden">
+                {/* Gradient edges */}
+                <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-page-bg to-transparent z-10 pointer-events-none" />
+                <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-page-bg to-transparent z-10 pointer-events-none" />
+
+                {/* Carousel Container */}
+                <div className="carousel-container group">
+                  {/* Row 1 */}
+                  <div className="carousel-track">
+                    {[...Array(18)].map((_, i) => (
+                      <div key={`row1-${i}`} className="carousel-item">
+                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
+                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 1}</span>
+                          </div>
+                        </Card>
+                      </div>
+                    ))}
+                    {/* Duplicate for seamless loop */}
+                    {[...Array(18)].map((_, i) => (
+                      <div key={`row1-dup-${i}`} className="carousel-item">
+                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
+                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 1}</span>
+                          </div>
+                        </Card>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Row 2 (reverse direction) */}
+                  <div className="carousel-track carousel-track-reverse">
+                    {[...Array(18)].map((_, i) => (
+                      <div key={`row2-${i}`} className="carousel-item">
+                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
+                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 19}</span>
+                          </div>
+                        </Card>
+                      </div>
+                    ))}
+                    {/* Duplicate for seamless loop */}
+                    {[...Array(18)].map((_, i) => (
+                      <div key={`row2-dup-${i}`} className="carousel-item">
+                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
+                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 19}</span>
+                          </div>
+                        </Card>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
         </Container>
       </Section>
     </>

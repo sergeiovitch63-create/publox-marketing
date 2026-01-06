@@ -87,6 +87,23 @@
           "text": "Sistema de comisión basado en resultados y colaboración a largo plazo."
         }
       },
+      "whoWeAre": {
+        "title": "Quiénes somos",
+        "subtitle": "Novira es el grupo principal que reúne varias entidades especializadas, incluyendo Publox, Tenerife Activity y Marina Masaje.",
+        "card": {
+          "heading": "Sobre Publox",
+          "paragraph": "Publox forma parte del grupo Novira, un conjunto de empresas que también incluye Tenerife Activity y Marina Masaje. Esta estructura nos permite ofrecer servicios variados manteniendo una gran coherencia y calidad."
+        },
+        "miniCards": {
+          "novira": "Novira",
+          "tenerifeActivity": "Tenerife Activity",
+          "marinaMasaje": "Marina Masaje"
+        }
+      },
+      "partners": {
+        "title": "Affiliados y empresas colaboradoras",
+        "subtitle": "Empresas y marcas que colaboran con nosotros"
+      },
       "affiliates": {
         "title": "Nuestros afiliados y partners de confianza",
         "subtitle": "Empresas y marcas que colaboran con nosotros dentro de nuestro ecosistema profesional.",

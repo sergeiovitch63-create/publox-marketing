@@ -19,3 +19,68 @@ body {
   color: var(--text-primary);
 }
 
+/* Partners Carousel */
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.carousel-track-reverse {
+  animation: scroll-reverse 40s linear infinite;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Pause on hover (desktop) */
+@media (hover: hover) {
+  .carousel-container:hover .carousel-track,
+  .carousel-container:hover .carousel-track-reverse {
+    animation-play-state: paused;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track,
+  .carousel-track-reverse {
+    animation: none;
+  }
+  
+  .carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .carousel-item {
+    scroll-snap-align: start;
+  }
+}
+
