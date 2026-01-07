@@ -5,6 +5,7 @@ import Container from '@/components/Container';
 import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Card from '@/components/Card';
+import BackButton from '@/components/BackButton';
 
 export default async function ReclutamientoPage({
   params,
