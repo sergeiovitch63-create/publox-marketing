@@ -1,10 +1,11 @@
 {
   "nav": {
     "home": "Accueil",
+    "pageMultiLiens": "Page multi-lien",
+    "blocMarketing": "Bloc marketing",
+    "sitioWeb": "Site web",
     "impresion": "Impression",
-    "sitioWeb": "Site Web",
-    "marketing": "Marketing & Acquisition de Clients",
-    "reclutamiento": "Recrutement",
+    "reclutamiento": "Affiliations",
     "contacto": "Contact"
   },
   "footer": {
@@ -375,7 +376,9 @@
           "q3": "Quels finitions sont disponibles ?",
           "a3": "Papier de haute qualité avec options de finition selon besoins.",
           "q4": "Combien de temps prend la livraison ?",
-          "a4": "Dépend de la quantité et finitions, normalement 5-10 jours ouvrables."
+          "a4": "Dépend de la quantité et finitions, normalement 5-10 jours ouvrables.",
+          "q5": "Le design graphique est-il payant ?",
+          "a5": "Le design graphique est payant sauf mention contraire."
         }
       },
       "block2": {
@@ -384,7 +387,6 @@
           "Design graphique inclus",
           "Flyer recto-verso",
           "Format promotionnel",
-          "Focus sur appel à l'action",
           "Option QR intégrée"
         ],
         "conclusion": "Parfait pour promotions locales et distribution physique.",
@@ -397,7 +399,9 @@
           "q3": "Le design complet est-il inclus ?",
           "a3": "Oui. Design graphique professionnel inclus avec appel à l'action.",
           "q4": "Pour quel type de promotions est-ce idéal ?",
-          "a4": "Idéal pour offres, événements, lancements et promotions locales."
+          "a4": "Idéal pour offres, événements, lancements et promotions locales.",
+          "q5": "Le design graphique est-il payant ?",
+          "a5": "Le design graphique est payant sauf mention contraire."
         }
       },
       "block3": {
@@ -418,7 +422,9 @@
           "q3": "Le design est-il inclus ?",
           "a3": "Oui. Design professionnel et lisible inclus.",
           "q4": "Pour quelles entreprises est-ce idéal ?",
-          "a4": "Idéal pour entreprises qui doivent expliquer services ou offres en détail."
+          "a4": "Idéal pour entreprises qui doivent expliquer services ou offres en détail.",
+          "q5": "Le design graphique est-il payant ?",
+          "a5": "Le design graphique est payant sauf mention contraire."
         }
       },
       "block4": {
@@ -437,7 +443,9 @@
           "q3": "Où est-il typiquement utilisé ?",
           "a3": "Aux points de contact : réception, comptoirs, événements, locaux commerciaux.",
           "q4": "Le design est-il inclus ?",
-          "a4": "Oui. Design professionnel recto-verso inclus."
+          "a4": "Oui. Design professionnel recto-verso inclus.",
+          "q5": "Le design graphique est-il payant ?",
+          "a5": "Le design graphique est payant sauf mention contraire."
         }
       },
       "faqGeneral": {
@@ -472,7 +480,7 @@
         "Professionnelles"
       ],
       "bullets": [
-        "Design personnalisé",
+        "Design personnalisé (supplément : 5€)",
         "Cartes de visite de haute qualité",
         "Impression professionnelle",
         "Options avec QR (WhatsApp, Google Maps, web)"
@@ -495,10 +503,9 @@
         "Flyers Promotionnels"
       ],
       "bullets": [
-        "Design graphique inclus",
+        "Design graphique (supplément : 10€)",
         "Flyer recto / verso",
         "Format promotionnel",
-        "Focus sur appel à l'action",
         "Option QR intégrée"
       ],
       "conclusion": "Parfait pour promotions locales et distribution physique.",
@@ -527,7 +534,7 @@
         "PACK DÉPLIANTS / TRIPTYQUES"
       ],
       "bullets": [
-        "Design de dépliant (2/3 plis)",
+        "Design de dépliant (2/3 plis) (supplément : 15€)",
         "Présentation claire des services",
         "Impression professionnelle",
         "Options avec QR (WhatsApp, Google Maps, web)"
@@ -546,7 +553,7 @@
         "Panneau (Double Face)"
       ],
       "bullets": [
-        "Design recto-verso",
+        "Design recto-verso (supplément : 20€)",
         "Impression professionnelle",
         "Parfait pour promotions, QR ou messages directs"
       ],

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
@@ -15,11 +15,19 @@ export default function Header() {
   const locale = useLocale();
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const navItems = [
-    { key: 'impresion', href: `/${locale}/impresion` },
+  // Main navigation items (always visible)
+  const mainNavItems = [
+    { key: 'pageMultiLiens', href: `/${locale}/page-multi-liens` },
+    { key: 'blocMarketing', href: `/${locale}/marketing` },
     { key: 'sitioWeb', href: `/${locale}/sitio-web` },
-    { key: 'marketing', href: `/${locale}/marketing` },
+  ];
+
+  // Dropdown menu items (in hamburger)
+  const dropdownItems = [
+    { key: 'impresion', href: `/${locale}/impresion` },
     { key: 'reclutamiento', href: `/${locale}/reclutamiento` },
     { key: 'contacto', href: `/${locale}/contacto` },
   ];
@@ -27,6 +35,23 @@ export default function Header() {
   const isActive = (href: string) => {
     return pathname === href || pathname?.startsWith(href + '/');
   };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    if (isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   return (
     <>
@@ -43,7 +68,7 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-6">
-              {navItems.map((item) => {
+              {mainNavItems.map((item) => {
                 const active = isActive(item.href);
                 return (
                   <Link
@@ -61,6 +86,52 @@ export default function Header() {
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-3">
+              {/* Desktop: Hamburger Menu with Dropdown */}
+              <div className="hidden md:block relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-pastel-blue focus:ring-offset-2 text-text-primary hover:bg-soft-beige transition-colors"
+                  aria-label="Open menu"
+                  aria-expanded={isDropdownOpen}
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+
+                {/* Dropdown Menu */}
+                {isDropdownOpen && (
+                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-card shadow-soft-lg border border-warm-beige/20 py-2 z-50">
+                    {dropdownItems.map((item) => {
+                      const active = isActive(item.href);
+                      return (
+                        <Link
+                          key={item.key}
+                          href={item.href}
+                          onClick={() => setIsDropdownOpen(false)}
+                          className={`block px-4 py-2 text-sm text-text-primary hover:bg-soft-beige transition-colors focus:outline-none focus:ring-2 focus:ring-pastel-blue focus:ring-inset ${
+                            active ? 'bg-soft-beige font-medium' : ''
+                          }`}
+                        >
+                          {t(item.key)}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+
               {/* Desktop: Language Switcher */}
               <div className="hidden md:block">
                 <LanguageSwitcher />

@@ -23,6 +23,7 @@ export default async function ImpresionPage({
     { question: t('block1.faq.q2'), answer: t('block1.faq.a2') },
     { question: t('block1.faq.q3'), answer: t('block1.faq.a3') },
     { question: t('block1.faq.q4'), answer: t('block1.faq.a4') },
+    { question: t('block1.faq.q5'), answer: t('block1.faq.a5') },
   ];
 
   // Build FAQ items for Block 2
@@ -31,6 +32,7 @@ export default async function ImpresionPage({
     { question: t('block2.faq.q2'), answer: t('block2.faq.a2') },
     { question: t('block2.faq.q3'), answer: t('block2.faq.a3') },
     { question: t('block2.faq.q4'), answer: t('block2.faq.a4') },
+    { question: t('block2.faq.q5'), answer: t('block2.faq.a5') },
   ];
 
   // Build FAQ items for Block 3
@@ -39,6 +41,7 @@ export default async function ImpresionPage({
     { question: t('block3.faq.q2'), answer: t('block3.faq.a2') },
     { question: t('block3.faq.q3'), answer: t('block3.faq.a3') },
     { question: t('block3.faq.q4'), answer: t('block3.faq.a4') },
+    { question: t('block3.faq.q5'), answer: t('block3.faq.a5') },
   ];
 
   // Build FAQ items for Block 4
@@ -47,6 +50,7 @@ export default async function ImpresionPage({
     { question: t('block4.faq.q2'), answer: t('block4.faq.a2') },
     { question: t('block4.faq.q3'), answer: t('block4.faq.a3') },
     { question: t('block4.faq.q4'), answer: t('block4.faq.a4') },
+    { question: t('block4.faq.q5'), answer: t('block4.faq.a5') },
   ];
 
   // Build general FAQ items

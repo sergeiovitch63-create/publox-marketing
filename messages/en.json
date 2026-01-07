@@ -1,10 +1,11 @@
 {
   "nav": {
     "home": "Home",
-    "impresion": "Printing",
+    "pageMultiLiens": "Multi-link page",
+    "blocMarketing": "Marketing block",
     "sitioWeb": "Website",
-    "marketing": "Marketing & Customer Acquisition",
-    "reclutamiento": "Recruitment",
+    "impresion": "Printing",
+    "reclutamiento": "Affiliates",
     "contacto": "Contact"
   },
   "footer": {
@@ -375,7 +376,9 @@
           "q3": "What finishes are available?",
           "a3": "High quality paper with finish options according to needs.",
           "q4": "How long does delivery take?",
-          "a4": "Depends on quantity and finishes, normally 5-10 business days."
+          "a4": "Depends on quantity and finishes, normally 5-10 business days.",
+          "q5": "Is graphic design paid?",
+          "a5": "Graphic design is paid unless otherwise stated."
         }
       },
       "block2": {
@@ -384,7 +387,6 @@
           "Graphic design included",
           "Double sided flyer",
           "Promotional format",
-          "Focus on call to action",
           "Integrated QR option"
         ],
         "conclusion": "Perfect for local promotions and physical distribution.",
@@ -397,7 +399,9 @@
           "q3": "Is complete design included?",
           "a3": "Yes. Professional graphic design included with call to action.",
           "q4": "What type of promotions is it ideal for?",
-          "a4": "Ideal for offers, events, launches and local promotions."
+          "a4": "Ideal for offers, events, launches and local promotions.",
+          "q5": "Is graphic design paid?",
+          "a5": "Graphic design is paid unless otherwise stated."
         }
       },
       "block3": {
@@ -418,7 +422,9 @@
           "q3": "Is design included?",
           "a3": "Yes. Professional and readable design included.",
           "q4": "What businesses is it ideal for?",
-          "a4": "Ideal for businesses that need to explain services or offers in detail."
+          "a4": "Ideal for businesses that need to explain services or offers in detail.",
+          "q5": "Is graphic design paid?",
+          "a5": "Graphic design is paid unless otherwise stated."
         }
       },
       "block4": {
@@ -437,7 +443,9 @@
           "q3": "Where is it typically used?",
           "a3": "At contact points: reception, counters, events, commercial premises.",
           "q4": "Is design included?",
-          "a4": "Yes. Professional double sided design included."
+          "a4": "Yes. Professional double sided design included.",
+          "q5": "Is graphic design paid?",
+          "a5": "Graphic design is paid unless otherwise stated."
         }
       },
       "faqGeneral": {
@@ -472,7 +480,7 @@
         "Business Cards"
       ],
       "bullets": [
-        "Custom design",
+        "Custom design (supplement: €5)",
         "High quality business cards",
         "Professional printing",
         "QR options (WhatsApp, Google Maps, web)"
@@ -495,10 +503,9 @@
         "Promotional Flyers"
       ],
       "bullets": [
-        "Graphic design included",
+        "Graphic design (supplement: €10)",
         "Single / double sided flyer",
         "Promotional format",
-        "Focus on call to action",
         "Integrated QR option"
       ],
       "conclusion": "Perfect for local promotions and physical distribution.",
@@ -527,7 +534,7 @@
         "BROCHURES / TRI-FOLD PACK"
       ],
       "bullets": [
-        "Brochure design (2/3 folds)",
+        "Brochure design (2/3 folds) (supplement: €15)",
         "Clear service presentation",
         "Professional printing",
         "QR options (WhatsApp, Google Maps, web)"
@@ -546,7 +553,7 @@
         "Display Stand (Double Sided)"
       ],
       "bullets": [
-        "Double sided design",
+        "Double sided design (supplement: €20)",
         "Professional printing",
         "Perfect for promotions, QR or direct messages"
       ],

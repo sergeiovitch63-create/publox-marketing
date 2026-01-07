@@ -1,10 +1,11 @@
 {
   "nav": {
     "home": "Inicio",
+    "pageMultiLiens": "Página multi-enlace",
+    "blocMarketing": "Bloque marketing",
+    "sitioWeb": "Sitio web",
     "impresion": "Impresión",
-    "sitioWeb": "Sitio Web",
-    "marketing": "Marketing & Captación de Clientes",
-    "reclutamiento": "Reclutamiento",
+    "reclutamiento": "Afiliaciones",
     "contacto": "Contacto"
   },
   "footer": {
@@ -375,7 +376,9 @@
           "q3": "¿Qué acabados están disponibles?",
           "a3": "Papel de alta calidad con opciones de acabado según necesidades.",
           "q4": "¿Cuánto tarda la entrega?",
-          "a4": "Depende de la cantidad y acabados, normalmente 5-10 días laborables."
+          "a4": "Depende de la cantidad y acabados, normalmente 5-10 días laborables.",
+          "q5": "¿El diseño gráfico es de pago?",
+          "a5": "El diseño gráfico es de pago salvo mención contraria."
         }
       },
       "block2": {
@@ -384,7 +387,6 @@
           "Diseño gráfico incluido",
           "Flyer doble cara",
           "Formato promocional",
-          "Enfoque en llamada a la acción",
           "Opción QR integrada"
         ],
         "conclusion": "Perfecto para promociones locales y distribución física.",
@@ -397,7 +399,9 @@
           "q3": "¿Incluye diseño completo?",
           "a3": "Sí. Diseño gráfico profesional incluido con llamada a la acción.",
           "q4": "¿Para qué tipo de promociones es ideal?",
-          "a4": "Ideal para ofertas, eventos, lanzamientos y promociones locales."
+          "a4": "Ideal para ofertas, eventos, lanzamientos y promociones locales.",
+          "q5": "¿El diseño gráfico es de pago?",
+          "a5": "El diseño gráfico es de pago salvo mención contraria."
         }
       },
       "block3": {
@@ -418,7 +422,9 @@
           "q3": "¿Incluye diseño?",
           "a3": "Sí. Diseño profesional y legible incluido.",
           "q4": "¿Para qué negocios es ideal?",
-          "a4": "Ideal para negocios que necesitan explicar servicios o ofertas de forma detallada."
+          "a4": "Ideal para negocios que necesitan explicar servicios o ofertas de forma detallada.",
+          "q5": "¿El diseño gráfico es de pago?",
+          "a5": "El diseño gráfico es de pago salvo mención contraria."
         }
       },
       "block4": {
@@ -437,7 +443,9 @@
           "q3": "¿Dónde se usa típicamente?",
           "a3": "En puntos de contacto: recepción, mostradores, eventos, locales comerciales.",
           "q4": "¿Incluye diseño?",
-          "a4": "Sí. Diseño profesional doble cara incluido."
+          "a4": "Sí. Diseño profesional doble cara incluido.",
+          "q5": "¿El diseño gráfico es de pago?",
+          "a5": "El diseño gráfico es de pago salvo mención contraria."
         }
       },
       "faqGeneral": {
@@ -472,7 +480,7 @@
         "Profesionales"
       ],
       "bullets": [
-        "Diseño personalizado",
+        "Diseño personalizado (suplemento: 5€)",
         "Tarjetas de visita de alta calidad",
         "Impresión profesional",
         "Opciones con QR (WhatsApp, Google Maps, web)"
@@ -495,10 +503,9 @@
         "Flyers Promocionales"
       ],
       "bullets": [
-        "Diseño gráfico incluido",
+        "Diseño gráfico (suplemento: 10€)",
         "Flyer recto / verso",
         "Formato promocional",
-        "Enfoque en llamada a la acción",
         "Opción QR integrada"
       ],
       "conclusion": "Perfecto para promociones locales y distribución física.",
@@ -527,7 +534,7 @@
         "PACK DÍPTICOS / TRÍPTICOS"
       ],
       "bullets": [
-        "Diseño de díptico (2/3 pliegues)",
+        "Diseño de díptico (2/3 pliegues) (suplemento: 15€)",
         "Presentación clara de servicios",
         "Impresión profesional",
         "Opciones con QR (WhatsApp, Google Maps, web)"
@@ -546,7 +553,7 @@
         "Caballete (Doble Cara)"
       ],
       "bullets": [
-        "Diseño doble cara",
+        "Diseño doble cara (suplemento: 20€)",
         "Impresión profesional",
         "Perfecto para promociones, QR o mensajes directos"
       ],

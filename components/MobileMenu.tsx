@@ -18,10 +18,16 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const locale = useLocale();
   const pathname = usePathname();
 
-  const navItems = [
-    { key: 'impresion', href: `/${locale}/impresion` },
+  // Main navigation items (always visible)
+  const mainNavItems = [
+    { key: 'pageMultiLiens', href: `/${locale}/page-multi-liens` },
+    { key: 'blocMarketing', href: `/${locale}/marketing` },
     { key: 'sitioWeb', href: `/${locale}/sitio-web` },
-    { key: 'marketing', href: `/${locale}/marketing` },
+  ];
+
+  // Additional items (in mobile menu)
+  const additionalItems = [
+    { key: 'impresion', href: `/${locale}/impresion` },
     { key: 'reclutamiento', href: `/${locale}/reclutamiento` },
     { key: 'contacto', href: `/${locale}/contacto` },
   ];
@@ -113,7 +119,28 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           {/* Navigation Links */}
           <nav className="flex-1 overflow-y-auto py-4" role="navigation" aria-label="Main navigation">
             <div className="flex flex-col">
-              {navItems.map((item) => {
+              {/* Main nav items */}
+              {mainNavItems.map((item) => {
+                const active = isActive(item.href);
+                return (
+                  <Link
+                    key={item.key}
+                    href={item.href}
+                    onClick={onClose}
+                    className={`px-6 py-3 text-text-primary hover:bg-soft-beige transition-colors focus:outline-none focus:ring-2 focus:ring-pastel-blue focus:ring-inset ${
+                      active ? 'bg-soft-beige border-l-4 border-pastel-blue font-medium' : ''
+                    }`}
+                  >
+                    {t(item.key)}
+                  </Link>
+                );
+              })}
+              
+              {/* Separator */}
+              <div className="px-6 py-2 border-t border-warm-beige/20 my-2" />
+              
+              {/* Additional items */}
+              {additionalItems.map((item) => {
                 const active = isActive(item.href);
                 return (
                   <Link

@@ -169,7 +169,7 @@ export default async function NecesitasPage({
             >
               {/* Badge Tenerife */}
               <span className="absolute top-6 right-6 inline-flex items-center px-3 py-1 text-xs font-semibold tracking-wide rounded-full bg-white/70 text-text-primary border border-black/10 shadow-soft">
-                {t('badge.tenerife')}
+                Seulement Tenerife
               </span>
               <div className="mb-8">
                 <VideoPlaceholder
