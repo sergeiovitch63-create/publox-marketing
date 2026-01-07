@@ -145,3 +145,53 @@ body {
   }
 }
 
+/* Mini Partner Cards Carousel (Mobile Only) */
+.mini-partner-carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.mini-partner-carousel-track {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+}
+
+@media (max-width: 767px) {
+  .mini-partner-carousel-track {
+    animation: mini-partner-scroll 18s linear infinite;
+  }
+}
+
+@media (min-width: 768px) {
+  .mini-partner-carousel-container {
+    overflow: visible;
+  }
+  
+  .mini-partner-carousel-track {
+    animation: none;
+  }
+}
+
+@keyframes mini-partner-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .mini-partner-carousel-track {
+    animation: none;
+  }
+  
+  .mini-partner-carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+

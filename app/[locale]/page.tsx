@@ -26,12 +26,12 @@ export default async function HomePage({
       {/* HERO SECTION */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-pastel-blue via-blue-grey to-soft-beige pt-20">
         {/* Cloud blobs */}
-        <div className="absolute top-20 left-10 w-64 h-64 bg-white/30 rounded-full blur-3xl opacity-60" />
-        <div className="absolute top-40 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl opacity-50" />
-        <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-white/25 rounded-full blur-3xl opacity-40" />
+        <div className="absolute top-20 left-10 w-64 h-64 bg-white/30 rounded-full blur-3xl opacity-60 pointer-events-none" />
+        <div className="absolute top-40 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl opacity-50 pointer-events-none" />
+        <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-white/25 rounded-full blur-3xl opacity-40 pointer-events-none" />
 
         <Container>
-          <div className="text-center pt-20 pb-0">
+          <div className="text-center pt-20 pb-0 relative z-10 pointer-events-auto">
             {/* Logo Hero */}
             <div className="flex justify-center mb-6 md:mb-8">
               <Image
@@ -55,7 +55,7 @@ export default async function HomePage({
               <p className="text-lg md:text-xl text-text-secondary mb-8 max-w-2xl mx-auto whitespace-pre-line">
                 {t('hero.subtitle')}
               </p>
-              <div className="mb-16 md:mb-20">
+              <div className="mb-16 md:mb-20 relative z-20">
                 <Button href={`/${locale}/necesitas`} variant="primary">
                   {t('hero.cta')}
                 </Button>
@@ -284,49 +284,127 @@ export default async function HomePage({
           </FadeIn>
 
           {/* Mini Cards Grid */}
-          <div className="w-full flex justify-center">
-            <div className="flex md:grid md:grid-cols-3 gap-4 max-w-3xl overflow-x-auto md:overflow-visible snap-x md:snap-none scrollbar-hide">
-            <FadeIn delay={0.2}>
-              <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
-                <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                  <Image
-                    src="/media/images/logo-hero.png"
-                    alt="Logo Novira"
-                    width={90}
-                    height={90}
-                    className="w-[70px] md:w-[90px] h-auto opacity-90"
-                  />
-                </div>
-              </Card>
-            </FadeIn>
-
-            <FadeIn delay={0.3}>
-              <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
-                <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                  <Image
-                    src="/media/images/tenerife-activity.png"
-                    alt="Tenerife Activity logo"
-                    width={90}
-                    height={90}
-                    className="w-[70px] md:w-[90px] h-auto opacity-90"
-                  />
-                </div>
-              </Card>
-            </FadeIn>
-
-            <FadeIn delay={0.4}>
-              <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
-                <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                  <Image
-                    src="/media/images/marina-masaje.png"
-                    alt="Marina Masaje logo"
-                    width={90}
-                    height={90}
-                    className="w-[70px] md:w-[90px] h-auto opacity-90"
-                  />
-                </div>
-              </Card>
-            </FadeIn>
+          <div className="w-full">
+            {/* Mobile: Carousel auto-scroll */}
+            <div className="mini-partner-carousel-container md:hidden">
+              <div className="mini-partner-carousel-track">
+                {/* Original set */}
+                <FadeIn delay={0.2}>
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                    <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                      <Image
+                        src="/media/images/logo-hero.png"
+                        alt="Logo Novira"
+                        width={90}
+                        height={90}
+                        className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                      />
+                    </div>
+                  </Card>
+                </FadeIn>
+                <FadeIn delay={0.3}>
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                    <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                      <Image
+                        src="/media/images/tenerife-activity.png"
+                        alt="Tenerife Activity logo"
+                        width={90}
+                        height={90}
+                        className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                      />
+                    </div>
+                  </Card>
+                </FadeIn>
+                <FadeIn delay={0.4}>
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                    <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                      <Image
+                        src="/media/images/marina-masaje.png"
+                        alt="Marina Masaje logo"
+                        width={90}
+                        height={90}
+                        className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                      />
+                    </div>
+                  </Card>
+                </FadeIn>
+                {/* Duplicated set for seamless loop */}
+                <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                  <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                    <Image
+                      src="/media/images/logo-hero.png"
+                      alt="Logo Novira"
+                      width={90}
+                      height={90}
+                      className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                    />
+                  </div>
+                </Card>
+                <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                  <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                    <Image
+                      src="/media/images/tenerife-activity.png"
+                      alt="Tenerife Activity logo"
+                      width={90}
+                      height={90}
+                      className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                    />
+                  </div>
+                </Card>
+                <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                  <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                    <Image
+                      src="/media/images/marina-masaje.png"
+                      alt="Marina Masaje logo"
+                      width={90}
+                      height={90}
+                      className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                    />
+                  </div>
+                </Card>
+              </div>
+            </div>
+            {/* Desktop: Static grid */}
+            <div className="hidden md:grid md:grid-cols-3 md:gap-6 md:max-w-3xl md:mx-auto">
+              <FadeIn delay={0.2}>
+                <Card className="p-4 hover:shadow-soft-lg transition-shadow">
+                  <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                    <Image
+                      src="/media/images/logo-hero.png"
+                      alt="Logo Novira"
+                      width={90}
+                      height={90}
+                      className="w-[90px] h-auto opacity-90"
+                    />
+                  </div>
+                </Card>
+              </FadeIn>
+              <FadeIn delay={0.3}>
+                <Card className="p-4 hover:shadow-soft-lg transition-shadow">
+                  <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                    <Image
+                      src="/media/images/tenerife-activity.png"
+                      alt="Tenerife Activity logo"
+                      width={90}
+                      height={90}
+                      className="w-[90px] h-auto opacity-90"
+                    />
+                  </div>
+                </Card>
+              </FadeIn>
+              <FadeIn delay={0.4}>
+                <Card className="p-4 hover:shadow-soft-lg transition-shadow">
+                  <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                    <Image
+                      src="/media/images/marina-masaje.png"
+                      alt="Marina Masaje logo"
+                      width={90}
+                      height={90}
+                      className="w-[90px] h-auto opacity-90"
+                    />
+                  </div>
+                </Card>
+              </FadeIn>
             </div>
           </div>
         </Container>

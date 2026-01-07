@@ -5,7 +5,6 @@ import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
-import MediaPlaceholder from '@/components/MediaPlaceholder';
 import VideoPlaceholder from '@/components/VideoPlaceholder';
 import BackButton from '@/components/BackButton';
 
@@ -48,7 +47,12 @@ export default async function NecesitasPage({
           <FadeIn>
             <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
               <div className="mb-8">
-                <MediaPlaceholder ratio="16:9" rounded />
+                <VideoPlaceholder
+                  src="/media/videos/page-multi.mp4"
+                  ratio="16:9"
+                  rounded
+                  ariaLabel={t('multiLinks.title')}
+                />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-text-primary">
                 {t('multiLinks.title')}

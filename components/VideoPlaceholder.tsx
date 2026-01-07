@@ -3,6 +3,7 @@ interface VideoPlaceholderProps {
   ratio?: '16:9' | '4:3' | '1:1' | '3:2' | '3:4';
   className?: string;
   rounded?: boolean;
+  ariaLabel?: string;
 }
 
 export default function VideoPlaceholder({
@@ -10,6 +11,7 @@ export default function VideoPlaceholder({
   ratio = '16:9',
   className = '',
   rounded = true,
+  ariaLabel,
 }: VideoPlaceholderProps) {
   const ratioClasses = {
     '16:9': 'aspect-video',
@@ -34,6 +36,7 @@ export default function VideoPlaceholder({
         playsInline
         preload="metadata"
         className="w-full h-full object-cover"
+        aria-label={ariaLabel}
       />
     </div>
   );
