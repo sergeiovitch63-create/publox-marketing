@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
+import Link from 'next/link';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
@@ -30,6 +31,18 @@ export default async function HomePage({
 
         <Container>
           <div className="text-center pt-20 pb-0">
+            {/* Logo Hero */}
+            <div className="flex justify-center mb-6 md:mb-8">
+              <Image
+                src="/media/images/logo-hero.png"
+                alt="PUBLOX"
+                width={160}
+                height={160}
+                className="w-[90px] md:w-[140px] h-auto"
+                priority
+              />
+            </div>
+
             <FadeIn>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-text-primary">
                 {t('hero.titleLine1')}
@@ -246,9 +259,15 @@ export default async function HomePage({
           <FadeIn delay={0.1}>
             <Card className="max-w-4xl mx-auto p-8 md:p-12 mb-12 hover:shadow-soft-lg transition-shadow">
               <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                {/* Left: NOVIRA Placeholder */}
-                <div className="relative aspect-square rounded-image overflow-hidden bg-warm-beige border-2 border-warm-beige/50 flex items-center justify-center">
-                  <div className="text-text-secondary text-xl font-semibold">NOVIRA</div>
+                {/* Left: NOVIRA Logo */}
+                <div className="relative aspect-square rounded-2xl overflow-hidden bg-warm-beige border-2 border-warm-beige/50 flex items-center justify-center">
+                  <Image
+                    src="/media/images/novira.png"
+                    alt="Novira group logo"
+                    width={320}
+                    height={320}
+                    className="w-full max-w-[280px] md:max-w-[320px] h-auto object-contain"
+                  />
                 </div>
                 {/* Right: Text Content */}
                 <div>
@@ -269,7 +288,13 @@ export default async function HomePage({
             <FadeIn delay={0.2}>
               <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
                 <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                  <span className="text-text-secondary text-sm font-medium">{t('whoWeAre.miniCards.novira')}</span>
+                  <Image
+                    src="/media/images/logo-hero.png"
+                    alt="Logo Novira"
+                    width={90}
+                    height={90}
+                    className="w-[70px] md:w-[90px] h-auto opacity-90"
+                  />
                 </div>
               </Card>
             </FadeIn>
@@ -277,7 +302,13 @@ export default async function HomePage({
             <FadeIn delay={0.3}>
               <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
                 <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                  <span className="text-text-secondary text-sm font-medium">{t('whoWeAre.miniCards.tenerifeActivity')}</span>
+                  <Image
+                    src="/media/images/tenerife-activity.png"
+                    alt="Tenerife Activity logo"
+                    width={90}
+                    height={90}
+                    className="w-[70px] md:w-[90px] h-auto opacity-90"
+                  />
                 </div>
               </Card>
             </FadeIn>
@@ -285,7 +316,13 @@ export default async function HomePage({
             <FadeIn delay={0.4}>
               <Card className="p-4 hover:shadow-soft-lg transition-shadow min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-shrink">
                 <div className="w-full h-20 md:h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                  <span className="text-text-secondary text-sm font-medium">{t('whoWeAre.miniCards.marinaMasaje')}</span>
+                  <Image
+                    src="/media/images/marina-masaje.png"
+                    alt="Marina Masaje logo"
+                    width={90}
+                    height={90}
+                    className="w-[70px] md:w-[90px] h-auto opacity-90"
+                  />
                 </div>
               </Card>
             </FadeIn>
@@ -307,61 +344,66 @@ export default async function HomePage({
               </p>
             </FadeIn>
 
-            {/* 2-Row Carousel */}
+            {/* Partners Grid */}
             <FadeIn delay={0.1}>
-              <div className="relative overflow-hidden">
-                {/* Gradient edges */}
-                <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-page-bg to-transparent z-10 pointer-events-none" />
-                <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-page-bg to-transparent z-10 pointer-events-none" />
+              <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+                {/* PUBLOX */}
+                <Link href={`/${locale}`} className="flex flex-col items-center group cursor-pointer">
+                  <Card className="p-4 aspect-square w-[140px] md:w-[160px] flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+                    <div className="w-full h-full rounded-xl bg-warm-beige border border-warm-beige/30 flex items-center justify-center overflow-hidden">
+                      <Image
+                        src="/media/images/logo-hero.png"
+                        alt="PUBLOX"
+                        width={120}
+                        height={120}
+                        className="w-auto h-auto max-w-[80%] max-h-[80%] object-contain"
+                      />
+                    </div>
+                  </Card>
+                  <span className="mt-3 text-sm font-medium text-text-secondary text-center">PUBLOX</span>
+                </Link>
 
-                {/* Carousel Container */}
-                <div className="carousel-container group">
-                  {/* Row 1 */}
-                  <div className="carousel-track">
-                    {[...Array(18)].map((_, i) => (
-                      <div key={`row1-${i}`} className="carousel-item">
-                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
-                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 1}</span>
-                          </div>
-                        </Card>
-                      </div>
-                    ))}
-                    {/* Duplicate for seamless loop */}
-                    {[...Array(18)].map((_, i) => (
-                      <div key={`row1-dup-${i}`} className="carousel-item">
-                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
-                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 1}</span>
-                          </div>
-                        </Card>
-                      </div>
-                    ))}
-                  </div>
+                {/* TENERIFE ACTIVITY */}
+                <a
+                  href="https://wa.me/34614891153"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center group cursor-pointer"
+                >
+                  <Card className="p-4 aspect-square w-[140px] md:w-[160px] flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+                    <div className="w-full h-full rounded-xl bg-warm-beige border border-warm-beige/30 flex items-center justify-center overflow-hidden">
+                      <Image
+                        src="/media/images/tenerife-activity.png"
+                        alt="TENERIFE ACTIVITY"
+                        width={120}
+                        height={120}
+                        className="w-auto h-auto max-w-[80%] max-h-[80%] object-contain"
+                      />
+                    </div>
+                  </Card>
+                  <span className="mt-3 text-sm font-medium text-text-secondary text-center">TENERIFE ACTIVITY</span>
+                </a>
 
-                  {/* Row 2 (reverse direction) */}
-                  <div className="carousel-track carousel-track-reverse">
-                    {[...Array(18)].map((_, i) => (
-                      <div key={`row2-${i}`} className="carousel-item">
-                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
-                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 19}</span>
-                          </div>
-                        </Card>
-                      </div>
-                    ))}
-                    {/* Duplicate for seamless loop */}
-                    {[...Array(18)].map((_, i) => (
-                      <div key={`row2-dup-${i}`} className="carousel-item">
-                        <Card className="p-4 h-20 md:h-24 flex items-center justify-center min-w-[140px] md:min-w-[160px] hover:shadow-soft-lg transition-shadow">
-                          <div className="w-full h-full rounded-image bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                            <span className="text-text-secondary text-xs md:text-sm font-medium">Partner {i + 19}</span>
-                          </div>
-                        </Card>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                {/* MARINA MASAJE */}
+                <a
+                  href="https://wa.me/34614202296"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center group cursor-pointer"
+                >
+                  <Card className="p-4 aspect-square w-[140px] md:w-[160px] flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+                    <div className="w-full h-full rounded-xl bg-warm-beige border border-warm-beige/30 flex items-center justify-center overflow-hidden">
+                      <Image
+                        src="/media/images/marina-masaje.png"
+                        alt="MARINA MASAJE"
+                        width={120}
+                        height={120}
+                        className="w-auto h-auto max-w-[80%] max-h-[80%] object-contain"
+                      />
+                    </div>
+                  </Card>
+                  <span className="mt-3 text-sm font-medium text-text-secondary text-center">MARINA MASAJE</span>
+                </a>
               </div>
             </FadeIn>
           </div>

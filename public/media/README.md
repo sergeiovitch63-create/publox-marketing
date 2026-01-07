@@ -5,11 +5,21 @@
 ```
 public/media/
 ├── images/          # Images (JPG, PNG, WebP, etc.)
+│   ├── affiliate-20-commission.png
+│   ├── commission-system.png
+│   ├── no-tech-knowledge.png
+│   └── ...
 ├── videos/          # Vidéos (MP4, WebM, etc.)
-├── icons/           # Icônes SVG ou PNG
-├── brands/          # Logos et identités visuelles
-└── placeholders/    # Images de placeholder temporaires
+│   ├── HERO.mp4
+│   ├── Captación-de-clientes.mp4
+│   ├── Sitio-web.mp4
+│   └── ...
+├── icons/           # Icônes SVG ou PNG (actuellement vide)
+├── brands/          # Logos et identités visuelles (actuellement vide)
+└── placeholders/    # Images de placeholder temporaires (actuellement vide)
 ```
+
+**Note:** Les dossiers `icons/`, `brands/` et `placeholders/` existent mais sont vides. Ils sont prêts à être utilisés.
 
 ## 📍 Où placer vos fichiers
 
@@ -80,6 +90,32 @@ import Image from 'next/image';
 ```
 
 ### Vidéos
+
+**Option 1: Utiliser le composant `VideoPlaceholder` (recommandé dans ce projet)**
+
+```tsx
+import VideoPlaceholder from '@/components/VideoPlaceholder';
+
+<VideoPlaceholder
+  src="/media/videos/HERO.mp4"
+  ratio="16:9"
+  rounded
+/>
+```
+
+**Option 2: Utiliser le composant `HeroMedia`**
+
+```tsx
+import HeroMedia from '@/components/HeroMedia';
+
+<HeroMedia
+  src="/media/videos/HERO.mp4"
+  type="video"
+  ratio="16:9"
+/>
+```
+
+**Option 3: Balise HTML `<video>` standard**
 
 ```tsx
 // Vidéo avec contrôles
@@ -160,46 +196,69 @@ import { ReactComponent as Icon } from '/media/icons/whatsapp.svg';
 
 ## 📝 Exemples concrets pour PUBLOX
 
-### Hero Section
+### Hero Section avec vidéo
+```tsx
+import HeroMedia from '@/components/HeroMedia';
+
+<HeroMedia
+  src="/media/videos/HERO.mp4"
+  type="video"
+  ratio="16:9"
+/>
+```
+
+### Image dans une carte (avec Next.js Image)
 ```tsx
 import Image from 'next/image';
 
 <Image
-  src="/media/images/hero-publox.jpg"
-  alt="PUBLOX Hero"
-  width={1920}
-  height={1080}
-  priority
-  className="w-full h-auto rounded-image"
+  src="/media/images/affiliate-20-commission.png"
+  alt="Gana hasta un 20% de comisión"
+  fill
+  className="object-cover"
+  sizes="(max-width: 768px) 100vw, 400px"
 />
 ```
 
-### Service Card
+### Vidéo dans une section de service
 ```tsx
+import VideoPlaceholder from '@/components/VideoPlaceholder';
+
+<VideoPlaceholder
+  src="/media/videos/Captación-de-clientes.mp4"
+  ratio="4:3"
+  rounded={false}
+/>
+```
+
+### Image avec dimensions fixes
+```tsx
+import Image from 'next/image';
+
 <Image
-  src="/media/images/service-marketing.jpg"
-  alt="Marketing Service"
-  width={800}
-  height={600}
-  className="rounded-image mb-6"
-/>
-```
-
-### Vidéo de présentation
-```tsx
-<video
-  src="/media/videos/publox-intro.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="w-full rounded-image"
+  src="/media/images/no-tech-knowledge.png"
+  alt="Sin conocimientos técnicos"
+  width={200}
+  height={200}
+  className="object-cover rounded-image"
 />
 ```
 
 ## 🔗 Accès rapide
 
-- Page de guide : `/media-guide` (développement uniquement)
-- Dossier public : `public/media/`
-- Documentation Next.js Image : https://nextjs.org/docs/app/api-reference/components/image
+- **Dossier public** : `public/media/`
+- **Documentation Next.js Image** : https://nextjs.org/docs/app/api-reference/components/image
+- **Composants disponibles** :
+  - `@/components/VideoPlaceholder` - Pour afficher des vidéos avec ratio et style
+  - `@/components/HeroMedia` - Pour les médias hero (vidéo ou image)
+  - `next/image` - Pour les images optimisées
+
+## ✅ Checklist avant d'ajouter un média
+
+- [ ] Le fichier est optimisé (compression, taille raisonnable)
+- [ ] Le nom du fichier est descriptif et sans espaces
+- [ ] Le fichier est dans le bon dossier (`images/`, `videos/`, etc.)
+- [ ] Le chemin dans le code commence par `/media/` (pas `/public/media/`)
+- [ ] Pour les images importantes, utilisez `<Image>` de Next.js avec `width`/`height` ou `fill`
+- [ ] L'attribut `alt` est présent et descriptif
 
