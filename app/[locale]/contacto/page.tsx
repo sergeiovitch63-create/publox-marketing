@@ -5,6 +5,7 @@ import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Card from '@/components/Card';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
 
 export default async function ContactoPage({
   params,
@@ -16,9 +17,12 @@ export default async function ContactoPage({
   const t = await getTranslations('pages.contacto');
 
   return (
-    <Section bgColor="soft-beige" className="py-20 md:py-24 lg:py-28">
-      <Container>
-        <div className="text-center mb-12">
+    <>
+      <Section bgColor="soft-beige" className="py-20 md:py-24 lg:py-28 relative">
+        {/* Back Button */}
+        <BackButton fallbackHref={`/${locale}`} absolute className="top-4 left-4" />
+        <Container>
+          <div className="text-center mb-12">
           <FadeIn>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-text-primary">
               {t('title')}
@@ -92,5 +96,6 @@ export default async function ContactoPage({
         </div>
       </Container>
     </Section>
+    </>
   );
 }

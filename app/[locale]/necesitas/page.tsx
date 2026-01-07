@@ -7,6 +7,7 @@ import Button from '@/components/Button';
 import Card from '@/components/Card';
 import MediaPlaceholder from '@/components/MediaPlaceholder';
 import VideoPlaceholder from '@/components/VideoPlaceholder';
+import BackButton from '@/components/BackButton';
 
 export default async function NecesitasPage({
   params,
@@ -21,6 +22,9 @@ export default async function NecesitasPage({
     <>
       {/* HERO SECTION */}
       <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-pastel-blue via-blue-grey to-soft-beige pt-20">
+        {/* Back Button */}
+        <BackButton fallbackHref={`/${locale}`} absolute />
+
         {/* Cloud blobs */}
         <div className="absolute top-20 left-10 w-64 h-64 bg-white/30 rounded-full blur-3xl opacity-60" />
         <div className="absolute top-40 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl opacity-50" />

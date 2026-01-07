@@ -29,7 +29,7 @@ export default async function HomePage({
         <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-white/25 rounded-full blur-3xl opacity-40" />
 
         <Container>
-          <div className="text-center py-20">
+          <div className="text-center pt-20 pb-0">
             <FadeIn>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-text-primary">
                 {t('hero.titleLine1')}
@@ -50,7 +50,7 @@ export default async function HomePage({
 
             {/* Banner Video */}
             <FadeIn delay={0.2}>
-              <div className="bg-soft-beige rounded-image p-4 max-w-4xl mx-auto">
+              <div className="bg-soft-beige rounded-image p-4 max-w-4xl mx-auto mb-0">
                 <HeroMedia src="/media/videos/HERO.mp4" type="video" ratio="16:9" />
               </div>
             </FadeIn>
@@ -59,7 +59,7 @@ export default async function HomePage({
       </section>
 
       {/* SOLUTIONS TITLE SECTION */}
-      <Section className="py-12 md:py-16">
+      <Section className="pt-12 md:pt-16 pb-12 md:pb-16">
         <Container>
           <FadeIn>
             <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary">
