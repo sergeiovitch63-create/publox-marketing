@@ -14,9 +14,6 @@ const routes = [
   'publox', // Page marque PUBLOX
   // Marketing & Captación
   'marketing',
-  'marketing/adquisicion',
-  'marketing/branding-adquisicion',
-  'marketing/automatizacion-adquisicion-branding',
   // Sitio Web
   'sitio-web',
   // Impresión

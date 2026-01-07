@@ -203,126 +203,40 @@
     },
     "marketing": {
       "hero": {
-        "title": "Marketing & Acquisition de Clients",
-        "subtitle1": "Boostez la croissance de votre entreprise locale avec une stratégie claire et rentable.",
-        "subtitle2": "Marketing, visibilité et automatisation conçus pour générer de vrais clients."
+        "title": "Block Marketing"
       },
-      "pack1": {
-        "title": "Pack Acquisition",
-        "description": "Nous créons un système d'acquisition conçu pour que votre entreprise apparaisse sur Google, génère de vrais contacts et soit compréhensible à la fois pour les clients et pour Google.",
-        "cta": "Choisir ce pack",
-        "faq": {
-          "q1": "Combien de temps faut-il pour voir des résultats ?",
-          "a1": "Cela dépend du secteur et de la concurrence, mais normalement on voit des signes en 7–14 jours et des résultats plus stables en 3–6 semaines.",
-          "q2": "Dois-je investir dans la publicité ?",
-          "a2": "Oui, si nous activons des campagnes. L'investissement est séparé et ajusté selon la ville et les objectifs.",
-          "q3": "Que dois-je vous fournir pour commencer ?",
-          "a3": "Informations sur l'entreprise, localisation, services et un canal de contact (WhatsApp/téléphone).",
-          "q4": "Que se passe-t-il si j'ai déjà un Google Business Profile ?",
-          "a4": "Nous l'auditons et l'optimisons pour améliorer la visibilité et les conversions."
+      "blocks": {
+        "blockMarketing": {
+          "title": "Block Marketing",
+          "bullets": {
+            "list1": "Création de 6 vidéos professionnelles (32 secondes par vidéo) pour les réseaux sociaux",
+            "list2": "Optimisation de votre fiche Google Maps",
+            "list3": "Création d'une boutique WhatsApp (automatisation des messages)",
+            "list4": "Page multi-liens avec tous vos contacts au même endroit",
+            "list5": "Création de QR code pour cartes, vitrines et supports imprimés",
+            "list6": "Création de logo (offerte si nécessaire)"
+          },
+          "closing": "Ce pack est conçu pour améliorer votre visibilité, simplifier le contact avec vos clients et automatiser une partie de votre communication.",
+          "cta": "Contactez-nous",
+          "price": "400€"
+        },
+        "adManagement": {
+          "title": "Gestion publicitaire",
+          "bullets": {
+            "list1": "Création et gestion de publicités Google Ads",
+            "list2": "Création et gestion de publicités Meta Ads (Facebook et Instagram)",
+            "list3": "Analyse de votre activité et de vos objectifs",
+            "list4": "Mise en place d'une stratégie publicitaire adaptée",
+            "list5": "Suivi et optimisation des campagnes"
+          },
+          "paragraphs": {
+            "p1": "Chaque entreprise est différente. La gestion des publicités est donc réalisée sur mesure, en fonction de vos objectifs et de votre activité.",
+            "p2": "Le budget publicitaire n'est pas inclus et est payé directement aux plateformes (Google, Facebook, Instagram)."
+          },
+          "cta": "Contactez-nous",
+          "price": "Sur devis"
         }
-      },
-      "pack2": {
-        "title": "Pack Branding + Acquisition",
-        "description": "Ce pack inclut tout ce qui est dans le pack d'Acquisition de Clients, plus un travail complet de branding et de présence visuelle pour renforcer la confiance et l'image de l'entreprise.",
-        "cta": "Choisir ce pack",
-        "faq": {
-          "q1": "Inclut-il le logo et le design visuel ?",
-          "a1": "Il inclut l'amélioration et la cohérence visuelle. Un nouveau logo complet est défini séparément si nécessaire.",
-          "q2": "Comment le branding améliore-t-il mes résultats ?",
-          "a2": "Il augmente la confiance et améliore la conversion des visites en contacts.",
-          "q3": "Puis-je garder mon style actuel ?",
-          "a3": "Oui. Il est professionnalisé sans perdre l'identité.",
-          "q4": "Quels livrables je reçois ?",
-          "a4": "Guide visuel de base et application du branding sur les canaux travaillés."
-        }
-      },
-      "pack3": {
-        "title": "Pack Automatisation + Acquisition + Branding",
-        "description1": "Ce pack inclut tout ce qui est dans les packs d'Acquisition de Clients et Branding, plus l'implémentation de systèmes d'automatisation pour convertir les contacts en clients sans perdre de temps.",
-        "description2": "Il est conçu pour les entreprises locales qui veulent un système qui fonctionne de manière fluide, même quand elles ne sont pas disponibles.",
-        "cta": "Choisir ce pack",
-        "faq": {
-          "q1": "Quelles automatisations peuvent être implémentées ?",
-          "a1": "Messages automatiques, suivi, formulaires, classification des leads et flux de contact.",
-          "q2": "Ai-je besoin d'outils externes ?",
-          "a2": "Parfois oui. C'est toujours validé avant et l'option la plus simple est recherchée.",
-          "q3": "Fonctionne-t-il même si je ne réponds pas rapidement ?",
-          "a3": "Oui. Le système capture et répond automatiquement pour ne pas perdre d'opportunités.",
-          "q4": "Peut-il être mis à l'échelle pour plusieurs services ou villes ?",
-          "a4": "Oui. Le système est conçu pour grandir."
-        }
-      },
-      "faqGeneral": {
-        "title": "Questions fréquentes",
-        "items": {
-          "q1": "Pour quel type d'entreprises PUBLOX fonctionne-t-il ?",
-          "a1": "Entreprises locales de services, tourisme, santé, beauté, restauration et plus.",
-          "q2": "Travaillez-vous avec des contrats longs ?",
-          "a2": "Ce n'est pas obligatoire. La continuité est recommandée pour de meilleurs résultats.",
-          "q3": "Garantissez-vous des clients ?",
-          "a3": "Nous ne promettons pas de faux chiffres. Nous travaillons avec des résultats mesurables réels.",
-          "q4": "Qu'est-ce qui différencie PUBLOX d'une agence normale ?",
-          "a4": "Système complet : acquisition + présence + automatisation.",
-          "q5": "Quel est le budget publicitaire minimum ?",
-          "a5": "Cela dépend du secteur et de la ville. Il est défini stratégiquement.",
-          "q6": "Puis-je garder mon site web actuel ?",
-          "a6": "Oui. L'existant est optimisé si viable.",
-          "q7": "Comment les résultats sont-ils mesurés ?",
-          "a7": "Leads, messages, appels, réservations et évolution mensuelle.",
-          "q8": "De quoi ai-je besoin pour commencer ?",
-          "a8": "Informations de base sur l'entreprise et accès aux canaux nécessaires.",
-          "q9": "Travaillez-vous uniquement en Espagne ?",
-          "a9": "Non. Le système s'adapte par ville et pays.",
-          "q10": "Puis-je changer de pack plus tard ?",
-          "a10": "Oui. Les packs sont conçus pour évoluer."
-        }
-      },
-      "separator": "• PUBLOX"
-    },
-    "marketingAdquisicion": {
-      "titleLines": ["Pack", "Acquisition"],
-      "intro": "Nous mettons en place des stratégies complètes d'acquisition de clients, adaptées aux entreprises locales :",
-      "bullets": [
-        "Configuration de campagnes Google Ads locales (recherches réelles, intention d'achat)",
-        "Optimisation SEO de base et locale (structure, contenus, visibilité sur Google)",
-        "Configuration du Google Business Profile et cohérence de présence en ligne",
-        "Redirection vers WhatsApp, formulaires ou landing page",
-        "Implémentation de codes QR pour capturer les clients hors ligne",
-        "Stratégie personnalisée selon votre secteur et ville"
-      ],
-      "note": "Service de lancement. Sans gestion mensuelle obligatoire.",
-      "price": "150€",
-      "cta": "Contactez-nous"
-    },
-    "marketingBrandingAdquisicion": {
-      "titleLines": ["Pack", "Branding +", "Acquisition"],
-      "intro1": "Système complet d'acquisition de clients (Google Ads, SEO local de base, Google Business Profile, WhatsApp, QR, structure d'acquisition)",
-      "bullets": [
-        "Définition et alignement de l'identité visuelle",
-        "Optimisation visuelle de Google Maps (image, cohérence, présentation)",
-        "Création de contenu pour les réseaux sociaux",
-        "Production de 3–4 vidéos Reels axées sur l'image et la crédibilité",
-        "Renforcement de la réputation et présence locale"
-      ],
-      "note": "Service de lancement. Sans gestion mensuelle obligatoire.",
-      "price": "250€",
-      "cta": "Contactez-nous"
-    },
-    "marketingAutomatizacion": {
-      "titleLines": ["Pack", "Automatisation", "Acquisition +", "Branding"],
-      "intro1": "Pack complet d'Acquisition de Clients (Google Ads, SEO local de base, Google Business Profile, WhatsApp, QR, structure d'acquisition)",
-      "intro2": "Pack complet de Branding et Visibilité (identité visuelle, Google Maps, contenu, 3–4 vidéos Reels, réputation locale)",
-      "bullets": [
-        "Automatisation WhatsApp (réponses automatiques, messages de bienvenue)",
-        "Formulaires intelligents et capture de leads",
-        "Réponses automatiques selon l'action du client",
-        "Structure de suivi des clients pour ne pas perdre d'opportunités",
-        "Système prêt à fonctionner de manière autonome"
-      ],
-      "note": "Service de lancement. Sans gestion mensuelle obligatoire.",
-      "price": "400€",
-      "cta": "Contactez-nous"
+      }
     },
     "sitioWeb": {
       "hero": {

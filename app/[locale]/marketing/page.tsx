@@ -5,7 +5,7 @@ import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
-import AccordionFAQ from '@/components/AccordionFAQ';
+import MediaPlaceholder from '@/components/MediaPlaceholder';
 
 export default async function MarketingPage({
   params,
@@ -15,44 +15,6 @@ export default async function MarketingPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('pages.marketing');
-
-  // Build FAQ items for Pack 1
-  const pack1FAQ = [
-    { question: t('pack1.faq.q1'), answer: t('pack1.faq.a1') },
-    { question: t('pack1.faq.q2'), answer: t('pack1.faq.a2') },
-    { question: t('pack1.faq.q3'), answer: t('pack1.faq.a3') },
-    { question: t('pack1.faq.q4'), answer: t('pack1.faq.a4') },
-  ];
-
-  // Build FAQ items for Pack 2
-  const pack2FAQ = [
-    { question: t('pack2.faq.q1'), answer: t('pack2.faq.a1') },
-    { question: t('pack2.faq.q2'), answer: t('pack2.faq.a2') },
-    { question: t('pack2.faq.q3'), answer: t('pack2.faq.a3') },
-    { question: t('pack2.faq.q4'), answer: t('pack2.faq.a4') },
-  ];
-
-  // Build FAQ items for Pack 3
-  const pack3FAQ = [
-    { question: t('pack3.faq.q1'), answer: t('pack3.faq.a1') },
-    { question: t('pack3.faq.q2'), answer: t('pack3.faq.a2') },
-    { question: t('pack3.faq.q3'), answer: t('pack3.faq.a3') },
-    { question: t('pack3.faq.q4'), answer: t('pack3.faq.a4') },
-  ];
-
-  // Build general FAQ items
-  const generalFAQ = [
-    { question: t('faqGeneral.items.q1'), answer: t('faqGeneral.items.a1') },
-    { question: t('faqGeneral.items.q2'), answer: t('faqGeneral.items.a2') },
-    { question: t('faqGeneral.items.q3'), answer: t('faqGeneral.items.a3') },
-    { question: t('faqGeneral.items.q4'), answer: t('faqGeneral.items.a4') },
-    { question: t('faqGeneral.items.q5'), answer: t('faqGeneral.items.a5') },
-    { question: t('faqGeneral.items.q6'), answer: t('faqGeneral.items.a6') },
-    { question: t('faqGeneral.items.q7'), answer: t('faqGeneral.items.a7') },
-    { question: t('faqGeneral.items.q8'), answer: t('faqGeneral.items.a8') },
-    { question: t('faqGeneral.items.q9'), answer: t('faqGeneral.items.a9') },
-    { question: t('faqGeneral.items.q10'), answer: t('faqGeneral.items.a10') },
-  ];
 
   return (
     <>
@@ -66,133 +28,101 @@ export default async function MarketingPage({
         <Container>
           <div className="text-center py-16">
             <FadeIn>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-text-primary">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary">
                 {t('hero.title')}
               </h1>
-              <p className="text-lg md:text-xl text-text-secondary mb-3 max-w-3xl mx-auto">
-                {t('hero.subtitle1')}
-              </p>
-              <p className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto">
-                {t('hero.subtitle2')}
-              </p>
             </FadeIn>
           </div>
         </Container>
       </section>
 
-      {/* PACKS SECTION */}
+      {/* BLOCKS SECTION */}
       <Section className="py-20 md:py-24 lg:py-28">
         <Container>
-          {/* PACK 1 - Adquisición */}
+          {/* BLOCK #1 - Block Marketing */}
           <FadeIn>
-            <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-8 hover:shadow-soft-lg transition-shadow">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary text-center">
-                {t('pack1.title')}
+            <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
+              {/* Media Placeholder */}
+              <div className="mb-8">
+                <MediaPlaceholder ratio="16:9" rounded />
+              </div>
+
+              {/* Title */}
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-text-primary">
+                {t('blocks.blockMarketing.title')}
               </h2>
+
+              {/* Bullets */}
+              <ul className="list-disc list-inside space-y-3 mb-6 text-text-secondary text-lg text-left">
+                <li>{t('blocks.blockMarketing.bullets.list1')}</li>
+                <li>{t('blocks.blockMarketing.bullets.list2')}</li>
+                <li>{t('blocks.blockMarketing.bullets.list3')}</li>
+                <li>{t('blocks.blockMarketing.bullets.list4')}</li>
+                <li>{t('blocks.blockMarketing.bullets.list5')}</li>
+                <li>{t('blocks.blockMarketing.bullets.list6')}</li>
+              </ul>
+
+              {/* Closing Text */}
               <p className="text-text-secondary text-lg mb-8 text-left">
-                {t('pack1.description')}
+                {t('blocks.blockMarketing.closing')}
               </p>
-              <div className="flex justify-center mb-8">
-                <Button
-                  href={`/${locale}/marketing/adquisicion`}
-                  variant="primary"
-                  className="w-full md:w-auto"
-                >
-                  {t('pack1.cta')}
+
+              {/* CTA + Price */}
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <Button href={`/${locale}/contacto`} variant="primary" className="w-full sm:w-auto">
+                  {t('blocks.blockMarketing.cta')}
                 </Button>
+                <div className="text-right">
+                  <p className="text-2xl md:text-3xl font-bold text-text-primary">
+                    {t('blocks.blockMarketing.price')}
+                  </p>
+                </div>
               </div>
             </Card>
-            {/* Mini FAQ Pack 1 */}
-            <div className="max-w-3xl mx-auto mb-16">
-              <AccordionFAQ items={pack1FAQ} />
-            </div>
           </FadeIn>
 
-          {/* SEPARATOR */}
-          <div className="text-center mb-16">
-            <p className="text-text-secondary opacity-30 text-lg">
-              {t('separator')}
-            </p>
-          </div>
-
-          {/* PACK 2 - Branding + Adquisición */}
+          {/* BLOCK #2 - Gestion publicitaire */}
           <FadeIn>
-            <div
-              className="max-w-3xl mx-auto rounded-card p-8 md:p-12 mb-8 shadow-soft hover:shadow-soft-lg transition-shadow"
-              style={{ backgroundColor: '#EFE3D6' }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary text-center">
-                {t('pack2.title')}
-              </h2>
-              <p className="text-text-secondary text-lg mb-8 text-left">
-                {t('pack2.description')}
-              </p>
-              <div className="flex justify-center mb-8">
-                <Button
-                  href={`/${locale}/marketing/branding-adquisicion`}
-                  variant="primary"
-                  className="w-full md:w-auto"
-                >
-                  {t('pack2.cta')}
-                </Button>
+            <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
+              {/* Media Placeholder */}
+              <div className="mb-8">
+                <MediaPlaceholder ratio="16:9" rounded />
               </div>
-            </div>
-            {/* Mini FAQ Pack 2 */}
-            <div className="max-w-3xl mx-auto mb-16">
-              <AccordionFAQ items={pack2FAQ} />
-            </div>
-          </FadeIn>
 
-          {/* SEPARATOR */}
-          <div className="text-center mb-16">
-            <p className="text-text-secondary opacity-30 text-lg">
-              {t('separator')}
-            </p>
-          </div>
-
-          {/* PACK 3 - Automatización + Adquisición + Branding */}
-          <FadeIn>
-            <div
-              className="max-w-3xl mx-auto rounded-card p-8 md:p-12 mb-8 shadow-soft-lg border-2 border-blue-grey/30 hover:shadow-soft-lg transition-shadow"
-              style={{ backgroundColor: '#CFE2D6' }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary text-center">
-                {t('pack3.title')}
+              {/* Title */}
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-text-primary">
+                {t('blocks.adManagement.title')}
               </h2>
+
+              {/* Bullets */}
+              <ul className="list-disc list-inside space-y-3 mb-6 text-text-secondary text-lg text-left">
+                <li>{t('blocks.adManagement.bullets.list1')}</li>
+                <li>{t('blocks.adManagement.bullets.list2')}</li>
+                <li>{t('blocks.adManagement.bullets.list3')}</li>
+                <li>{t('blocks.adManagement.bullets.list4')}</li>
+                <li>{t('blocks.adManagement.bullets.list5')}</li>
+              </ul>
+
+              {/* Paragraphs */}
               <p className="text-text-secondary text-lg mb-4 text-left">
-                {t('pack3.description1')}
+                {t('blocks.adManagement.paragraphs.p1')}
               </p>
               <p className="text-text-secondary text-lg mb-8 text-left">
-                {t('pack3.description2')}
+                {t('blocks.adManagement.paragraphs.p2')}
               </p>
-              <div className="flex justify-center mb-8">
-                <Button
-                  href={`/${locale}/marketing/automatizacion-adquisicion-branding`}
-                  variant="primary"
-                  className="w-full md:w-auto"
-                >
-                  {t('pack3.cta')}
-                </Button>
-              </div>
-            </div>
-            {/* Mini FAQ Pack 3 */}
-            <div className="max-w-3xl mx-auto mb-16">
-              <AccordionFAQ items={pack3FAQ} />
-            </div>
-          </FadeIn>
-        </Container>
-      </Section>
 
-      {/* FAQ GENERAL SECTION */}
-      <Section bgColor="soft-beige" className="py-20 md:py-24 lg:py-28">
-        <Container>
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-text-primary">
-              {t('faqGeneral.title')}
-            </h2>
-            <div className="max-w-3xl mx-auto">
-              <AccordionFAQ items={generalFAQ} />
-            </div>
+              {/* CTA + Price */}
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <Button href={`/${locale}/contacto`} variant="primary" className="w-full sm:w-auto">
+                  {t('blocks.adManagement.cta')}
+                </Button>
+                <div className="text-right">
+                  <p className="text-2xl md:text-3xl font-bold text-text-primary">
+                    {t('blocks.adManagement.price')}
+                  </p>
+                </div>
+              </div>
+            </Card>
           </FadeIn>
         </Container>
       </Section>

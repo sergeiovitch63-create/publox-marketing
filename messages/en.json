@@ -203,126 +203,40 @@
     },
     "marketing": {
       "hero": {
-        "title": "Marketing & Customer Acquisition",
-        "subtitle1": "Boost the growth of your local business with a clear and profitable strategy.",
-        "subtitle2": "Marketing, visibility and automation designed to generate real customers."
+        "title": "Marketing Block"
       },
-      "pack1": {
-        "title": "Acquisition Pack",
-        "description": "We create a customer acquisition system designed so your business appears on Google, generates real contacts and is understandable for both customers and Google.",
-        "cta": "Choose this pack",
-        "faq": {
-          "q1": "How long does it take to see results?",
-          "a1": "It depends on the sector and competition, but normally signs are seen in 7–14 days and more stable results in 3–6 weeks.",
-          "q2": "Do I need to invest in advertising?",
-          "a2": "Yes, if we activate campaigns. The investment is separate and adjusted according to city and objectives.",
-          "q3": "What do I need to provide to get started?",
-          "a3": "Business information, location, services and a contact channel (WhatsApp/phone).",
-          "q4": "What if I already have a Google Business Profile?",
-          "a4": "We audit and optimize it to improve visibility and conversions."
+      "blocks": {
+        "blockMarketing": {
+          "title": "Marketing Block",
+          "bullets": {
+            "list1": "Creation of 6 professional videos (32 seconds per video) for social media",
+            "list2": "Optimization of your Google Maps listing",
+            "list3": "Creation of a WhatsApp shop (message automation)",
+            "list4": "Multi-link page with all your contacts in one place",
+            "list5": "QR code creation for cards, displays and printed materials",
+            "list6": "Logo creation (included if needed)"
+          },
+          "closing": "This pack is designed to improve your visibility, simplify contact with your customers and automate part of your communication.",
+          "cta": "Contact us",
+          "price": "€400"
+        },
+        "adManagement": {
+          "title": "Ad management",
+          "bullets": {
+            "list1": "Creation and management of Google Ads campaigns",
+            "list2": "Creation and management of Meta Ads campaigns (Facebook and Instagram)",
+            "list3": "Analysis of your business and objectives",
+            "list4": "Implementation of an adapted advertising strategy",
+            "list5": "Campaign monitoring and optimization"
+          },
+          "paragraphs": {
+            "p1": "Every business is different. Ad management is therefore customized according to your objectives and your business.",
+            "p2": "The advertising budget is not included and is paid directly to the platforms (Google, Facebook, Instagram)."
+          },
+          "cta": "Contact us",
+          "price": "Custom quote"
         }
-      },
-      "pack2": {
-        "title": "Branding + Acquisition Pack",
-        "description": "This pack includes everything in the Customer Acquisition pack, plus complete branding and visual presence work to reinforce trust and business image.",
-        "cta": "Choose this pack",
-        "faq": {
-          "q1": "Does it include logo and visual design?",
-          "a1": "It includes visual improvement and coherence. A complete new logo is defined separately if necessary.",
-          "q2": "How does branding improve my results?",
-          "a2": "It increases trust and improves the conversion of visits into contacts.",
-          "q3": "Can I keep my current style?",
-          "a3": "Yes. It is professionalized without losing identity.",
-          "q4": "What deliverables do I receive?",
-          "a4": "Basic visual guide and application of branding in the channels worked on."
-        }
-      },
-      "pack3": {
-        "title": "Automation + Acquisition + Branding Pack",
-        "description1": "This pack includes everything in the Customer Acquisition and Branding packs, plus the implementation of automation systems to convert contacts into customers without wasting time.",
-        "description2": "It is designed for local businesses that want a system that works smoothly, even when they are not available.",
-        "cta": "Choose this pack",
-        "faq": {
-          "q1": "What automations can be implemented?",
-          "a1": "Automatic messages, follow-up, forms, lead classification and contact flows.",
-          "q2": "Do I need external tools?",
-          "a2": "Sometimes yes. It is always validated beforehand and the simplest option is sought.",
-          "q3": "Does it work even if I don't respond quickly?",
-          "a3": "Yes. The system captures and responds automatically so as not to lose opportunities.",
-          "q4": "Can it be scaled to multiple services or cities?",
-          "a4": "Yes. The system is designed to grow."
-        }
-      },
-      "faqGeneral": {
-        "title": "Frequently asked questions",
-        "items": {
-          "q1": "What type of businesses does PUBLOX work for?",
-          "a1": "Local service businesses, tourism, health, beauty, restaurants and more.",
-          "q2": "Do you work with long contracts?",
-          "a2": "It's not mandatory. Continuity is recommended for better results.",
-          "q3": "Do you guarantee customers?",
-          "a3": "We don't promise false numbers. We work with real measurable results.",
-          "q4": "What differentiates PUBLOX from a normal agency?",
-          "a4": "Complete system: acquisition + presence + automation.",
-          "q5": "What is the minimum advertising budget?",
-          "a5": "It depends on the sector and city. It is defined strategically.",
-          "q6": "Can I keep my current website?",
-          "a6": "Yes. Existing is optimized if viable.",
-          "q7": "How are results measured?",
-          "a7": "Leads, messages, calls, reservations and monthly evolution.",
-          "q8": "What do I need to get started?",
-          "a8": "Basic business information and access to necessary channels.",
-          "q9": "Do you only work in Spain?",
-          "a9": "No. The system adapts by city and country.",
-          "q10": "Can I change packs later?",
-          "a10": "Yes. Packs are designed to evolve."
-        }
-      },
-      "separator": "• PUBLOX"
-    },
-    "marketingAdquisicion": {
-      "titleLines": ["Pack", "Acquisition"],
-      "intro": "We implement complete customer acquisition strategies, adapted to local businesses:",
-      "bullets": [
-        "Local Google Ads campaign setup (real searches, purchase intent)",
-        "Basic and local SEO optimization (structure, content, Google visibility)",
-        "Google Business Profile setup and online presence coherence",
-        "Redirect to WhatsApp, forms or landing page",
-        "QR code implementation to capture offline customers",
-        "Customized strategy based on your sector and city"
-      ],
-      "note": "Launch service. No mandatory monthly management.",
-      "price": "150€",
-      "cta": "Get in touch with us"
-    },
-    "marketingBrandingAdquisicion": {
-      "titleLines": ["Pack", "Branding +", "Acquisition"],
-      "intro1": "Complete customer acquisition system (Google Ads, basic local SEO, Google Business Profile, WhatsApp, QR, acquisition structure)",
-      "bullets": [
-        "Visual identity definition and alignment",
-        "Google Maps visual optimization (image, coherence, presentation)",
-        "Social media content creation",
-        "Production of 3–4 Reels videos focused on image and credibility",
-        "Reputation and local presence reinforcement"
-      ],
-      "note": "Launch service. No mandatory monthly management.",
-      "price": "250€",
-      "cta": "Get in touch with us"
-    },
-    "marketingAutomatizacion": {
-      "titleLines": ["Pack", "Automation", "Acquisition +", "Branding"],
-      "intro1": "Complete Customer Acquisition pack (Google Ads, basic local SEO, Google Business Profile, WhatsApp, QR, acquisition structure)",
-      "intro2": "Complete Branding and Visibility pack (visual identity, Google Maps, content, 3–4 Reels videos, local reputation)",
-      "bullets": [
-        "WhatsApp automation (automatic responses, welcome messages)",
-        "Smart forms and lead capture",
-        "Automatic responses based on customer action",
-        "Customer follow-up structure to not lose opportunities",
-        "System ready to work autonomously"
-      ],
-      "note": "Launch service. No mandatory monthly management.",
-      "price": "400€",
-      "cta": "Get in touch with us"
+      }
     },
     "sitioWeb": {
       "hero": {
