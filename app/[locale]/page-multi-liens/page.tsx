@@ -1,11 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
-import MediaPlaceholder from '@/components/MediaPlaceholder';
 import AccordionFAQ from '@/components/AccordionFAQ';
 import BackButton from '@/components/BackButton';
 
@@ -58,17 +58,41 @@ export default async function PageMultiLiens({
               {/* Media Grid 2x2 */}
               <div className="mb-8">
                 <div className="grid grid-cols-2 gap-3 md:gap-4">
-                  <div className="aspect-square rounded-image bg-warm-beige flex items-center justify-center">
-                    <div className="text-text-secondary text-sm">Image 1</div>
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-1.png"
+                      alt="Page multi-liens 1"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
                   </div>
-                  <div className="aspect-square rounded-image bg-warm-beige flex items-center justify-center">
-                    <div className="text-text-secondary text-sm">Image 2</div>
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-2.png"
+                      alt="Page multi-liens 2"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
                   </div>
-                  <div className="aspect-square rounded-image bg-warm-beige flex items-center justify-center">
-                    <div className="text-text-secondary text-sm">Image 3</div>
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-3.png"
+                      alt="Page multi-liens 3"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
                   </div>
-                  <div className="aspect-square rounded-image bg-warm-beige flex items-center justify-center">
-                    <div className="text-text-secondary text-sm">Image 4</div>
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-4.jpg"
+                      alt="Page multi-liens 4"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
                   </div>
                 </div>
               </div>
