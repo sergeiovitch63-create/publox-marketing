@@ -1,0 +1,603 @@
+{
+  "nav": {
+    "home": "Home",
+    "pageMultiLiens": "Pagina multi-link",
+    "blocMarketing": "Blocco marketing",
+    "sitioWeb": "Sito web",
+    "impresion": "Stampa",
+    "reclutamiento": "Affiliazioni",
+    "contacto": "Contatto"
+  },
+  "footer": {
+    "title": "PUBLOX",
+    "description": "PUBLOX aiuta le aziende locali ad attirare più clienti\nattraverso pubblicità,\nautomazione e sistemi\ndigitali\nfocalizzati su risultati\nreali.",
+    "information": "INFORMAZIONI",
+    "contact": "Contatto",
+    "privacy": "Privacy",
+    "notFound": "404",
+    "copyright": "© 2025 PUBLOX. Created by Egor Lunev"
+  },
+  "common": {
+    "learnMore": "Scopri di più",
+    "contact": "Contatta",
+    "back": "Indietro",
+    "loading": "Caricamento..."
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "titleLine1": "La soluzione per far",
+        "titleLine2": "crescere la tua attività",
+        "titleLine3": "",
+        "subtitle": "Aiutiamo le aziende a crescere con una strategia chiara di\nacquisizione, visibilità e automazione.",
+        "cta": "Sviluppa la mia attività"
+      },
+      "solutionsTitle": "Le nostre soluzioni",
+      "services": {
+        "captacion": {
+          "title": "Blocco Marketing",
+          "text1": "Aumenta la tua visibilità e la tua base clienti con un sistema di marketing completo pensato per aziende locali.",
+          "text2": "Implementiamo una struttura chiavi in mano che attira clienti, rafforza il tuo brand e automatizza i primi contatti.",
+          "text3": "Dall'acquisizione alla conversione, tutto è ottimizzato per generare risultati reali, senza gestione mensile obbligatoria."
+        },
+        "automatizacion": {
+          "title": "Automazione",
+          "text1": "Semplifica i tuoi processi con sistemi automatizzati che lavorano 24/7.",
+          "text2": "Dalle risposte automatiche alla gestione clienti, ottimizziamo la tua operazione quotidiana.",
+          "text3": "Più tempo per ciò che conta davvero: far crescere la tua attività."
+        },
+        "redesSociales": {
+          "title": "Social Media",
+          "text1": "Presenza professionale sulle principali piattaforme social.",
+          "text2": "Contenuti strategici che generano engagement e costruiscono una comunità fedele.",
+          "text3": "Gestione integrale del tuo brand digitale con risultati misurabili."
+        },
+        "sitioWeb": {
+          "title": "Sito Web",
+          "text1": "Design web professionale adattato alla tua attività locale.",
+          "text2": "Siti veloci, ottimizzati e pensati per convertire visitatori in clienti.",
+          "text3": "Dai siti aziendali ai negozi online completi."
+        },
+        "impresion": {
+          "title": "Stampa Professionale",
+          "text1": "Materiale grafico di alta qualità per la tua attività.",
+          "text2": "Biglietti da visita, volantini, dépliant e altro, progettati per avere impatto.",
+          "text3": "Stampa professionale che riflette la qualità del tuo brand."
+        }
+      },
+      "oportunidad": {
+        "title": "Un'opportunità reale",
+        "subtitle": "COLLABORA CON UNA SOLUZIONE CHE GIÀ FUNZIONA PER LE AZIENDE LOCALI.",
+        "card": {
+          "title": "Guadagna fino al 20% di commissione",
+          "text1": "Unisciti al nostro programma di affiliazione e aiuta le aziende locali a crescere generando entrate ricorrenti.",
+          "text2": "Ogni azienda che segnali e che diventa cliente ti genera una commissione basata su risultati reali.",
+          "text3": "Senza limiti, senza restrizioni. Più aziende aiuti, più guadagni.",
+          "cta": "Unisciti al programma"
+        },
+        "vignette1": {
+          "title": "Senza conoscenze tecniche",
+          "text": "Non devi essere un esperto di marketing o tecnologia. Devi solo collegare le aziende con PUBLOX."
+        },
+        "vignette2": {
+          "title": "La tua missione è connettere",
+          "text": "La tua missione è connettere le aziende con PUBLOX. Noi facciamo il resto."
+        },
+        "vignette3": {
+          "title": "Sistema di commissione",
+          "text": "Sistema di commissione basato su risultati e collaborazione a lungo termine."
+        }
+      },
+      "whoWeAre": {
+        "title": "Chi siamo",
+        "subtitle": "Novira è il gruppo principale che riunisce diverse entità specializzate, tra cui Publox, Tenerife Activity e Marina Masaje.",
+        "card": {
+          "heading": "Su Publox",
+          "paragraph": "Publox fa parte del gruppo Novira, un insieme di aziende che include anche Tenerife Activity e Marina Masaje. Questa struttura ci permette di offrire servizi vari mantenendo una grande coerenza e qualità."
+        },
+        "miniCards": {
+          "novira": "Novira",
+          "tenerifeActivity": "Tenerife Activity",
+          "marinaMasaje": "Marina Masaje"
+        }
+      },
+      "partners": {
+        "title": "Affiliati e aziende partner",
+        "subtitle": "Aziende e brand che collaborano con noi"
+      },
+      "affiliates": {
+        "title": "I nostri affiliati e partner di fiducia",
+        "subtitle": "Aziende e brand che collaborano con noi all'interno del nostro ecosistema professionale.",
+        "mainCard": {
+          "title": "Gruppo & Holding",
+          "text1": "PUBLOX fa parte di un gruppo aziendale dedicato allo sviluppo digitale, marketing e automazione per aziende locali.",
+          "text2": "Questo ecosistema ci permette di offrire soluzioni solide, scalabili e orientate a risultati reali.",
+          "placeholder": "Logo del gruppo / holding (prossimamente)"
+        },
+        "gridTitle": "Affiliati e aziende partner",
+        "affiliatePlaceholder": "Logo azienda affiliata\n(Prossimamente)"
+      }
+    },
+    "necesitas": {
+      "hero": {
+        "title": "Di cosa hai bisogno per far crescere la tua attività?"
+      },
+      "multiLinks": {
+        "title": "Pagina multi-link",
+        "list1": "Una sola pagina che riunisce tutti i tuoi link importanti",
+        "list2": "I tuoi clienti trovano sito web, social media e contatti in un solo posto",
+        "list3": "Pulsanti diretti a WhatsApp, chiamata o prenotazione",
+        "list4": "Perfetta per Instagram, Google Maps o un codice QR",
+        "list5": "Design professionale che ispira fiducia",
+        "list6": "Modificabile in qualsiasi momento, senza complicazioni",
+        "cta": "Scegli questa opzione"
+      },
+      "marketing": {
+        "title": "Blocco Marketing",
+        "intro": "Implementiamo strategie complete di acquisizione clienti, adattate ad aziende locali:",
+        "list1": "Creazione di 6 video (32 secondi ciascuno) per i social media",
+        "list2": "Ottimizzazione di Google Maps",
+        "list3": "Negozio WhatsApp (automazione messaggi)",
+        "list4": "Pagina multi-link",
+        "list5": "Creazione codice QR",
+        "list6": "Creazione logo inclusa se necessario",
+        "conclusion": "Il nostro obiettivo è semplice: più visibilità, più contatti e più vendite.",
+        "cta": "Scegli questa opzione"
+      },
+      "sitioWeb": {
+        "title": "Sito Web",
+        "intro": "",
+        "list1": "Un sito completo (non solo una pagina) per presentare la tua attività, servizi e prezzi",
+        "list2": "Pagine essenziali: Home, Servizi, Chi siamo, Contatto (+ FAQ se necessario)",
+        "list3": "Contatto diretto: WhatsApp, chiamata, modulo, percorso Google Maps",
+        "list4": "Opzioni \"aggiuntive\" se lo desideri: calendario, appuntamento, prenotazione, richiesta preventivo",
+        "list5": "Ottimizzato mobile + veloce + design professionale che ispira fiducia",
+        "list6": "Visibilità Google: SEO locale, struttura pulita e base pronta per evolversi",
+        "conclusion": "Un sito che rassicura, spiega chiaramente la tua offerta e trasforma i visitatori in clienti.",
+        "cta": "Scegli questa opzione"
+      },
+      "impresion": {
+        "title": "Stampa professionale per la tua attività locale",
+        "intro": "Progettiamo e produciamo tutto il materiale fisico di cui la tua attività ha bisogno per attirare e convertire i clienti:",
+        "list1": "Biglietti da visita",
+        "list2": "Volantini",
+        "list3": "Dépliant pieghevoli (dépliant / trittici)",
+        "list4": "Cavalletto pubblicitario",
+        "list5": "Design non incluso",
+        "list6": "",
+        "conclusion": "Ogni supporto è pensato per rafforzare la tua immagine, generare fiducia e portare i clienti al tuo WhatsApp o Google Maps.",
+        "cta": "Scegli questa opzione"
+      },
+      "separator": "• PUBLOX",
+      "badge": {
+        "tenerife": "Tenerife"
+      }
+    },
+    "multiLinksPage": {
+      "heroTitle": "Pagina multi-link",
+      "blockTitle": "Pagina multi-link",
+      "bullets": {
+        "list1": "Una sola pagina che riunisce tutti i tuoi link importanti",
+        "list2": "I tuoi clienti trovano sito web, social media e contatti in un solo posto",
+        "list3": "Pulsanti diretti a WhatsApp, chiamata o prenotazione",
+        "list4": "Perfetta per Instagram, Google Maps o un codice QR",
+        "list5": "Design professionale che ispira fiducia",
+        "list6": "Modificabile in qualsiasi momento, senza complicazioni"
+      },
+      "cta": "Contattaci",
+      "price": "200€",
+      "faq": {
+        "title": "Domande frequenti",
+        "items": {
+          "q1": "Cos'è una pagina multi-link?",
+          "a1": "Una pagina multi-link è una pagina unica che riunisce tutti i tuoi link importanti (sito web, social media, contatto) in un solo posto, accessibile tramite un link unico o codice QR.",
+          "q2": "Come posso modificare il contenuto?",
+          "a2": "Il contenuto può essere modificato in qualsiasi momento, senza complessità tecnica. Puoi facilmente aggiungere, rimuovere o modificare i tuoi link.",
+          "q3": "Posso aggiungere pulsanti di azione diretti?",
+          "a3": "Sì, puoi aggiungere pulsanti diretti a WhatsApp, chiamata telefonica, prenotazione o percorso Google Maps.",
+          "q4": "La pagina è ottimizzata per mobile?",
+          "a4": "Sì, la pagina è completamente responsive e ottimizzata per tutti i dispositivi (mobile, tablet, computer).",
+          "q5": "Posso usare un codice QR con questa pagina?",
+          "a5": "Assolutamente! La pagina multi-link è perfetta per essere condivisa tramite codice QR, sia sui tuoi materiali stampati, nel tuo locale o sui tuoi social network."
+        }
+      }
+    },
+    "marketing": {
+      "hero": {
+        "title": "Blocco Marketing"
+      },
+      "blocks": {
+        "blockMarketing": {
+          "title": "Blocco Marketing",
+          "bullets": {
+            "list1": "Creazione di 6 video professionali (32 secondi per video) per i social media",
+            "list2": "Ottimizzazione della tua scheda Google Maps",
+            "list3": "Creazione di un negozio WhatsApp (automazione messaggi)",
+            "list4": "Pagina multi-link con tutti i tuoi contatti in un solo posto",
+            "list5": "Creazione codice QR per biglietti da visita, vetrine e supporti stampati",
+            "list6": "Creazione logo (inclusa se necessario)"
+          },
+          "closing": "Questo pacchetto è progettato per migliorare la tua visibilità, semplificare il contatto con i tuoi clienti e automatizzare parte della tua comunicazione.",
+          "cta": "Contattaci",
+          "price": "400€"
+        },
+        "adManagement": {
+          "title": "Gestione pubblicitaria",
+          "bullets": {
+            "list1": "Creazione e gestione di pubblicità Google Ads",
+            "list2": "Creazione e gestione di pubblicità Meta Ads (Facebook e Instagram)",
+            "list3": "Analisi della tua attività e obiettivi",
+            "list4": "Implementazione di una strategia pubblicitaria adattata",
+            "list5": "Monitoraggio e ottimizzazione delle campagne"
+          },
+          "paragraphs": {
+            "p1": "Ogni azienda è diversa. La gestione pubblicitaria viene quindi realizzata su misura, in base ai tuoi obiettivi e alla tua attività.",
+            "p2": "Il budget pubblicitario non è incluso e viene pagato direttamente alle piattaforme (Google, Facebook, Instagram)."
+          },
+          "cta": "Contattaci",
+          "price": "Preventivo personalizzato"
+        }
+      }
+    },
+    "sitioWeb": {
+      "hero": {
+        "title": "Sito Web"
+      },
+      "corporateBlock": {
+        "title": "Sito web aziendale",
+        "bullets": {
+          "list1": "Sito vetrina moderno",
+          "list2": "Presentazione di servizi e attività",
+          "list3": "Pagina di contatto con WhatsApp",
+          "list4": "Ottimizzazione base per Google",
+          "list5": "Design pulito e professionale",
+          "list6": "Migliore reputazione e presenza locale"
+        },
+        "closing": "Perfetto per le aziende che vogliono esistere ed essere trovate online.",
+        "cta": "Mettiti in contatto con noi",
+        "price": "Da 450€",
+        "faq": {
+          "items": {
+            "q1": "Quanto tempo ci vuole per creare un sito web?",
+            "a1": "Normalmente 7-14 giorni a seconda del contenuto e del numero di pagine. Possiamo andare più veloci se tutto è pronto.",
+            "q2": "Cosa devo fornire?",
+            "a2": "Nome dell'azienda, servizi, dati di contatto, alcune foto se le hai. Altrimenti possiamo aiutarti.",
+            "q3": "Funziona su mobile?",
+            "a3": "Sì, è ottimizzato per mobile e carica velocemente.",
+            "q4": "Posso modificarlo dopo?",
+            "a4": "Sì, puoi richiedere modifiche e aggiungere sezioni quando vuoi.",
+            "q5": "Aiuta con Google?",
+            "a5": "Sì, impostiamo una base SEO (titoli, struttura, prestazioni) per essere meglio compresi da Google."
+          }
+        }
+      },
+      "shopBlock": {
+        "title": "Negozio online",
+        "bullets": {
+          "list1": "Negozio online completo",
+          "list2": "Gestione prodotti",
+          "list3": "Carrello acquisti e processo ordine",
+          "list4": "Ottimizzazione base per Google",
+          "list5": "Pagamenti online",
+          "list6": "Integrazione con WhatsApp"
+        },
+        "closing": "Perfetto per le aziende che vogliono vendere i propri prodotti online.",
+        "cta": "Mettiti in contatto con noi",
+        "price": "Da 950€",
+        "faq": {
+          "items": {
+            "q1": "Come funzionano i pagamenti online?",
+            "a1": "I pagamenti sono sicuri tramite soluzioni riconosciute (Stripe, PayPal, ecc.). I clienti possono pagare con carta bancaria o altri metodi a seconda della configurazione.",
+            "q2": "Posso gestire facilmente i miei prodotti?",
+            "a2": "Sì, potrai aggiungere, modificare o eliminare prodotti, gestire scorte e prezzi da un pannello semplice.",
+            "q3": "Come funzionano le consegne?",
+            "a3": "Il negozio può essere configurato per gestire le consegne. Puoi definire zone, tariffe e scadenze secondo le tue esigenze.",
+            "q4": "Quanto tempo ci vuole per creare il negozio?",
+            "a4": "Normalmente 14-21 giorni a seconda del numero di prodotti e funzionalità richieste. Possiamo accelerare se tutto è pronto.",
+            "q5": "Il negozio funziona su mobile?",
+            "a5": "Sì, è completamente ottimizzato per mobile. I tuoi clienti possono acquistare facilmente dal loro telefono."
+          }
+        }
+      },
+      "faqGeneral": {
+        "title": "Domande frequenti",
+        "items": {
+          "q1": "Quanto tempo ci vuole perché il sito web sia pronto?",
+          "a1": "Dipende dal tipo di sito, ma cerchiamo una consegna rapida e funzionale.",
+          "q2": "Devo avere testi e immagini preparati?",
+          "a2": "No. Può essere strutturato prima e il contenuto aggiunto dopo.",
+          "q3": "Il sito sarà multilingue?",
+          "a3": "Sì. Italiano, inglese, francese, spagnolo e russo.",
+          "q4": "Posso collegare il sito con WhatsApp?",
+          "a4": "Sì. Il sito può reindirizzare direttamente a WhatsApp.",
+          "q5": "Posso usare il sito per pubblicità?",
+          "a5": "Sì. È una base ideale per Google Ads e social network.",
+          "q6": "Il sito è veloce e moderno?",
+          "a6": "Sì. È ottimizzato per velocità e esperienza utente.",
+          "q7": "Posso modificare il contenuto più avanti?",
+          "a7": "Sì. Il sito è progettato per evolversi.",
+          "q8": "Include manutenzione mensile obbligatoria?",
+          "a8": "No. Il servizio è di lancio.",
+          "q9": "Il sito aiuta a generare clienti?",
+          "a9": "Sì. È progettato per convertire le visite in contatti.",
+          "q10": "Posso iniziare semplice e ampliare dopo?",
+          "a10": "Sì. Il sito è una base scalabile."
+        }
+      }
+    },
+    "sitioWebCorporativo": {
+      "titleLines": ["Sito Web", "Aziendale"],
+      "bullets": [
+        "Sito vetrina moderno e responsive",
+        "Presentazione di servizi e attività",
+        "Pagina di contatto con WhatsApp",
+        "Ottimizzazione base per Google",
+        "Design pulito e professionale",
+        "Rafforzamento della reputazione e presenza locale"
+      ],
+      "note": "Perfetto per le aziende che vogliono esistere ed essere trovate online.",
+      "price": "Da 300€",
+      "cta": "Mettiti in contatto con noi"
+    },
+    "sitioWebTiendaOnline": {
+      "titleLines": ["Negozio Online"],
+      "bullets": [
+        "Negozio online completo",
+        "Gestione prodotti",
+        "Carrello acquisti e processo ordine",
+        "Ottimizzazione base per Google",
+        "Pagamenti online",
+        "Integrazione con WhatsApp",
+        "Sito sicuro e responsive"
+      ],
+      "note": "Perfetto per le aziende che vogliono esistere ed essere trovate online.",
+      "price": "Da 900€",
+      "cta": "Mettiti in contatto con noi"
+    },
+    "impresion": {
+      "hero": {
+        "title": "Stampa"
+      },
+      "block1": {
+        "title": "Biglietti da Visita Professionali (Doppia Faccia)",
+        "bullets": [
+          "Design personalizzato",
+          "Biglietti da visita di alta qualità",
+          "Stampa professionale",
+          "Opzioni con QR (WhatsApp, Google Maps, web)"
+        ],
+        "conclusion": "Ideale per contatti rapidi e prima impressione.",
+        "cta": "Scegli questo",
+        "faq": {
+          "q1": "Quali informazioni posso includere sui biglietti?",
+          "a1": "Nome, contatto, servizi, logo e opzionalmente QR per WhatsApp, Google Maps o web.",
+          "q2": "Il design è incluso?",
+          "a2": "Sì. Design personalizzato incluso secondo la tua identità visiva.",
+          "q3": "Quali finiture sono disponibili?",
+          "a3": "Carta di alta qualità con opzioni di finitura secondo le esigenze.",
+          "q4": "Quanto tempo ci vuole per la consegna?",
+          "a4": "Dipende dalla quantità e finiture, normalmente 5-10 giorni lavorativi.",
+          "q5": "Il design grafico è a pagamento?",
+          "a5": "Il design grafico è a pagamento salvo indicazione contraria."
+        }
+      },
+      "block2": {
+        "title": "Volantini Promozionali (Doppia Faccia) A5",
+        "bullets": [
+          "Design grafico incluso",
+          "Volantino doppia faccia",
+          "Formato promozionale",
+          "Opzione QR integrata"
+        ],
+        "conclusion": "Perfetto per promozioni locali e distribuzione fisica.",
+        "cta": "Scegli questo",
+        "faq": {
+          "q1": "Che dimensione hanno i volantini?",
+          "a1": "Formato A5 standard, doppia faccia per massimo impatto.",
+          "q2": "Posso includere codici QR?",
+          "a2": "Sì. QR può essere integrato per WhatsApp, Google Maps o landing page.",
+          "q3": "Il design completo è incluso?",
+          "a3": "Sì. Design grafico professionale incluso con call to action.",
+          "q4": "Per quale tipo di promozioni è ideale?",
+          "a4": "Ideale per offerte, eventi, lanci e promozioni locali.",
+          "q5": "Il design grafico è a pagamento?",
+          "a5": "Il design grafico è a pagamento salvo indicazione contraria."
+        }
+      },
+      "block3": {
+        "title": "Dépliant / Trittici Informativi A5",
+        "bullets": [
+          "Design dépliant (2/3 pieghe)",
+          "Presentazione chiara dei servizi",
+          "Ideale per spiegare un'offerta o attività",
+          "Design professionale e leggibile"
+        ],
+        "conclusion": "Ideale per presentare la tua attività in modo strutturato.",
+        "cta": "Scegli questo",
+        "faq": {
+          "q1": "Qual è la differenza tra dépliant e trittico?",
+          "a1": "Dépliant ha 2 pieghe, trittico ha 3. Entrambi permettono di presentare informazioni strutturate.",
+          "q2": "Quale contenuto posso includere?",
+          "a2": "Servizi, offerte, informazioni attività, contatto e altro, organizzati chiaramente.",
+          "q3": "Il design è incluso?",
+          "a3": "Sì. Design professionale e leggibile incluso.",
+          "q4": "Per quali attività è ideale?",
+          "a4": "Ideale per attività che devono spiegare servizi o offerte in dettaglio.",
+          "q5": "Il design grafico è a pagamento?",
+          "a5": "Il design grafico è a pagamento salvo indicazione contraria."
+        }
+      },
+      "block4": {
+        "title": "Cavalletto (Doppia Faccia)",
+        "bullets": [
+          "Design doppia faccia",
+          "Perfetto per promozioni, QR o messaggi diretti"
+        ],
+        "conclusion": "Molto visibile nei punti di contatto con i clienti.",
+        "cta": "Scegli questo",
+        "faq": {
+          "q1": "Che dimensione ha il cavalletto?",
+          "a1": "Dimensione standard cavalletto, doppia faccia per massima visibilità.",
+          "q2": "Posso includere codici QR?",
+          "a2": "Sì. Perfetto per includere QR che dirigono a WhatsApp, Google Maps o web.",
+          "q3": "Dove viene tipicamente utilizzato?",
+          "a3": "Nei punti di contatto: reception, banconi, eventi, locali commerciali.",
+          "q4": "Il design è incluso?",
+          "a4": "Sì. Design professionale doppia faccia incluso.",
+          "q5": "Il design grafico è a pagamento?",
+          "a5": "Il design grafico è a pagamento salvo indicazione contraria."
+        }
+      },
+      "faqGeneral": {
+        "title": "Domande frequenti",
+        "items": {
+          "q1": "Quali sono i tempi di consegna?",
+          "a1": "Dipende dal prodotto e quantità. Normalmente tra 5-15 giorni lavorativi dalla validazione del design.",
+          "q2": "Quali formati sono disponibili?",
+          "a2": "A5 per volantini e dépliant, formati standard per biglietti da visita e cavalletti. Altri formati su richiesta.",
+          "q3": "Quale qualità di carta e finiture offrite?",
+          "a3": "Carta di alta qualità con opzioni di finitura secondo il prodotto. Definito secondo le esigenze.",
+          "q4": "Posso includere codici QR su tutti i prodotti?",
+          "a4": "Sì. I codici QR possono essere integrati su biglietti da visita, volantini e cavalletti per dirigere a WhatsApp, Google Maps o web.",
+          "q5": "Il design è incluso?",
+          "a5": "Sì. Design professionale incluso per tutti i prodotti, adattato alla tua identità visiva.",
+          "q6": "Ci sono quantità minime?",
+          "a6": "Dipende dal prodotto. Definito secondo esigenze e budget.",
+          "q7": "Come invio il mio logo e contenuto?",
+          "a7": "Può essere inviato via email o accesso condiviso. Formati preferiti: logo in vettoriale o alta risoluzione.",
+          "q8": "C'è revisione prima della stampa?",
+          "a8": "Sì. Viene sempre inviata una bozza per validazione prima della stampa finale.",
+          "q9": "Come viene effettuata la consegna?",
+          "a9": "Consegna o ritiro secondo ubicazione. Coordinato una volta validato il design.",
+          "q10": "Posso fare modifiche o ristampare?",
+          "a10": "Sì. Modifiche prima della stampa finale. Ristampe su richiesta secondo esigenze."
+        }
+      }
+    },
+    "impresionTarjetas": {
+      "titleLines": ["Biglietti da Visita", "Professionali"],
+      "bullets": [
+        "Design personalizzato (supplemento: 5€)",
+        "Biglietti da visita di alta qualità",
+        "Stampa professionale",
+        "Opzioni con QR (WhatsApp, Google Maps, web)"
+      ],
+      "conclusion": "Perfetto per contatti rapidi e prima impressione.",
+      "blueActions": [
+        {
+          "label": "Prezzo 1 faccia",
+          "href": "https://drive.google.com/file/d/1HOXpZigkVEyfVu1G5Rw9JCegGfPQ98dM/view"
+        },
+        {
+          "label": "Prezzo 2 facce",
+          "href": "https://drive.google.com/file/d/1iYo_93VjWks7JzGsYDu99wNPCeUPpfjW/view"
+        }
+      ],
+      "contactCta": "Mettiti in contatto con noi"
+    },
+    "impresionFlyers": {
+      "titleLines": ["Volantini Promozionali"],
+      "bullets": [
+        "Design grafico (supplemento: 10€)",
+        "Volantino dritto / rovescio",
+        "Formato promozionale",
+        "Opzione QR integrata"
+      ],
+      "conclusion": "Perfetto per promozioni locali e distribuzione fisica.",
+      "blueActions": [
+        {
+          "label": "Prezzo A6 1 faccia (10,5 x 14,8cm)",
+          "href": "https://drive.google.com/file/d/1yrsYWAieuwvKoHRmyxUjlP5KA5A4UvE-/view"
+        },
+        {
+          "label": "Prezzo A6 2 facce (10,5 x 14,8cm)",
+          "href": "https://drive.google.com/file/d/1YeKpcvsJkkysZ16jfN4_5zDDyoigZ1v7/view"
+        },
+        {
+          "label": "Prezzo A5 1 faccia (14,8 x 21cm)",
+          "href": "https://drive.google.com/file/d/10Zi2E_08qorIYzXeVBiWxaeVn8Lw5y3N/view"
+        },
+        {
+          "label": "Prezzo A5 2 facce (14,8 x 21cm)",
+          "href": "https://drive.google.com/file/d/14xrt_aH1ARBS0CwfFxMlSH8Lf93WQAxi/view"
+        }
+      ],
+      "contactCta": "Mettiti in contatto con noi"
+    },
+    "impresionDipticos": {
+      "titleLines": ["PACCHETTO DÉPLIANT / TRITTICI"],
+      "bullets": [
+        "Design dépliant (2/3 pieghe) (supplemento: 15€)",
+        "Presentazione chiara dei servizi",
+        "Stampa professionale",
+        "Opzioni con QR (WhatsApp, Google Maps, web)"
+      ],
+      "conclusion": "Ideale per presentare la tua attività in modo strutturato.",
+      "blueActions": [
+        {
+          "label": "Prezzo A5 (14,8 x 21 cm)",
+          "href": "https://drive.google.com/file/d/1jfl-dzggoU5JWCahHKnaNk3MQQrTUguB/view"
+        }
+      ],
+      "contactCta": "Mettiti in contatto con noi"
+    },
+    "impresionCaballete": {
+      "titleLines": ["Cavalletto (Doppia Faccia)"],
+      "bullets": [
+        "Design doppia faccia (supplemento: 20€)",
+        "Stampa professionale",
+        "Perfetto per promozioni, QR o messaggi diretti"
+      ],
+      "conclusion": "Molto visibile nei punti di contatto con i clienti.",
+      "extraPricesTextLines": [
+        "100 x 70 = 180€",
+        "70 x 50 = 130€"
+      ],
+      "contactCta": "Mettiti in contatto con noi"
+    },
+    "reclutamiento": {
+      "hero": {
+        "title": "Un'opportunità reale",
+        "subtitle": "Collabora con una soluzione che già funziona per le aziende locali."
+      },
+      "mainSection": {
+        "title": "Guadagna fino al 20% di commissione",
+        "paragraph1": "Come collaboratore PUBLOX, ricevi una commissione per ogni azienda locale che entra grazie a te.",
+        "paragraph2": "Il tuo ruolo è semplice: identificare aziende che hanno bisogno di più clienti e metterle in contatto con il nostro team.",
+        "paragraph3": "PUBLOX si occupa di tutto: strategia, pubblicità, automazione, follow-up e supporto clienti.",
+        "paragraph4": "La commissione può arrivare fino al 20%, a seconda del tipo di collaborazione e della durata del cliente.",
+        "paragraph5": "Non ci sono limiti fissi né false promesse: tutto si basa su risultati reali e relazioni a lungo termine. Senza investimento iniziale. Senza obiettivi obbligatori. Senza rischio."
+      },
+      "advantages": {
+        "card1": {
+          "caption": "Senza conoscenze tecniche"
+        },
+        "card2": {
+          "caption": "La tua missione è connettere le aziende con PUBLOX. Noi facciamo il resto."
+        },
+        "card3": {
+          "caption": "Sistema di commissione basato su risultati e collaborazione a lungo termine."
+        }
+      }
+    },
+    "contacto": {
+      "title": "Contatto",
+      "subtitle": "Scegli il tuo metodo di contatto e ti risponderemo il prima possibile.",
+      "whatsapp": {
+        "label": "WhatsApp"
+      },
+      "email": {
+        "label": "Email"
+      }
+    },
+    "privacy": {
+      "title": "Politica sulla Privacy",
+      "description": "Politica sulla privacy di PUBLOX"
+    },
+    "notFound": {
+      "title": "Pagina non trovata",
+      "description": "La pagina che stai cercando non esiste",
+      "backHome": "Torna alla home"
+    }
+  }
+}

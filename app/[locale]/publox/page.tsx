@@ -15,6 +15,7 @@ const contentByLocale: Record<Locale, {
   h2: string;
   text: string;
   services: string[];
+  servicesTitle: string;
   cta: string;
 }> = {
   es: {
@@ -36,6 +37,7 @@ Nuestros servicios de marketing digital incluyen optimización SEO para mejorar 
       'Automatización',
       'Impresión',
     ],
+    servicesTitle: 'Servicios',
     cta: 'Contactar por WhatsApp',
   },
   en: {
@@ -57,6 +59,7 @@ Our digital marketing services include SEO optimization to improve search engine
       'Automation',
       'Printing',
     ],
+    servicesTitle: 'Services',
     cta: 'Contact via WhatsApp',
   },
   fr: {
@@ -78,7 +81,52 @@ Nos services de marketing digital incluent l'optimisation SEO pour améliorer la
       'Automatisation',
       'Impression',
     ],
+    servicesTitle: 'Services',
     cta: 'Contacter par WhatsApp',
+  },
+  it: {
+    title: 'PUBLOX — Agenzia di marketing digitale, siti web e automazione',
+    description: 'PUBLOX è un\'agenzia di marketing digitale specializzata in siti web, SEO, branding e automazione per aiutare le aziende a ottenere più clienti.',
+    h1: 'PUBLOX',
+    h2: 'Agenzia di marketing digitale, siti web e automazione',
+    text: `PUBLOX è un'agenzia di marketing digitale con sede a Tenerife, specializzata nell'aiutare le aziende a ottenere clienti attraverso strategie di marketing digitale efficaci. Il nostro approccio combina siti web veloci e ottimizzati, tecniche SEO avanzate, branding professionale e sistemi di automazione che consentono alle aziende di acquisire e convertire più clienti in modo efficiente.
+
+In PUBLOX, capiamo che ogni azienda ha esigenze uniche. Ecco perché offriamo soluzioni personalizzate di marketing digitale che vanno dalla progettazione e sviluppo di siti web aziendali all'implementazione di strategie complete di acquisizione clienti. Il nostro team lavora con tecnologie moderne per creare siti web che non solo hanno un bell'aspetto, ma convertono anche i visitatori in clienti.
+
+L'automazione è una parte chiave del nostro approccio. Implementiamo sistemi che consentono ai nostri clienti di automatizzare i processi di marketing, dalla generazione di lead al follow-up post-vendita. Questo è combinato con un branding solido che aiuta le aziende a distinguersi nel mercato e costruire un'identità di marca riconoscibile.
+
+I nostri servizi di marketing digitale includono l'ottimizzazione SEO per migliorare la visibilità nei motori di ricerca, lo sviluppo di siti web responsive e veloci, la creazione di strategie di branding coerenti e l'automazione dei processi di acquisizione clienti. Tutto questo con un focus su risultati misurabili e crescita sostenibile.`,
+    services: [
+      'Sito web',
+      'SEO',
+      'Branding',
+      'Automazione',
+      'Stampa',
+    ],
+    servicesTitle: 'Servizi',
+    cta: 'Contatta via WhatsApp',
+  },
+  ru: {
+    title: 'PUBLOX — Агентство цифрового маркетинга, веб-сайтов и автоматизации',
+    description: 'PUBLOX — это агентство цифрового маркетинга, специализирующееся на веб-сайтах, SEO, брендинге и автоматизации, чтобы помочь бизнесу привлечь больше клиентов.',
+    h1: 'PUBLOX',
+    h2: 'Агентство цифрового маркетинга, веб-сайтов и автоматизации',
+    text: `PUBLOX — это агентство цифрового маркетинга, базирующееся на Тенерифе, специализирующееся на помощи бизнесу в привлечении клиентов через эффективные стратегии цифрового маркетинга. Наш подход сочетает быстрые и оптимизированные веб-сайты, передовые SEO-техники, профессиональный брендинг и системы автоматизации, которые позволяют компаниям эффективно привлекать и конвертировать больше клиентов.
+
+В PUBLOX мы понимаем, что у каждого бизнеса есть уникальные потребности. Поэтому мы предлагаем персонализированные решения цифрового маркетинга, начиная от дизайна и разработки корпоративных веб-сайтов до внедрения полных стратегий привлечения клиентов. Наша команда работает с современными технологиями для создания веб-сайтов, которые не только хорошо выглядят, но и конвертируют посетителей в клиентов.
+
+Автоматизация — ключевая часть нашего подхода. Мы внедряем системы, которые позволяют нашим клиентам автоматизировать маркетинговые процессы, от генерации лидов до постпродажного сопровождения. Это сочетается с сильным брендингом, который помогает бизнесу выделиться на рынке и построить узнаваемую идентичность бренда.
+
+Наши услуги цифрового маркетинга включают SEO-оптимизацию для улучшения видимости в поисковых системах, разработку адаптивных и быстрых веб-сайтов, создание согласованных стратегий брендинга и автоматизацию процессов привлечения клиентов. Все это с фокусом на измеримые результаты и устойчивый рост.`,
+    services: [
+      'Веб-сайт',
+      'SEO',
+      'Брендинг',
+      'Автоматизация',
+      'Печать',
+    ],
+    servicesTitle: 'Услуги',
+    cta: 'Связаться через WhatsApp',
   },
 };
 
@@ -137,9 +185,7 @@ export default async function PubloxPage({
             {/* Services */}
             <div className="mb-12">
               <h3 className="text-xl font-semibold mb-4 text-text-primary">
-                {locale === 'es' && 'Servicios'}
-                {locale === 'en' && 'Services'}
-                {locale === 'fr' && 'Services'}
+                {content.servicesTitle || 'Services'}
               </h3>
               <ul className="list-disc list-inside space-y-2 text-text-secondary">
                 {content.services.map((service, index) => (

@@ -170,7 +170,7 @@
       },
       "separator": "• PUBLOX",
       "badge": {
-        "tenerife": "Tenerife"
+        "tenerife": "Seulement Tenerife"
       }
     },
     "multiLinksPage": {
@@ -307,7 +307,7 @@
           "q2": "Dois-je avoir des textes et images préparés ?",
           "a2": "Non. Il peut être structuré d'abord et le contenu ajouté ensuite.",
           "q3": "Le site sera-t-il multilingue ?",
-          "a3": "Oui. Espagnol (par défaut), anglais et français.",
+          "a3": "Oui. Espagnol (par défaut), anglais, français, italien et russe.",
           "q4": "Puis-je connecter le site avec WhatsApp ?",
           "a4": "Oui. Le site peut rediriger directement vers WhatsApp.",
           "q5": "Puis-je utiliser le site pour la publicité ?",

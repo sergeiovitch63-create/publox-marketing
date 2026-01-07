@@ -100,7 +100,7 @@ export default async function ReclutamientoPage({
                 <div className="mb-6 relative aspect-square max-w-[200px] mx-auto rounded-image overflow-hidden bg-white">
                   <Image
                     src="/media/images/your-mission-connect.png"
-                    alt={locale === 'es' ? 'Tu misión es conectar negocios con PUBLOX' : locale === 'en' ? 'Your mission is to connect businesses with PUBLOX' : 'Votre mission est de connecter les entreprises avec PUBLOX'}
+                    alt={t('advantages.card2.caption')}
                     fill
                     className="object-cover"
                     sizes="200px"

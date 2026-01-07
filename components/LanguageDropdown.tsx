@@ -9,12 +9,16 @@ const flags: Record<Locale, string> = {
   es: '🇪🇸',
   en: '🇬🇧',
   fr: '🇫🇷',
+  it: '🇮🇹',
+  ru: '🇷🇺',
 };
 
 const localeNames: Record<Locale, string> = {
   es: 'ES',
   en: 'EN',
   fr: 'FR',
+  it: 'IT',
+  ru: 'RU',
 };
 
 export default function LanguageDropdown() {
