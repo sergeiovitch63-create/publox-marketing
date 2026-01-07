@@ -172,9 +172,34 @@
         "tenerife": "Tenerife"
       }
     },
-    "necesitas.multiLinksPage": {
-      "title": "Página multi-enlaces",
-      "subtitle": "Contenido próximamente."
+    "multiLinksPage": {
+      "heroTitle": "Página multi-enlaces",
+      "blockTitle": "Página multi-enlaces",
+      "bullets": {
+        "list1": "Una sola página que reúne todos tus enlaces importantes",
+        "list2": "Tus clientes encuentran web, redes sociales y contactos en un solo lugar",
+        "list3": "Botones directos a WhatsApp, llamada o reserva",
+        "list4": "Perfecta para Instagram, Google Maps o un código QR",
+        "list5": "Diseño profesional que inspira confianza",
+        "list6": "Se puede modificar en cualquier momento, sin complicaciones"
+      },
+      "cta": "Contáctanos",
+      "price": "200€",
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "items": {
+          "q1": "¿Qué es una página multi-enlaces?",
+          "a1": "Una página multi-enlaces es una página única que reúne todos tus enlaces importantes (sitio web, redes sociales, contacto) en un solo lugar, accesible mediante un enlace único o código QR.",
+          "q2": "¿Cómo puedo modificar el contenido?",
+          "a2": "El contenido se puede modificar en cualquier momento, sin complejidad técnica. Puedes añadir, eliminar o modificar tus enlaces fácilmente.",
+          "q3": "¿Puedo añadir botones de acción directos?",
+          "a3": "Sí, puedes añadir botones directos a WhatsApp, llamada telefónica, reserva o ruta de Google Maps.",
+          "q4": "¿La página está optimizada para móvil?",
+          "a4": "Sí, la página es completamente responsive y optimizada para todos los dispositivos (móvil, tablet, ordenador).",
+          "q5": "¿Puedo usar un código QR con esta página?",
+          "a5": "¡Por supuesto! La página multi-enlaces es perfecta para compartir mediante código QR, ya sea en tus materiales impresos, en tu establecimiento o en tus redes sociales."
+        }
+      }
     },
     "marketing": {
       "hero": {
@@ -303,34 +328,60 @@
       "hero": {
         "title": "Sitio Web"
       },
-      "corporativo": {
-        "title": "Sitio Web Corporativo",
-        "description": "Ideal para presentar tu negocio de forma clara, profesional y creíble.",
-        "cta": "Elegir este pack",
+      "corporateBlock": {
+        "title": "Sitio web corporativo",
+        "bullets": {
+          "list1": "Sitio vitrina moderno",
+          "list2": "Presentación de servicios y negocio",
+          "list3": "Página de contacto con WhatsApp",
+          "list4": "Optimización básica para Google",
+          "list5": "Diseño limpio y profesional",
+          "list6": "Mejor reputación y presencia local"
+        },
+        "closing": "Perfecto para negocios que quieren existir y ser encontrados online.",
+        "cta": "Póngase en contacto con nosotros",
+        "price": "Desde 450€",
         "faq": {
-          "q1": "¿Para qué tipo de negocio es ideal un sitio web corporativo?",
-          "a1": "Es ideal para negocios locales y empresas que quieren presentar sus servicios de forma clara, profesional y generar confianza.",
-          "q2": "¿El sitio web incluye versión móvil?",
-          "a2": "Sí. Está optimizado para móvil, tablet y ordenador.",
-          "q3": "¿Puedo mostrar mis servicios y contacto?",
-          "a3": "Sí. El sitio está pensado para explicar servicios y facilitar el contacto por WhatsApp o formulario.",
-          "q4": "¿El sitio está optimizado para Google?",
-          "a4": "Sí. Incluye una estructura SEO básica y local."
+          "items": {
+            "q1": "¿Cuánto tarda en hacerse un sitio web?",
+            "a1": "Normalmente 7 a 14 días según el contenido y número de páginas. Podemos ir más rápido si todo está listo.",
+            "q2": "¿Qué tengo que proporcionar?",
+            "a2": "Nombre del negocio, servicios, datos de contacto, algunas fotos si las tienes. Si no, podemos ayudarte.",
+            "q3": "¿Funciona en móvil?",
+            "a3": "Sí, está optimizado para móvil y carga rápido.",
+            "q4": "¿Puedo modificarlo después?",
+            "a4": "Sí, puedes pedir cambios y añadir secciones cuando quieras.",
+            "q5": "¿Ayuda para Google?",
+            "a5": "Sí, ponemos una base SEO (títulos, estructura, rendimiento) para ser mejor entendido por Google."
+          }
         }
       },
-      "tiendaOnline": {
-        "title": "Tienda Online",
-        "description": "Para vender productos o servicios directamente desde tu sitio web.",
-        "cta": "Elegir este pack",
+      "shopBlock": {
+        "title": "Tienda online",
+        "bullets": {
+          "list1": "Tienda online completa",
+          "list2": "Gestión de productos",
+          "list3": "Carrito de compra y proceso de pedido",
+          "list4": "Optimización básica para Google",
+          "list5": "Pagos online",
+          "list6": "Integración con WhatsApp"
+        },
+        "closing": "Perfecto para negocios que quieren vender sus productos online.",
+        "cta": "Póngase en contacto con nosotros",
+        "price": "Desde 950€",
         "faq": {
-          "q1": "¿Puedo vender productos y servicios desde la web?",
-          "a1": "Sí. La tienda permite vender productos físicos, digitales o servicios.",
-          "q2": "¿Incluye pagos online?",
-          "a2": "Sí. Se pueden integrar pagos online seguros según la solución elegida.",
-          "q3": "¿Puedo gestionar productos y pedidos fácilmente?",
-          "a3": "Sí. La gestión está pensada para ser simple e intuitiva.",
-          "q4": "¿La tienda es escalable?",
-          "a4": "Sí. Puedes empezar pequeño y ampliar cuando tu negocio crezca."
+          "items": {
+            "q1": "¿Cómo funcionan los pagos online?",
+            "a1": "Los pagos son seguros mediante soluciones reconocidas (Stripe, PayPal, etc.). Los clientes pueden pagar con tarjeta bancaria u otros métodos según la configuración.",
+            "q2": "¿Puedo gestionar mis productos fácilmente?",
+            "a2": "Sí, podrás añadir, modificar o eliminar productos, gestionar stocks y precios desde un panel simple.",
+            "q3": "¿Cómo funcionan las entregas?",
+            "a3": "La tienda puede configurarse para gestionar entregas. Puedes definir zonas, tarifas y plazos según tus necesidades.",
+            "q4": "¿Cuánto tarda en crearse la tienda?",
+            "a4": "Normalmente 14 a 21 días según el número de productos y funcionalidades solicitadas. Podemos acelerar si todo está listo.",
+            "q5": "¿Funciona la tienda en móvil?",
+            "a5": "Sí, está totalmente optimizada para móvil. Tus clientes pueden comprar fácilmente desde su teléfono."
+          }
         }
       },
       "faqGeneral": {

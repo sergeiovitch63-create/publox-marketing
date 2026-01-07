@@ -4,6 +4,8 @@ import Container from '@/components/Container';
 import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
+import Card from '@/components/Card';
+import MediaPlaceholder from '@/components/MediaPlaceholder';
 import AccordionFAQ from '@/components/AccordionFAQ';
 
 export default async function SitioWebPage({
@@ -14,22 +16,23 @@ export default async function SitioWebPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('pages.sitioWeb');
-  const tMarketing = await getTranslations('pages.marketing');
 
-  // Build FAQ items for Corporativo
-  const corporativoFAQ = [
-    { question: t('corporativo.faq.q1'), answer: t('corporativo.faq.a1') },
-    { question: t('corporativo.faq.q2'), answer: t('corporativo.faq.a2') },
-    { question: t('corporativo.faq.q3'), answer: t('corporativo.faq.a3') },
-    { question: t('corporativo.faq.q4'), answer: t('corporativo.faq.a4') },
+  // Build FAQ items for Corporate Block
+  const corporateFAQ = [
+    { question: t('corporateBlock.faq.items.q1'), answer: t('corporateBlock.faq.items.a1') },
+    { question: t('corporateBlock.faq.items.q2'), answer: t('corporateBlock.faq.items.a2') },
+    { question: t('corporateBlock.faq.items.q3'), answer: t('corporateBlock.faq.items.a3') },
+    { question: t('corporateBlock.faq.items.q4'), answer: t('corporateBlock.faq.items.a4') },
+    { question: t('corporateBlock.faq.items.q5'), answer: t('corporateBlock.faq.items.a5') },
   ];
 
-  // Build FAQ items for Tienda Online
-  const tiendaOnlineFAQ = [
-    { question: t('tiendaOnline.faq.q1'), answer: t('tiendaOnline.faq.a1') },
-    { question: t('tiendaOnline.faq.q2'), answer: t('tiendaOnline.faq.a2') },
-    { question: t('tiendaOnline.faq.q3'), answer: t('tiendaOnline.faq.a3') },
-    { question: t('tiendaOnline.faq.q4'), answer: t('tiendaOnline.faq.a4') },
+  // Build FAQ items for Shop Block
+  const shopFAQ = [
+    { question: t('shopBlock.faq.items.q1'), answer: t('shopBlock.faq.items.a1') },
+    { question: t('shopBlock.faq.items.q2'), answer: t('shopBlock.faq.items.a2') },
+    { question: t('shopBlock.faq.items.q3'), answer: t('shopBlock.faq.items.a3') },
+    { question: t('shopBlock.faq.items.q4'), answer: t('shopBlock.faq.items.a4') },
+    { question: t('shopBlock.faq.items.q5'), answer: t('shopBlock.faq.items.a5') },
   ];
 
   // Build general FAQ items
@@ -66,71 +69,101 @@ export default async function SitioWebPage({
         </Container>
       </section>
 
-      {/* PACKS SECTION */}
+      {/* CORPORATE BLOCK SECTION */}
       <Section className="py-20 md:py-24 lg:py-28">
         <Container>
-          {/* BLOC 1 - Sitio Web Corporativo */}
           <FadeIn>
-            <div
-              className="max-w-3xl mx-auto rounded-card p-8 md:p-12 mb-8 shadow-soft hover:shadow-soft-lg transition-shadow"
-              style={{ backgroundColor: '#BBCDDE' }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary text-center">
-                {t('corporativo.title')}
-              </h2>
-              <p className="text-text-secondary text-lg mb-8 text-center">
-                {t('corporativo.description')}
-              </p>
-              <div className="flex justify-center mb-8">
-                <Button
-                  href={`/${locale}/sitio-web/corporativo`}
-                  variant="primary"
-                  className="w-full md:w-auto"
-                >
-                  {t('corporativo.cta')}
-                </Button>
+            <Card className="max-w-5xl mx-auto p-8 md:p-12 mb-8 hover:shadow-soft-lg transition-shadow">
+              {/* Media Placeholder */}
+              <div className="mb-8">
+                <MediaPlaceholder ratio="16:9" rounded />
               </div>
-            </div>
-            {/* Mini FAQ Corporativo */}
-            <div className="max-w-3xl mx-auto mb-16">
-              <AccordionFAQ items={corporativoFAQ} />
-            </div>
+
+              {/* Title */}
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary">
+                {t('corporateBlock.title')}
+              </h2>
+
+              {/* Bullets */}
+              <ul className="list-disc list-inside space-y-3 mb-6 text-text-secondary text-lg">
+                <li>{t('corporateBlock.bullets.list1')}</li>
+                <li>{t('corporateBlock.bullets.list2')}</li>
+                <li>{t('corporateBlock.bullets.list3')}</li>
+                <li>{t('corporateBlock.bullets.list4')}</li>
+                <li>{t('corporateBlock.bullets.list5')}</li>
+                <li>{t('corporateBlock.bullets.list6')}</li>
+              </ul>
+
+              {/* Closing Text */}
+              <p className="text-text-secondary text-lg mb-8 text-left">
+                {t('corporateBlock.closing')}
+              </p>
+
+              {/* CTA + Price */}
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <Button href={`/${locale}/contacto`} variant="primary" className="w-full sm:w-auto">
+                  {t('corporateBlock.cta')}
+                </Button>
+                <div className="text-right">
+                  <p className="text-2xl md:text-3xl font-bold text-text-primary">
+                    {t('corporateBlock.price')}
+                  </p>
+                </div>
+              </div>
+            </Card>
           </FadeIn>
 
-          {/* SEPARATOR */}
-          <div className="text-center mb-16">
-            <p className="text-text-secondary opacity-30 text-lg">
-              {tMarketing('separator')}
-            </p>
+          {/* Corporate Block FAQ */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <AccordionFAQ items={corporateFAQ} />
           </div>
 
-          {/* BLOC 2 - Tienda Online */}
+          {/* SHOP BLOCK SECTION */}
           <FadeIn>
-            <div
-              className="max-w-3xl mx-auto rounded-card p-8 md:p-12 mb-8 shadow-soft hover:shadow-soft-lg transition-shadow"
-              style={{ backgroundColor: '#BBCDDE' }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary text-center">
-                {t('tiendaOnline.title')}
-              </h2>
-              <p className="text-text-secondary text-lg mb-8 text-center">
-                {t('tiendaOnline.description')}
-              </p>
-              <div className="flex justify-center mb-8">
-                <Button
-                  href={`/${locale}/sitio-web/tienda-online`}
-                  variant="primary"
-                  className="w-full md:w-auto"
-                >
-                  {t('tiendaOnline.cta')}
-                </Button>
+            <Card className="max-w-5xl mx-auto p-8 md:p-12 mb-8 hover:shadow-soft-lg transition-shadow">
+              {/* Media Placeholder */}
+              <div className="mb-8">
+                <MediaPlaceholder ratio="16:9" rounded />
               </div>
-            </div>
-            {/* Mini FAQ Tienda Online */}
-            <div className="max-w-3xl mx-auto mb-16">
-              <AccordionFAQ items={tiendaOnlineFAQ} />
-            </div>
+
+              {/* Title */}
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary">
+                {t('shopBlock.title')}
+              </h2>
+
+              {/* Bullets */}
+              <ul className="list-disc list-inside space-y-3 mb-6 text-text-secondary text-lg">
+                <li>{t('shopBlock.bullets.list1')}</li>
+                <li>{t('shopBlock.bullets.list2')}</li>
+                <li>{t('shopBlock.bullets.list3')}</li>
+                <li>{t('shopBlock.bullets.list4')}</li>
+                <li>{t('shopBlock.bullets.list5')}</li>
+                <li>{t('shopBlock.bullets.list6')}</li>
+              </ul>
+
+              {/* Closing Text */}
+              <p className="text-text-secondary text-lg mb-8 text-left">
+                {t('shopBlock.closing')}
+              </p>
+
+              {/* CTA + Price */}
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <Button href={`/${locale}/contacto`} variant="primary" className="w-full sm:w-auto">
+                  {t('shopBlock.cta')}
+                </Button>
+                <div className="text-right">
+                  <p className="text-2xl md:text-3xl font-bold text-text-primary">
+                    {t('shopBlock.price')}
+                  </p>
+                </div>
+              </div>
+            </Card>
           </FadeIn>
+
+          {/* Shop Block FAQ */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <AccordionFAQ items={shopFAQ} />
+          </div>
         </Container>
       </Section>
 

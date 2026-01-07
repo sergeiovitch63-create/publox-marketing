@@ -172,9 +172,34 @@
         "tenerife": "Tenerife"
       }
     },
-    "necesitas.multiLinksPage": {
-      "title": "Page multi-liens",
-      "subtitle": "Contenu à venir."
+    "multiLinksPage": {
+      "heroTitle": "Page multi-liens",
+      "blockTitle": "Page multi-liens",
+      "bullets": {
+        "list1": "Une seule page qui regroupe tous vos liens importants",
+        "list2": "Vos clients trouvent site, réseaux sociaux et contacts au même endroit",
+        "list3": "Boutons directs vers WhatsApp, appel ou réservation",
+        "list4": "Parfait pour Instagram, Google Maps ou QR code",
+        "list5": "Design professionnel qui inspire confiance",
+        "list6": "Modifiable à tout moment, sans complexité"
+      },
+      "cta": "Nous contacter",
+      "price": "200€",
+      "faq": {
+        "title": "Questions fréquentes",
+        "items": {
+          "q1": "Qu'est-ce qu'une page multi-liens ?",
+          "a1": "Une page multi-liens est une page unique qui regroupe tous vos liens importants (site web, réseaux sociaux, contact) en un seul endroit, accessible via un lien unique ou un QR code.",
+          "q2": "Comment puis-je modifier le contenu ?",
+          "a2": "Le contenu est modifiable à tout moment, sans complexité technique. Vous pouvez ajouter, supprimer ou modifier vos liens facilement.",
+          "q3": "Puis-je ajouter des boutons d'action directs ?",
+          "a3": "Oui, vous pouvez ajouter des boutons directs vers WhatsApp, appel téléphonique, réservation, ou itinéraire Google Maps.",
+          "q4": "La page est-elle optimisée pour mobile ?",
+          "a4": "Oui, la page est entièrement responsive et optimisée pour tous les appareils (mobile, tablette, ordinateur).",
+          "q5": "Puis-je utiliser un QR code avec cette page ?",
+          "a5": "Absolument ! La page multi-liens est parfaite pour être partagée via QR code, que ce soit sur vos supports imprimés, dans votre établissement ou sur vos réseaux sociaux."
+        }
+      }
     },
     "marketing": {
       "hero": {
@@ -303,34 +328,60 @@
       "hero": {
         "title": "Site Web"
       },
-      "corporativo": {
-        "title": "Site Web Corporatif",
-        "description": "Idéal pour présenter votre entreprise de manière claire, professionnelle et crédible.",
-        "cta": "Choisir ce pack",
+      "corporateBlock": {
+        "title": "Site web corporatif",
+        "bullets": {
+          "list1": "Site vitrine moderne",
+          "list2": "Présentation des services et de l'activité",
+          "list3": "Page de contact avec WhatsApp",
+          "list4": "Optimisation de base pour Google",
+          "list5": "Design épuré et professionnel",
+          "list6": "Renforcement de la réputation et présence locale"
+        },
+        "closing": "Parfait pour les entreprises qui veulent exister et être trouvées en ligne.",
+        "cta": "Contactez-nous",
+        "price": "À partir de 450€",
         "faq": {
-          "q1": "Pour quel type d'entreprise un site web corporatif est-il idéal ?",
-          "a1": "Il est idéal pour les entreprises locales et les sociétés qui veulent présenter leurs services de manière claire, professionnelle et générer la confiance.",
-          "q2": "Le site web inclut-il une version mobile ?",
-          "a2": "Oui. Il est optimisé pour mobile, tablette et ordinateur.",
-          "q3": "Puis-je afficher mes services et contact ?",
-          "a3": "Oui. Le site est conçu pour expliquer les services et faciliter le contact via WhatsApp ou formulaire.",
-          "q4": "Le site est-il optimisé pour Google ?",
-          "a4": "Oui. Il inclut une structure SEO de base et locale."
+          "items": {
+            "q1": "Combien de temps pour créer un site ?",
+            "a1": "En général 7 à 14 jours selon le contenu et le nombre de pages. On peut aller plus vite si tout est prêt.",
+            "q2": "Je dois fournir quoi ?",
+            "a2": "Nom de l'entreprise, services, coordonnées, quelques photos si vous en avez. Sinon on peut vous aider.",
+            "q3": "Le site sera-t-il sur téléphone ?",
+            "a3": "Oui, il est optimisé mobile et rapide à charger.",
+            "q4": "Est-ce que je peux modifier plus tard ?",
+            "a4": "Oui, vous pourrez demander des modifications et ajouter des sections quand vous voulez.",
+            "q5": "Le site aide pour Google ?",
+            "a5": "Oui, on met une base SEO (titres, structure, performance) pour être mieux compris par Google."
+          }
         }
       },
-      "tiendaOnline": {
-        "title": "Boutique en Ligne",
-        "description": "Pour vendre des produits ou services directement depuis votre site web.",
-        "cta": "Choisir ce pack",
+      "shopBlock": {
+        "title": "Boutique en ligne",
+        "bullets": {
+          "list1": "Boutique en ligne complète",
+          "list2": "Gestion des produits",
+          "list3": "Panier d'achat et processus de commande",
+          "list4": "Optimisation de base pour Google",
+          "list5": "Paiements en ligne",
+          "list6": "Intégration avec WhatsApp"
+        },
+        "closing": "Parfait pour les entreprises qui veulent vendre leurs produits en ligne.",
+        "cta": "Contactez-nous",
+        "price": "À partir de 950€",
         "faq": {
-          "q1": "Puis-je vendre des produits et services depuis le web ?",
-          "a1": "Oui. La boutique permet de vendre des produits physiques, numériques ou services.",
-          "q2": "Inclut-il les paiements en ligne ?",
-          "a2": "Oui. Des paiements en ligne sécurisés peuvent être intégrés selon la solution choisie.",
-          "q3": "Puis-je gérer les produits et commandes facilement ?",
-          "a3": "Oui. La gestion est conçue pour être simple et intuitive.",
-          "q4": "La boutique est-elle évolutive ?",
-          "a4": "Oui. Vous pouvez commencer petit et agrandir quand votre entreprise grandit."
+          "items": {
+            "q1": "Comment fonctionnent les paiements en ligne ?",
+            "a1": "Les paiements sont sécurisés via des solutions reconnues (Stripe, PayPal, etc.). Les clients peuvent payer par carte bancaire ou autres méthodes selon la configuration.",
+            "q2": "Puis-je gérer mes produits facilement ?",
+            "a2": "Oui, vous pourrez ajouter, modifier ou supprimer des produits, gérer les stocks et les prix depuis un tableau de bord simple.",
+            "q3": "Comment se passent les livraisons ?",
+            "a3": "La boutique peut être configurée pour gérer les livraisons. Vous pouvez définir les zones, les tarifs et les délais selon vos besoins.",
+            "q4": "Combien de temps pour créer la boutique ?",
+            "a4": "En général 14 à 21 jours selon le nombre de produits et les fonctionnalités demandées. On peut accélérer si tout est prêt.",
+            "q5": "La boutique fonctionne-t-elle sur mobile ?",
+            "a5": "Oui, elle est entièrement optimisée pour mobile. Vos clients peuvent acheter facilement depuis leur téléphone."
+          }
         }
       },
       "faqGeneral": {

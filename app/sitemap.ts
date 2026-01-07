@@ -19,8 +19,6 @@ const routes = [
   'marketing/automatizacion-adquisicion-branding',
   // Sitio Web
   'sitio-web',
-  'sitio-web/corporativo',
-  'sitio-web/tienda-online',
   // Impresión
   'impresion',
   'impresion/tarjetas-visita',

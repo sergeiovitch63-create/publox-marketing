@@ -172,9 +172,34 @@
         "tenerife": "Tenerife"
       }
     },
-    "necesitas.multiLinksPage": {
-      "title": "Multi-link page",
-      "subtitle": "Content coming soon."
+    "multiLinksPage": {
+      "heroTitle": "Multi-link page",
+      "blockTitle": "Multi-link page",
+      "bullets": {
+        "list1": "One single page that keeps all your important links together",
+        "list2": "Your clients find your website, social media and contacts in one place",
+        "list3": "Direct buttons to WhatsApp, call or booking",
+        "list4": "Perfect for Instagram, Google Maps or a QR code",
+        "list5": "Professional design that builds trust",
+        "list6": "Editable at any time, without complexity"
+      },
+      "cta": "Contact us",
+      "price": "200€",
+      "faq": {
+        "title": "Frequently asked questions",
+        "items": {
+          "q1": "What is a multi-link page?",
+          "a1": "A multi-link page is a single page that groups all your important links (website, social media, contact) in one place, accessible via a single link or QR code.",
+          "q2": "How can I modify the content?",
+          "a2": "The content can be modified at any time, without technical complexity. You can easily add, remove or modify your links.",
+          "q3": "Can I add direct action buttons?",
+          "a3": "Yes, you can add direct buttons to WhatsApp, phone call, booking, or Google Maps directions.",
+          "q4": "Is the page optimized for mobile?",
+          "a4": "Yes, the page is fully responsive and optimized for all devices (mobile, tablet, computer).",
+          "q5": "Can I use a QR code with this page?",
+          "a5": "Absolutely! The multi-link page is perfect for sharing via QR code, whether on your printed materials, in your establishment or on your social networks."
+        }
+      }
     },
     "marketing": {
       "hero": {
@@ -303,34 +328,60 @@
       "hero": {
         "title": "Website"
       },
-      "corporativo": {
-        "title": "Corporate Website",
-        "description": "Ideal for presenting your business clearly, professionally and credibly.",
-        "cta": "Choose this pack",
+      "corporateBlock": {
+        "title": "Corporate website",
+        "bullets": {
+          "list1": "Modern showcase website",
+          "list2": "Services & business presentation",
+          "list3": "Contact page with WhatsApp",
+          "list4": "Basic Google optimization",
+          "list5": "Clean, professional design",
+          "list6": "Stronger reputation & local presence"
+        },
+        "closing": "Perfect for businesses that want to exist and be found online.",
+        "cta": "Get in touch with us",
+        "price": "From 450€",
         "faq": {
-          "q1": "What type of business is a corporate website ideal for?",
-          "a1": "It is ideal for local businesses and companies that want to present their services clearly, professionally and generate trust.",
-          "q2": "Does the website include a mobile version?",
-          "a2": "Yes. It is optimized for mobile, tablet and computer.",
-          "q3": "Can I show my services and contact?",
-          "a3": "Yes. The site is designed to explain services and facilitate contact via WhatsApp or form.",
-          "q4": "Is the site optimized for Google?",
-          "a4": "Yes. It includes a basic and local SEO structure."
+          "items": {
+            "q1": "How long does it take to build a website?",
+            "a1": "Usually 7–14 days depending on content and number of pages. We can go faster if everything is ready.",
+            "q2": "What do I need to provide?",
+            "a2": "Business name, services, contact details, a few photos if you have them. Otherwise we can help you.",
+            "q3": "Will it work on mobile?",
+            "a3": "Yes, it's mobile-optimized and fast to load.",
+            "q4": "Can I update it later?",
+            "a4": "Yes, you can request changes and add sections whenever you want.",
+            "q5": "Does it help with Google?",
+            "a5": "Yes, we set up basic SEO (titles, structure, performance) to be better understood by Google."
+          }
         }
       },
-      "tiendaOnline": {
-        "title": "Online Store",
-        "description": "To sell products or services directly from your website.",
-        "cta": "Choose this pack",
+      "shopBlock": {
+        "title": "Online store",
+        "bullets": {
+          "list1": "Complete online store",
+          "list2": "Product management",
+          "list3": "Shopping cart and checkout process",
+          "list4": "Basic Google optimization",
+          "list5": "Online payments",
+          "list6": "WhatsApp integration"
+        },
+        "closing": "Perfect for businesses that want to sell their products online.",
+        "cta": "Get in touch with us",
+        "price": "From 950€",
         "faq": {
-          "q1": "Can I sell products and services from the web?",
-          "a1": "Yes. The store allows selling physical products, digital products or services.",
-          "q2": "Does it include online payments?",
-          "a2": "Yes. Secure online payments can be integrated according to the chosen solution.",
-          "q3": "Can I manage products and orders easily?",
-          "a3": "Yes. Management is designed to be simple and intuitive.",
-          "q4": "Is the store scalable?",
-          "a4": "Yes. You can start small and expand when your business grows."
+          "items": {
+            "q1": "How do online payments work?",
+            "a1": "Payments are secured through recognized solutions (Stripe, PayPal, etc.). Customers can pay by credit card or other methods depending on the configuration.",
+            "q2": "Can I manage my products easily?",
+            "a2": "Yes, you'll be able to add, modify or delete products, manage stock and prices from a simple dashboard.",
+            "q3": "How do deliveries work?",
+            "a3": "The store can be configured to manage deliveries. You can define zones, rates and deadlines according to your needs.",
+            "q4": "How long does it take to create the store?",
+            "a4": "Usually 14 to 21 days depending on the number of products and requested features. We can speed up if everything is ready.",
+            "q5": "Does the store work on mobile?",
+            "a5": "Yes, it's fully optimized for mobile. Your customers can easily shop from their phone."
+          }
         }
       },
       "faqGeneral": {
