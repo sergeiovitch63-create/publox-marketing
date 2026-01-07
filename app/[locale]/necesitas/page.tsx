@@ -72,7 +72,54 @@ export default async function NecesitasPage({
             </p>
           </div>
 
-          {/* BLOC #2 - Marketing */}
+          {/* BLOC #2 - Site Web */}
+          <FadeIn>
+            <div
+              className="max-w-3xl mx-auto rounded-card p-8 md:p-12 mb-16 shadow-soft hover:shadow-soft-lg transition-shadow"
+              style={{ backgroundColor: '#F2E6A5' }}
+            >
+              <div className="mb-8">
+                <VideoPlaceholder
+                  src="/media/videos/Sitio-web.mp4"
+                  ratio="16:9"
+                  rounded
+                />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary">
+                {t('sitioWeb.title')}
+              </h2>
+              {t('sitioWeb.intro') && (
+                <p className="text-text-secondary text-lg mb-6 text-left">
+                  {t('sitioWeb.intro')}
+                </p>
+              )}
+              <ul className="list-disc list-inside space-y-3 mb-6 text-text-secondary text-lg">
+                <li>{t('sitioWeb.list1')}</li>
+                <li>{t('sitioWeb.list2')}</li>
+                <li>{t('sitioWeb.list3')}</li>
+                <li>{t('sitioWeb.list4')}</li>
+                <li>{t('sitioWeb.list5')}</li>
+                <li>{t('sitioWeb.list6')}</li>
+              </ul>
+              <p className="text-text-secondary text-lg mb-8 text-left">
+                {t('sitioWeb.conclusion')}
+              </p>
+              <div className="flex justify-center">
+                <Button href={`/${locale}/sitio-web`} variant="primary" className="w-full md:w-auto">
+                  {t('sitioWeb.cta')}
+                </Button>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* SEPARATOR */}
+          <div className="text-center mb-16">
+            <p className="text-text-secondary opacity-30 text-lg">
+              {t('separator')}
+            </p>
+          </div>
+
+          {/* BLOC #3 - Marketing & Acquisition de Clients */}
           <FadeIn>
             <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
               <div className="mb-8">
@@ -114,51 +161,6 @@ export default async function NecesitasPage({
             </p>
           </div>
 
-          {/* BLOC #3 - Captación (Acquisition) */}
-          <FadeIn>
-            <div
-              className="max-w-3xl mx-auto rounded-card p-8 md:p-12 mb-16 shadow-soft hover:shadow-soft-lg transition-shadow"
-              style={{ backgroundColor: '#F2E6A5' }}
-            >
-              <div className="mb-8">
-                <VideoPlaceholder
-                  src="/media/videos/Sitio-web.mp4"
-                  ratio="16:9"
-                  rounded
-                />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-text-primary">
-                {t('sitioWeb.title')}
-              </h2>
-              <p className="text-text-secondary text-lg mb-6 text-left">
-                {t('sitioWeb.intro')}
-              </p>
-              <ul className="list-disc list-inside space-y-3 mb-6 text-text-secondary text-lg">
-                <li>{t('sitioWeb.list1')}</li>
-                <li>{t('sitioWeb.list2')}</li>
-                <li>{t('sitioWeb.list3')}</li>
-                <li>{t('sitioWeb.list4')}</li>
-                <li>{t('sitioWeb.list5')}</li>
-                <li>{t('sitioWeb.list6')}</li>
-              </ul>
-              <p className="text-text-secondary text-lg mb-8 text-left">
-                {t('sitioWeb.conclusion')}
-              </p>
-              <div className="flex justify-center">
-                <Button href={`/${locale}/sitio-web`} variant="primary" className="w-full md:w-auto">
-                  {t('sitioWeb.cta')}
-                </Button>
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* SEPARATOR */}
-          <div className="text-center mb-16">
-            <p className="text-text-secondary opacity-30 text-lg">
-              {t('separator')}
-            </p>
-          </div>
-
           {/* BLOC #4 - Impresión */}
           <FadeIn>
             <div
@@ -188,7 +190,6 @@ export default async function NecesitasPage({
                 <li>{t('impresion.list3')}</li>
                 <li>{t('impresion.list4')}</li>
                 <li>{t('impresion.list5')}</li>
-                <li>{t('impresion.list6')}</li>
               </ul>
               <p className="text-text-secondary text-lg mb-8 text-left">
                 {t('impresion.conclusion')}
