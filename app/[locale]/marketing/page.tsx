@@ -6,6 +6,7 @@ import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import MediaPlaceholder from '@/components/MediaPlaceholder';
+import VideoPlaceholder from '@/components/VideoPlaceholder';
 import BackButton from '@/components/BackButton';
 
 export default async function MarketingPage({
@@ -46,9 +47,13 @@ export default async function MarketingPage({
           {/* BLOCK #1 - Block Marketing */}
           <FadeIn>
             <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
-              {/* Media Placeholder */}
+              {/* Video */}
               <div className="mb-8">
-                <MediaPlaceholder ratio="16:9" rounded />
+                <VideoPlaceholder
+                  src="/media/videos/Pack Automatización-Adquisicion-Branding.mp4"
+                  ratio="16:9"
+                  rounded
+                />
               </div>
 
               {/* Title */}
@@ -88,9 +93,13 @@ export default async function MarketingPage({
           {/* BLOCK #2 - Gestion publicitaire */}
           <FadeIn>
             <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
-              {/* Media Placeholder */}
+              {/* Video */}
               <div className="mb-8">
-                <MediaPlaceholder ratio="16:9" rounded />
+                <VideoPlaceholder
+                  src="/media/videos/adevertising.mp4"
+                  ratio="16:9"
+                  rounded
+                />
               </div>
 
               {/* Title */}

@@ -5,7 +5,7 @@ import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
-import MediaPlaceholder from '@/components/MediaPlaceholder';
+import VideoPlaceholder from '@/components/VideoPlaceholder';
 import AccordionFAQ from '@/components/AccordionFAQ';
 import BackButton from '@/components/BackButton';
 
@@ -78,9 +78,13 @@ export default async function SitioWebPage({
         <Container>
           <FadeIn>
             <Card className="max-w-5xl mx-auto p-8 md:p-12 mb-8 hover:shadow-soft-lg transition-shadow">
-              {/* Media Placeholder */}
+              {/* Video */}
               <div className="mb-8">
-                <MediaPlaceholder ratio="16:9" rounded />
+                <VideoPlaceholder
+                  src="/media/videos/Sitio-web-corporativo.mp4"
+                  ratio="16:9"
+                  rounded
+                />
               </div>
 
               {/* Title */}
@@ -125,9 +129,13 @@ export default async function SitioWebPage({
           {/* SHOP BLOCK SECTION */}
           <FadeIn>
             <Card className="max-w-5xl mx-auto p-8 md:p-12 mb-8 hover:shadow-soft-lg transition-shadow">
-              {/* Media Placeholder */}
+              {/* Video */}
               <div className="mb-8">
-                <MediaPlaceholder ratio="16:9" rounded />
+                <VideoPlaceholder
+                  src="/media/videos/Tienda-online.mp4"
+                  ratio="16:9"
+                  rounded
+                />
               </div>
 
               {/* Title */}
