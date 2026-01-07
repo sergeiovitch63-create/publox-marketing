@@ -121,6 +121,16 @@
       "hero": {
         "title": "De quoi avez-vous besoin pour faire croître votre entreprise ?"
       },
+      "multiLinks": {
+        "title": "Page multi-liens",
+        "list1": "Une seule page qui regroupe tous vos liens importants",
+        "list2": "Vos clients trouvent site, réseaux sociaux et contacts au même endroit",
+        "list3": "Boutons directs vers WhatsApp, appel ou réservation",
+        "list4": "Parfait pour Instagram, Google Maps ou QR code",
+        "list5": "Design professionnel qui inspire confiance",
+        "list6": "Modifiable à tout moment, sans complexité",
+        "cta": "Choisir cette option"
+      },
       "marketing": {
         "title": "Marketing & Acquisition de Clients",
         "intro": "Nous mettons en place des stratégies complètes d'acquisition de clients, adaptées aux entreprises locales :",
@@ -161,6 +171,10 @@
       "badge": {
         "tenerife": "Tenerife"
       }
+    },
+    "necesitas.multiLinksPage": {
+      "title": "Page multi-liens",
+      "subtitle": "Contenu à venir."
     },
     "marketing": {
       "hero": {

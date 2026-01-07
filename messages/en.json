@@ -121,6 +121,16 @@
       "hero": {
         "title": "What do you need to grow your business?"
       },
+      "multiLinks": {
+        "title": "Multi-link page",
+        "list1": "One single page that keeps all your important links together",
+        "list2": "Your clients find your website, social media and contacts in one place",
+        "list3": "Direct buttons to WhatsApp, call or booking",
+        "list4": "Perfect for Instagram, Google Maps or a QR code",
+        "list5": "Professional design that builds trust",
+        "list6": "Editable at any time, without complexity",
+        "cta": "Choose this option"
+      },
       "marketing": {
         "title": "Marketing & Customer Acquisition",
         "intro": "We implement complete customer acquisition strategies, adapted to local businesses:",
@@ -161,6 +171,10 @@
       "badge": {
         "tenerife": "Tenerife"
       }
+    },
+    "necesitas.multiLinksPage": {
+      "title": "Multi-link page",
+      "subtitle": "Content coming soon."
     },
     "marketing": {
       "hero": {
