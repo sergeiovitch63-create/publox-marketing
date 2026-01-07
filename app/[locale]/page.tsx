@@ -9,6 +9,7 @@ import Button from '@/components/Button';
 import Card from '@/components/Card';
 import HeroMedia from '@/components/HeroMedia';
 import VideoPlaceholder from '@/components/VideoPlaceholder';
+import PartnerCarousel from '@/components/PartnerCarousel';
 
 export default async function HomePage({
   params,
@@ -344,67 +345,43 @@ export default async function HomePage({
               </p>
             </FadeIn>
 
-            {/* Partners Grid */}
+            {/* Partners Carousel */}
             <FadeIn delay={0.1}>
-              <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-                {/* PUBLOX */}
-                <Link href={`/${locale}`} className="flex flex-col items-center group cursor-pointer">
-                  <Card className="p-4 aspect-square w-[140px] md:w-[160px] flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-                    <div className="w-full h-full rounded-xl bg-warm-beige border border-warm-beige/30 flex items-center justify-center overflow-hidden">
-                      <Image
-                        src="/media/images/logo-hero.png"
-                        alt="PUBLOX"
-                        width={120}
-                        height={120}
-                        className="w-auto h-auto max-w-[80%] max-h-[80%] object-contain"
-                      />
-                    </div>
-                  </Card>
-                  <span className="mt-3 text-sm font-medium text-text-secondary text-center">PUBLOX</span>
-                </Link>
-
-                {/* TENERIFE ACTIVITY */}
-                <a
-                  href="https://wa.me/34614891153"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center group cursor-pointer"
-                >
-                  <Card className="p-4 aspect-square w-[140px] md:w-[160px] flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-                    <div className="w-full h-full rounded-xl bg-warm-beige border border-warm-beige/30 flex items-center justify-center overflow-hidden">
-                      <Image
-                        src="/media/images/tenerife-activity.png"
-                        alt="TENERIFE ACTIVITY"
-                        width={120}
-                        height={120}
-                        className="w-auto h-auto max-w-[80%] max-h-[80%] object-contain"
-                      />
-                    </div>
-                  </Card>
-                  <span className="mt-3 text-sm font-medium text-text-secondary text-center">TENERIFE ACTIVITY</span>
-                </a>
-
-                {/* MARINA MASAJE */}
-                <a
-                  href="https://wa.me/34614202296"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center group cursor-pointer"
-                >
-                  <Card className="p-4 aspect-square w-[140px] md:w-[160px] flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-                    <div className="w-full h-full rounded-xl bg-warm-beige border border-warm-beige/30 flex items-center justify-center overflow-hidden">
-                      <Image
-                        src="/media/images/marina-masaje.png"
-                        alt="MARINA MASAJE"
-                        width={120}
-                        height={120}
-                        className="w-auto h-auto max-w-[80%] max-h-[80%] object-contain"
-                      />
-                    </div>
-                  </Card>
-                  <span className="mt-3 text-sm font-medium text-text-secondary text-center">MARINA MASAJE</span>
-                </a>
-              </div>
+              <PartnerCarousel
+                locale={locale}
+                partners={[
+                  {
+                    name: 'PUBLOX',
+                    image: '/media/images/logo-hero.png',
+                    whatsappLink: null,
+                    homeLink: `/${locale}`,
+                  },
+                  {
+                    name: 'TENERIFE ACTIVITY',
+                    image: '/media/images/tenerife-activity.png',
+                    whatsappLink: 'https://wa.me/34614891153',
+                    homeLink: null,
+                  },
+                  {
+                    name: 'MARINA MASAJE',
+                    image: '/media/images/marina-masaje.png',
+                    whatsappLink: 'https://wa.me/34614202296',
+                    homeLink: null,
+                  },
+                  {
+                    name: 'CAFÉ CON ARTE',
+                    image: '/media/images/cafe-con-arte.png',
+                    whatsappLink: 'https://wa.me/34642053214',
+                    homeLink: null,
+                  },
+                  {
+                    name: 'AUTO DETAILING',
+                    image: '/media/images/auto-detailing.png',
+                    whatsappLink: 'https://wa.me/34614397963',
+                    homeLink: null,
+                  },
+                ]}
+              />
             </FadeIn>
           </div>
         </Container>
