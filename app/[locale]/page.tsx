@@ -84,7 +84,12 @@ export default async function HomePage({
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-              {/* Left: Media Grid 2x2 */}
+              {/* Title - Mobile: order-1, Desktop: inside text block */}
+              <h2 className="text-3xl md:text-4xl font-bold text-text-primary order-1 md:order-none md:hidden">
+                {t('promocionDelMes.mainTitle')}
+              </h2>
+
+              {/* Left: Media Grid 2x2 - Mobile: order-2 (after title), Desktop: order-1 (left) */}
               <div className="order-2 md:order-1">
                 <div className="grid grid-cols-2 gap-3 md:gap-4">
                   <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
@@ -126,9 +131,10 @@ export default async function HomePage({
                 </div>
               </div>
 
-              {/* Right: Text Content + Price + CTA */}
-              <div className="order-1 md:order-2 space-y-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
+              {/* Right: Text Content + Price + CTA - Mobile: order-3 (after images), Desktop: order-2 (right) */}
+              <div className="order-3 md:order-2 space-y-6">
+                {/* Title - Desktop only */}
+                <h2 className="hidden md:block text-3xl md:text-4xl font-bold text-text-primary">
                   {t('promocionDelMes.mainTitle')}
                 </h2>
                 <p className="text-lg text-text-secondary">
