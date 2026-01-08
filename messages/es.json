@@ -279,7 +279,8 @@
           "list3": "Carrito de compra y proceso de pedido",
           "list4": "Optimización básica para Google",
           "list5": "Pagos online",
-          "list6": "Integración con WhatsApp"
+          "list6": "Integración con WhatsApp",
+          "list7": "Módulo de reserva"
         },
         "closing": "Perfecto para negocios que quieren vender sus productos online.",
         "cta": "Póngase en contacto con nosotros",
@@ -307,7 +308,7 @@
           "q2": "¿Necesito tener textos e imágenes preparados?",
           "a2": "No. Se puede estructurar primero y añadir contenidos después.",
           "q3": "¿El sitio será multilingüe?",
-          "a3": "Sí. Español (por defecto), inglés, francés, italiano y ruso.",
+          "a3": "Sí.",
           "q4": "¿Puedo conectar el sitio con WhatsApp?",
           "a4": "Sí. El sitio puede redirigir directamente a WhatsApp.",
           "q5": "¿Puedo usar el sitio para publicidad?",
@@ -384,7 +385,6 @@
       "block2": {
         "title": "Flyers Promocionales (Doble Cara) A5",
         "bullets": [
-          "Diseño gráfico incluido",
           "Flyer doble cara",
           "Formato promocional",
           "Opción QR integrada"

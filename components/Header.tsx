@@ -55,7 +55,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white shadow-soft sticky top-0 z-50">
+      <header id="site-header" className="bg-white shadow-soft sticky top-0 z-50">
         <Container>
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}

@@ -21,6 +21,7 @@ export default async function ImpresionTarjetasPage({
       contactHref={`/${locale}/contacto`}
       imageRatio="16:9"
       videoSrc="/media/videos/Tarjetas-de-Visita-Profesionales.mp4"
+      backButtonHref={`/${locale}/impresion`}
     />
   );
 }

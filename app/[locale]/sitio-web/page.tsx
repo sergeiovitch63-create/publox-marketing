@@ -55,7 +55,7 @@ export default async function SitioWebPage({
       {/* HERO SECTION */}
       <section className="relative min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-pastel-blue via-blue-grey to-soft-beige pt-20">
         {/* Back Button */}
-        <BackButton fallbackHref={`/${locale}/necesitas`} absolute />
+        <BackButton fallbackHref={`/${locale}/necesitas`} />
 
         {/* Cloud blobs */}
         <div className="absolute top-20 left-10 w-64 h-64 bg-white/30 rounded-full blur-3xl opacity-60" />
@@ -151,6 +151,7 @@ export default async function SitioWebPage({
                 <li>{t('shopBlock.bullets.list4')}</li>
                 <li>{t('shopBlock.bullets.list5')}</li>
                 <li>{t('shopBlock.bullets.list6')}</li>
+                <li>{t('shopBlock.bullets.list7')}</li>
               </ul>
 
               {/* Closing Text */}

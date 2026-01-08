@@ -20,7 +20,7 @@ export default async function ContactoPage({
     <>
       <Section bgColor="soft-beige" className="py-20 md:py-24 lg:py-28 relative">
         {/* Back Button */}
-        <BackButton fallbackHref={`/${locale}`} absolute className="top-4 left-4" />
+        <BackButton fallbackHref={`/${locale}`} />
         <Container>
           <div className="text-center mb-12">
           <FadeIn>

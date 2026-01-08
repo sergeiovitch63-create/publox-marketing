@@ -279,7 +279,8 @@
           "list3": "Shopping cart and checkout process",
           "list4": "Basic Google optimization",
           "list5": "Online payments",
-          "list6": "WhatsApp integration"
+          "list6": "WhatsApp integration",
+          "list7": "Booking module"
         },
         "closing": "Perfect for businesses that want to sell their products online.",
         "cta": "Get in touch with us",
@@ -307,7 +308,7 @@
           "q2": "Do I need to have texts and images prepared?",
           "a2": "No. It can be structured first and content added later.",
           "q3": "Will the site be multilingual?",
-          "a3": "Yes. Spanish (default), English, French, Italian and Russian.",
+          "a3": "Yes.",
           "q4": "Can I connect the site with WhatsApp?",
           "a4": "Yes. The site can redirect directly to WhatsApp.",
           "q5": "Can I use the site for advertising?",
@@ -384,7 +385,6 @@
       "block2": {
         "title": "Promotional Flyers (Double Sided) A5",
         "bullets": [
-          "Graphic design included",
           "Double sided flyer",
           "Promotional format",
           "Integrated QR option"

@@ -5,6 +5,7 @@ import Card from './Card';
 import Button from './Button';
 import MediaPlaceholder from './MediaPlaceholder';
 import VideoPlaceholder from './VideoPlaceholder';
+import BackButton from './BackButton';
 
 interface BlueAction {
   label: string;
@@ -21,6 +22,7 @@ interface PrintProductDetailPageProps {
   contactHref: string;
   imageRatio?: '16:9' | '4:3' | '1:1' | '3:2' | '3:4';
   videoSrc?: string;
+  backButtonHref?: string;
 }
 
 export default function PrintProductDetailPage({
@@ -33,11 +35,17 @@ export default function PrintProductDetailPage({
   contactHref,
   imageRatio = '16:9',
   videoSrc,
+  backButtonHref,
 }: PrintProductDetailPageProps) {
   return (
     <>
       {/* HERO SECTION */}
       <section className="relative min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-pastel-blue via-blue-grey to-soft-beige pt-20">
+        {/* Back Button */}
+        {backButtonHref && (
+          <BackButton directHref={backButtonHref} />
+        )}
+
         {/* Cloud blobs */}
         <div className="absolute top-20 left-10 w-64 h-64 bg-white/30 rounded-full blur-3xl opacity-60" />
         <div className="absolute top-40 right-20 w-80 h-80 bg-white/20 rounded-full blur-3xl opacity-50" />

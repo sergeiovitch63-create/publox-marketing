@@ -21,6 +21,7 @@ export default async function ImpresionDipticosPage({
       contactHref={`/${locale}/contacto`}
       imageRatio="16:9"
       videoSrc="/media/videos/PACK-DIPTICOS-TRIPTICOS.mp4"
+      backButtonHref={`/${locale}/impresion`}
     />
   );
 }

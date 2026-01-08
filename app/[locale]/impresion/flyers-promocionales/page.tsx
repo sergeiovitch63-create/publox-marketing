@@ -21,6 +21,7 @@ export default async function ImpresionFlyersPage({
       contactHref={`/${locale}/contacto`}
       imageRatio="16:9"
       videoSrc="/media/videos/Flyers-Promocionales.mp4"
+      backButtonHref={`/${locale}/impresion`}
     />
   );
 }

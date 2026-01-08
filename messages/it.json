@@ -279,7 +279,8 @@
           "list3": "Carrello acquisti e processo ordine",
           "list4": "Ottimizzazione base per Google",
           "list5": "Pagamenti online",
-          "list6": "Integrazione con WhatsApp"
+          "list6": "Integrazione con WhatsApp",
+          "list7": "Modulo di prenotazione"
         },
         "closing": "Perfetto per le aziende che vogliono vendere i propri prodotti online.",
         "cta": "Mettiti in contatto con noi",
@@ -307,7 +308,7 @@
           "q2": "Devo avere testi e immagini preparati?",
           "a2": "No. Può essere strutturato prima e il contenuto aggiunto dopo.",
           "q3": "Il sito sarà multilingue?",
-          "a3": "Sì. Italiano, inglese, francese, spagnolo e russo.",
+          "a3": "Sì.",
           "q4": "Posso collegare il sito con WhatsApp?",
           "a4": "Sì. Il sito può reindirizzare direttamente a WhatsApp.",
           "q5": "Posso usare il sito per pubblicità?",
@@ -384,7 +385,6 @@
       "block2": {
         "title": "Volantini Promozionali (Doppia Faccia) A5",
         "bullets": [
-          "Design grafico incluso",
           "Volantino doppia faccia",
           "Formato promozionale",
           "Opzione QR integrata"

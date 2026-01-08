@@ -9,3 +9,4 @@ export default async function TiendaOnlineRedirect({
   redirect(`/${locale}/sitio-web`);
 }
 
+

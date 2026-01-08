@@ -279,7 +279,8 @@
           "list3": "Panier d'achat et processus de commande",
           "list4": "Optimisation de base pour Google",
           "list5": "Paiements en ligne",
-          "list6": "Intégration avec WhatsApp"
+          "list6": "Intégration avec WhatsApp",
+          "list7": "Module de réservation"
         },
         "closing": "Parfait pour les entreprises qui veulent vendre leurs produits en ligne.",
         "cta": "Contactez-nous",
@@ -307,7 +308,7 @@
           "q2": "Dois-je avoir des textes et images préparés ?",
           "a2": "Non. Il peut être structuré d'abord et le contenu ajouté ensuite.",
           "q3": "Le site sera-t-il multilingue ?",
-          "a3": "Oui. Espagnol (par défaut), anglais, français, italien et russe.",
+          "a3": "Oui.",
           "q4": "Puis-je connecter le site avec WhatsApp ?",
           "a4": "Oui. Le site peut rediriger directement vers WhatsApp.",
           "q5": "Puis-je utiliser le site pour la publicité ?",
@@ -384,7 +385,6 @@
       "block2": {
         "title": "Flyers Promotionnels (Recto-Verso) A5",
         "bullets": [
-          "Design graphique inclus",
           "Flyer recto-verso",
           "Format promotionnel",
           "Option QR intégrée"

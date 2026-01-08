@@ -9,3 +9,4 @@ export default async function CorporativoRedirect({
   redirect(`/${locale}/sitio-web`);
 }
 
+
