@@ -33,6 +33,15 @@
         "cta": "Desarrollar mi negocio"
       },
       "solutionsTitle": "Nuestras soluciones",
+      "promocionDelMes": {
+        "eyebrow": "Promoción del mes",
+        "mainTitle": "Página multi-enlace",
+        "description": "Este mes destacamos nuestra Página Multi-enlace, una solución simple y eficaz para centralizar todos tus enlaces importantes en una sola página.",
+        "oldPrice": "200€",
+        "newPrice": "100€",
+        "badge": "-50%",
+        "cta": "Descubrir la oferta"
+      },
       "services": {
         "captacion": {
           "title": "Bloque de Marketing",
@@ -90,13 +99,13 @@
       },
       "whoWeAre": {
         "title": "Quiénes somos",
-        "subtitle": "Novira es el grupo principal que reúne varias entidades especializadas, incluyendo Publox, Tenerife Activity y Marina Masaje.",
+        "subtitle": "Novyra es el grupo principal que reúne varias entidades especializadas, incluyendo Publox, Tenerife Activity y Marina Masaje.",
         "card": {
           "heading": "Sobre Publox",
-          "paragraph": "Publox forma parte del grupo Novira, un conjunto de empresas que también incluye Tenerife Activity y Marina Masaje. Esta estructura nos permite ofrecer servicios variados manteniendo una gran coherencia y calidad."
+          "paragraph": "Publox forma parte del grupo Novyra, un conjunto de empresas que también incluye Tenerife Activity y Marina Masaje. Esta estructura nos permite ofrecer servicios variados manteniendo una gran coherencia y calidad."
         },
         "miniCards": {
-          "novira": "Novira",
+          "novira": "Novyra",
           "tenerifeActivity": "Tenerife Activity",
           "marinaMasaje": "Marina Masaje"
         }
@@ -185,7 +194,10 @@
         "list6": "Se puede modificar en cualquier momento, sin complicaciones"
       },
       "cta": "Contáctanos",
-      "price": "200€",
+      "oldPrice": "200€",
+      "newPrice": "100€",
+      "badge": "-50%",
+      "promoText": "-50% este mes",
       "faq": {
         "title": "Preguntas frecuentes",
         "items": {

@@ -72,6 +72,98 @@ export default async function HomePage({
         </Container>
       </section>
 
+      {/* PROMOCIÓN DEL MES SECTION */}
+      <Section bgColor="soft-beige" className="py-20 md:py-24 lg:py-28">
+        <Container>
+          <FadeIn>
+            {/* Eyebrow Title */}
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
+                {t('promocionDelMes.eyebrow')}
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+              {/* Left: Media Grid 2x2 */}
+              <div className="order-2 md:order-1">
+                <div className="grid grid-cols-2 gap-3 md:gap-4">
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-1.png"
+                      alt="Page multi-liens 1"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
+                  </div>
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-2.png"
+                      alt="Page multi-liens 2"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
+                  </div>
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-3.png"
+                      alt="Page multi-liens 3"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
+                  </div>
+                  <div className="aspect-square rounded-image bg-warm-beige overflow-hidden relative hover:scale-[1.01] transition-transform duration-200">
+                    <Image
+                      src="/media/images/page-multi-lien-4.jpg"
+                      alt="Page multi-liens 4"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 400px"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: Text Content + Price + CTA */}
+              <div className="order-1 md:order-2 space-y-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
+                  {t('promocionDelMes.mainTitle')}
+                </h2>
+                <p className="text-lg text-text-secondary">
+                  {t('promocionDelMes.description')}
+                </p>
+
+                {/* Price Section */}
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-xl text-text-secondary line-through">
+                      {t('promocionDelMes.oldPrice')}
+                    </span>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-4xl md:text-5xl font-bold text-button-primary-bg">
+                        {t('promocionDelMes.newPrice')}
+                      </span>
+                      <span className="px-3 py-1 bg-button-primary-bg text-white text-sm font-bold rounded-full">
+                        {t('promocionDelMes.badge')}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <div className="pt-4">
+                  <Button href={`/${locale}/page-multi-liens`} variant="primary" className="w-full md:w-auto">
+                    {t('promocionDelMes.cta')}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </Container>
+      </Section>
+
       {/* SOLUTIONS TITLE SECTION */}
       <Section className="pt-12 md:pt-16 pb-12 md:pb-16">
         <Container>
@@ -260,16 +352,21 @@ export default async function HomePage({
           <FadeIn delay={0.1}>
             <Card className="max-w-4xl mx-auto p-8 md:p-12 mb-12 hover:shadow-soft-lg transition-shadow">
               <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                {/* Left: NOVIRA Logo */}
-                <div className="relative aspect-square rounded-2xl overflow-hidden bg-warm-beige border-2 border-warm-beige/50 flex items-center justify-center">
+                {/* Left: NOVYRA Logo */}
+                <a
+                  href="https://linktr.ee/novagrouptenerife"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative aspect-square rounded-2xl overflow-hidden bg-warm-beige border-2 border-warm-beige/50 flex items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
+                >
                   <Image
                     src="/media/images/novira.png"
-                    alt="Novira group logo"
+                    alt="Novyra group logo"
                     width={320}
                     height={320}
                     className="w-full max-w-[280px] md:max-w-[320px] h-auto object-contain"
                   />
-                </div>
+                </a>
                 {/* Right: Text Content */}
                 <div>
                   <h3 className="text-3xl font-bold mb-6 text-text-primary">

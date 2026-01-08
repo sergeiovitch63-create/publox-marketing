@@ -33,6 +33,15 @@
         "cta": "Develop my business"
       },
       "solutionsTitle": "Our solutions",
+      "promocionDelMes": {
+        "eyebrow": "Promotion of the month",
+        "mainTitle": "Multi-link page",
+        "description": "This month we highlight our Multi-link Page, a simple and effective solution to centralize all your important links on a single page.",
+        "oldPrice": "200€",
+        "newPrice": "100€",
+        "badge": "-50%",
+        "cta": "Discover the offer"
+      },
       "services": {
         "captacion": {
           "title": "Marketing Block",
@@ -90,13 +99,13 @@
       },
       "whoWeAre": {
         "title": "Who we are",
-        "subtitle": "Novira is the main group bringing together several specialized entities, including Publox, Tenerife Activity, and Marina Masaje.",
+        "subtitle": "Novyra is the main group bringing together several specialized entities, including Publox, Tenerife Activity, and Marina Masaje.",
         "card": {
           "heading": "About Publox",
-          "paragraph": "Publox is part of the Novira group, a set of companies that also includes Tenerife Activity and Marina Masaje. This structure allows us to offer a wide range of services while maintaining strong consistency and quality."
+          "paragraph": "Publox is part of the Novyra group, a set of companies that also includes Tenerife Activity and Marina Masaje. This structure allows us to offer a wide range of services while maintaining strong consistency and quality."
         },
         "miniCards": {
-          "novira": "Novira",
+          "novira": "Novyra",
           "tenerifeActivity": "Tenerife Activity",
           "marinaMasaje": "Marina Masaje"
         }
@@ -185,7 +194,10 @@
         "list6": "Editable at any time, without complexity"
       },
       "cta": "Contact us",
-      "price": "200€",
+      "oldPrice": "200€",
+      "newPrice": "100€",
+      "badge": "-50%",
+      "promoText": "-50% this month",
       "faq": {
         "title": "Frequently asked questions",
         "items": {
