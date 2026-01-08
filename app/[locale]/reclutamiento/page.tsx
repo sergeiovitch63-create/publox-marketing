@@ -6,6 +6,7 @@ import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import Card from '@/components/Card';
 import BackButton from '@/components/BackButton';
+import Button from '@/components/Button';
 
 export default async function ReclutamientoPage({
   params,
@@ -70,6 +71,11 @@ export default async function ReclutamientoPage({
                     <p>{t('mainSection.paragraph3')}</p>
                     <p>{t('mainSection.paragraph4')}</p>
                     <p>{t('mainSection.paragraph5')}</p>
+                  </div>
+                  <div className="pt-4 flex justify-center md:justify-start">
+                    <Button href={`/${locale}/contacto`} variant="primary" className="w-full md:w-auto">
+                      {t('mainSection.cta')}
+                    </Button>
                   </div>
                 </div>
               </div>

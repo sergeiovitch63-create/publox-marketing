@@ -575,7 +575,8 @@
         "paragraph2": "Tu rol es sencillo: identificar negocios que necesitan más clientes y ponerlos en contacto con nuestro equipo.",
         "paragraph3": "PUBLOX se encarga de todo: estrategia, publicidad, automatización, seguimiento y soporte al cliente.",
         "paragraph4": "La comisión puede llegar hasta el 20 %, según el tipo de colaboración y la duración del cliente.",
-        "paragraph5": "No hay límites fijos ni falsas promesas: todo se basa en resultados reales y relaciones a largo plazo. Sin inversión inicial. Sin objetivos obligatorios. Sin riesgo."
+        "paragraph5": "No hay límites fijos ni falsas promesas: todo se basa en resultados reales y relaciones a largo plazo. Sin inversión inicial. Sin objetivos obligatorios. Sin riesgo.",
+        "cta": "Contactar con nosotros"
       },
       "advantages": {
         "card1": {
@@ -597,6 +598,16 @@
       },
       "email": {
         "label": "Email"
+      }
+    },
+    "contactoWhatsapp": {
+      "title": "Elige tu idioma",
+      "subtitle": "Selecciona el contacto WhatsApp adecuado",
+      "french": {
+        "label": "Contact français"
+      },
+      "spanish": {
+        "label": "Contacto en español"
       }
     },
     "privacy": {

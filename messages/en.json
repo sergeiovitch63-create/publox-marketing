@@ -575,7 +575,8 @@
         "paragraph2": "Your role is simple: identify businesses that need more customers and connect them with our team.",
         "paragraph3": "PUBLOX handles everything: strategy, advertising, automation, follow-up and customer support.",
         "paragraph4": "The commission can reach up to 20%, depending on the type of collaboration and the duration of the client.",
-        "paragraph5": "There are no fixed limits or false promises: everything is based on real results and long-term relationships. No initial investment. No mandatory goals. No risk."
+        "paragraph5": "There are no fixed limits or false promises: everything is based on real results and long-term relationships. No initial investment. No mandatory goals. No risk.",
+        "cta": "Contact us"
       },
       "advantages": {
         "card1": {
@@ -597,6 +598,16 @@
       },
       "email": {
         "label": "Email"
+      }
+    },
+    "contactoWhatsapp": {
+      "title": "Choose your language",
+      "subtitle": "Select the appropriate WhatsApp contact",
+      "french": {
+        "label": "Contact français"
+      },
+      "spanish": {
+        "label": "Contacto en español"
       }
     },
     "privacy": {

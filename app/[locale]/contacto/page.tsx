@@ -37,9 +37,7 @@ export default async function ContactoPage({
           {/* WhatsApp Card */}
           <FadeIn delay={0.1}>
             <Link
-              href="https://wa.me/34614052889"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/${locale}/contacto/whatsapp`}
               className="block"
             >
               <Card className="p-8 md:p-12 hover:shadow-soft-lg transition-all duration-200 hover:scale-[1.02] cursor-pointer focus:outline-none focus:ring-2 focus:ring-pastel-blue focus:ring-offset-2">

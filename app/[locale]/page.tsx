@@ -290,7 +290,53 @@ export default async function HomePage({
               <div className="mini-partner-carousel-track">
                 {/* Original set */}
                 <FadeIn delay={0.2}>
-                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                  <Link href={`/${locale}`} className="block">
+                    <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px] cursor-pointer">
+                      <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                        <Image
+                          src="/media/images/logo-hero.png"
+                          alt="Logo Novira"
+                          width={90}
+                          height={90}
+                          className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                        />
+                      </div>
+                    </Card>
+                  </Link>
+                </FadeIn>
+                <FadeIn delay={0.3}>
+                  <a href="https://www.tenerife-activity.com" target="_blank" rel="noopener noreferrer" className="block">
+                    <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px] cursor-pointer">
+                      <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                        <Image
+                          src="/media/images/tenerife-activity.png"
+                          alt="Tenerife Activity logo"
+                          width={90}
+                          height={90}
+                          className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                        />
+                      </div>
+                    </Card>
+                  </a>
+                </FadeIn>
+                <FadeIn delay={0.4}>
+                  <a href="https://linktr.ee/chovvlad?fbclid=PAdGRleANokwZleHRuA2FlbQIxMQABp4C_jibC4eMF6DJZSMzdl2I766eCygJYgcKZrupnJJ5Ul84D5apAAigyb2u6_aem_QHvDymULcGt9J14LnI3Q6Q" target="_blank" rel="noopener noreferrer" className="block">
+                    <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px] cursor-pointer">
+                      <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                        <Image
+                          src="/media/images/marina-masaje.png"
+                          alt="Marina Masaje logo"
+                          width={90}
+                          height={90}
+                          className="w-[70px] sm:w-[90px] h-auto opacity-90"
+                        />
+                      </div>
+                    </Card>
+                  </a>
+                </FadeIn>
+                {/* Duplicated set for seamless loop */}
+                <Link href={`/${locale}`} className="block">
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px] cursor-pointer">
                     <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
                       <Image
                         src="/media/images/logo-hero.png"
@@ -301,9 +347,9 @@ export default async function HomePage({
                       />
                     </div>
                   </Card>
-                </FadeIn>
-                <FadeIn delay={0.3}>
-                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                </Link>
+                <a href="https://www.tenerife-activity.com" target="_blank" rel="noopener noreferrer" className="block">
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px] cursor-pointer">
                     <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
                       <Image
                         src="/media/images/tenerife-activity.png"
@@ -314,9 +360,9 @@ export default async function HomePage({
                       />
                     </div>
                   </Card>
-                </FadeIn>
-                <FadeIn delay={0.4}>
-                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
+                </a>
+                <a href="https://linktr.ee/chovvlad?fbclid=PAdGRleANokwZleHRuA2FlbQIxMQABp4C_jibC4eMF6DJZSMzdl2I766eCygJYgcKZrupnJJ5Ul84D5apAAigyb2u6_aem_QHvDymULcGt9J14LnI3Q6Q" target="_blank" rel="noopener noreferrer" className="block">
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px] cursor-pointer">
                     <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
                       <Image
                         src="/media/images/marina-masaje.png"
@@ -327,83 +373,55 @@ export default async function HomePage({
                       />
                     </div>
                   </Card>
-                </FadeIn>
-                {/* Duplicated set for seamless loop */}
-                <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
-                  <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                    <Image
-                      src="/media/images/logo-hero.png"
-                      alt="Logo Novira"
-                      width={90}
-                      height={90}
-                      className="w-[70px] sm:w-[90px] h-auto opacity-90"
-                    />
-                  </div>
-                </Card>
-                <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
-                  <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                    <Image
-                      src="/media/images/tenerife-activity.png"
-                      alt="Tenerife Activity logo"
-                      width={90}
-                      height={90}
-                      className="w-[70px] sm:w-[90px] h-auto opacity-90"
-                    />
-                  </div>
-                </Card>
-                <Card className="p-4 hover:shadow-soft-lg transition-shadow flex-none w-[180px] sm:w-[200px]">
-                  <div className="w-full h-20 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                    <Image
-                      src="/media/images/marina-masaje.png"
-                      alt="Marina Masaje logo"
-                      width={90}
-                      height={90}
-                      className="w-[70px] sm:w-[90px] h-auto opacity-90"
-                    />
-                  </div>
-                </Card>
+                </a>
               </div>
             </div>
             {/* Desktop: Static grid */}
             <div className="hidden md:grid md:grid-cols-3 md:gap-6 md:max-w-3xl md:mx-auto">
               <FadeIn delay={0.2}>
-                <Card className="p-4 hover:shadow-soft-lg transition-shadow">
-                  <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                    <Image
-                      src="/media/images/logo-hero.png"
-                      alt="Logo Novira"
-                      width={90}
-                      height={90}
-                      className="w-[90px] h-auto opacity-90"
-                    />
-                  </div>
-                </Card>
+                <Link href={`/${locale}`}>
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow cursor-pointer">
+                    <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                      <Image
+                        src="/media/images/logo-hero.png"
+                        alt="Logo Novira"
+                        width={90}
+                        height={90}
+                        className="w-[90px] h-auto opacity-90"
+                      />
+                    </div>
+                  </Card>
+                </Link>
               </FadeIn>
               <FadeIn delay={0.3}>
-                <Card className="p-4 hover:shadow-soft-lg transition-shadow">
-                  <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                    <Image
-                      src="/media/images/tenerife-activity.png"
-                      alt="Tenerife Activity logo"
-                      width={90}
-                      height={90}
-                      className="w-[90px] h-auto opacity-90"
-                    />
-                  </div>
-                </Card>
+                <a href="https://www.tenerife-activity.com" target="_blank" rel="noopener noreferrer">
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow cursor-pointer">
+                    <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                      <Image
+                        src="/media/images/tenerife-activity.png"
+                        alt="Tenerife Activity logo"
+                        width={90}
+                        height={90}
+                        className="w-[90px] h-auto opacity-90"
+                      />
+                    </div>
+                  </Card>
+                </a>
               </FadeIn>
               <FadeIn delay={0.4}>
-                <Card className="p-4 hover:shadow-soft-lg transition-shadow">
-                  <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
-                    <Image
-                      src="/media/images/marina-masaje.png"
-                      alt="Marina Masaje logo"
-                      width={90}
-                      height={90}
-                      className="w-[90px] h-auto opacity-90"
-                    />
-                  </div>
-                </Card>
+                <a href="https://linktr.ee/chovvlad?fbclid=PAdGRleANokwZleHRuA2FlbQIxMQABp4C_jibC4eMF6DJZSMzdl2I766eCygJYgcKZrupnJJ5Ul84D5apAAigyb2u6_aem_QHvDymULcGt9J14LnI3Q6Q" target="_blank" rel="noopener noreferrer">
+                  <Card className="p-4 hover:shadow-soft-lg transition-shadow cursor-pointer">
+                    <div className="w-full h-24 rounded-image overflow-hidden bg-warm-beige border border-warm-beige/30 flex items-center justify-center">
+                      <Image
+                        src="/media/images/marina-masaje.png"
+                        alt="Marina Masaje logo"
+                        width={90}
+                        height={90}
+                        className="w-[90px] h-auto opacity-90"
+                      />
+                    </div>
+                  </Card>
+                </a>
               </FadeIn>
             </div>
           </div>
@@ -437,13 +455,13 @@ export default async function HomePage({
                   {
                     name: 'TENERIFE ACTIVITY',
                     image: '/media/images/tenerife-activity.png',
-                    whatsappLink: 'https://wa.me/34614891153',
+                    whatsappLink: 'https://www.tenerife-activity.com',
                     homeLink: null,
                   },
                   {
                     name: 'MARINA MASAJE',
                     image: '/media/images/marina-masaje.png',
-                    whatsappLink: 'https://wa.me/34614202296',
+                    whatsappLink: 'https://linktr.ee/chovvlad?fbclid=PAdGRleANokwZleHRuA2FlbQIxMQABp4C_jibC4eMF6DJZSMzdl2I766eCygJYgcKZrupnJJ5Ul84D5apAAigyb2u6_aem_QHvDymULcGt9J14LnI3Q6Q',
                     homeLink: null,
                   },
                   {
@@ -455,7 +473,7 @@ export default async function HomePage({
                   {
                     name: 'AUTO DETAILING',
                     image: '/media/images/auto-detailing.png',
-                    whatsappLink: 'https://wa.me/34614397963',
+                    whatsappLink: 'https://linktr.ee/autodetailingpuertodelacruz',
                     homeLink: null,
                   },
                 ]}
