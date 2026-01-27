@@ -186,18 +186,18 @@
       "heroTitle": "Pagina multi-link",
       "blockTitle": "Pagina multi-link",
       "bullets": {
-        "list1": "Una sola pagina che riunisce tutti i tuoi link importanti",
-        "list2": "I tuoi clienti trovano sito web, social media e contatti in un solo posto",
-        "list3": "Pulsanti diretti a WhatsApp, chiamata o prenotazione",
-        "list4": "Perfetta per Instagram, Google Maps o un codice QR",
-        "list5": "Design professionale che ispira fiducia",
-        "list6": "Modificabile in qualsiasi momento, senza complicazioni"
+      "list1": "Una sola pagina che riunisce tutti i tuoi link importanti",
+      "list2": "I tuoi clienti trovano sito web, social media e contatti in un solo posto",
+      "list3": "Pulsanti diretti a WhatsApp, chiamata o prenotazione",
+      "list4": "Perfetta per Instagram, Google Maps o un codice QR",
+      "list5": "Design professionale che ispira fiducia",
+      "list6": "Modificabile in qualsiasi momento, senza complicazioni"
       },
       "cta": "Contattaci",
-      "oldPrice": "200€",
-      "newPrice": "100€",
-      "badge": "-50%",
-      "promoText": "-50% questo mese",
+      "oldPrice": "",
+      "newPrice": "200€",
+      "badge": "",
+      "promoText": "",
       "faq": {
         "title": "Domande frequenti",
         "items": {
@@ -505,7 +505,8 @@
           "href": "https://drive.google.com/file/d/1iYo_93VjWks7JzGsYDu99wNPCeUPpfjW/view"
         }
       ],
-      "contactCta": "Mettiti in contatto con noi"
+      "contactCta": "Mettiti in contatto con noi",
+      "quoteText": "Contattaci per un preventivo"
     },
     "impresionFlyers": {
       "titleLines": ["Volantini Promozionali"],
@@ -534,7 +535,8 @@
           "href": "https://drive.google.com/file/d/14xrt_aH1ARBS0CwfFxMlSH8Lf93WQAxi/view"
         }
       ],
-      "contactCta": "Mettiti in contatto con noi"
+      "contactCta": "Mettiti in contatto con noi",
+      "quoteText": "Contattaci per un preventivo"
     },
     "impresionDipticos": {
       "titleLines": ["PACCHETTO DÉPLIANT / TRITTICI"],
@@ -551,7 +553,8 @@
           "href": "https://drive.google.com/file/d/1jfl-dzggoU5JWCahHKnaNk3MQQrTUguB/view"
         }
       ],
-      "contactCta": "Mettiti in contatto con noi"
+      "contactCta": "Mettiti in contatto con noi",
+      "quoteText": "Contattaci per un preventivo"
     },
     "impresionCaballete": {
       "titleLines": ["Cavalletto (Doppia Faccia)"],
@@ -565,7 +568,8 @@
         "100 x 70 = 180€",
         "70 x 50 = 130€"
       ],
-      "contactCta": "Mettiti in contatto con noi"
+      "contactCta": "Mettiti in contatto con noi",
+      "quoteText": "Contattaci per un preventivo"
     },
     "reclutamiento": {
       "hero": {

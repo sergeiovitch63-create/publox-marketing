@@ -117,25 +117,10 @@ export default async function PageMultiLiens({
                 <Button href={`/${locale}/contacto`} variant="primary" className="w-full sm:w-auto">
                   {t('cta')}
                 </Button>
-                <div className="flex flex-col sm:items-end gap-2">
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-xl text-text-secondary line-through">
-                      {t('oldPrice')}
-                    </span>
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-4xl md:text-5xl font-bold text-button-primary-bg">
-                        {t('newPrice')}
-                      </span>
-                      <span className="px-3 py-1 bg-button-primary-bg text-white text-sm font-bold rounded-full">
-                        {t('badge')}
-                      </span>
-                    </div>
-                  </div>
-                  {t('promoText') && (
-                    <p className="text-sm text-text-secondary italic">
-                      {t('promoText')}
-                    </p>
-                  )}
+                <div className="flex items-baseline gap-3 sm:justify-end">
+                  <span className="text-4xl md:text-5xl font-bold text-button-primary-bg">
+                    {t('newPrice')}
+                  </span>
                 </div>
               </div>
             </Card>

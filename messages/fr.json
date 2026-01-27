@@ -182,22 +182,22 @@
         "tenerife": "Seulement Tenerife"
       }
     },
-    "multiLinksPage": {
+      "multiLinksPage": {
       "heroTitle": "Page multi-liens",
       "blockTitle": "Page multi-liens",
       "bullets": {
-        "list1": "Une seule page qui regroupe tous vos liens importants",
-        "list2": "Vos clients trouvent site, réseaux sociaux et contacts au même endroit",
-        "list3": "Boutons directs vers WhatsApp, appel ou réservation",
-        "list4": "Parfait pour Instagram, Google Maps ou QR code",
-        "list5": "Design professionnel qui inspire confiance",
-        "list6": "Modifiable à tout moment, sans complexité"
+      "list1": "Une seule page qui regroupe tous vos liens importants",
+      "list2": "Vos clients trouvent site, réseaux sociaux et contacts au même endroit",
+      "list3": "Boutons directs vers WhatsApp, appel ou réservation",
+      "list4": "Parfait pour Instagram, Google Maps ou QR code",
+      "list5": "Design professionnel qui inspire confiance",
+      "list6": "Modifiable à tout moment, sans complexité"
       },
       "cta": "Nous contacter",
-      "oldPrice": "200€",
-      "newPrice": "100€",
-      "badge": "-50%",
-      "promoText": "-50% ce mois-ci",
+      "oldPrice": "",
+      "newPrice": "200€",
+      "badge": "",
+      "promoText": "",
       "faq": {
         "title": "Questions fréquentes",
         "items": {
@@ -508,7 +508,8 @@
           "href": "https://drive.google.com/file/d/1iYo_93VjWks7JzGsYDu99wNPCeUPpfjW/view"
         }
       ],
-      "contactCta": "Contactez-nous"
+      "contactCta": "Contactez-nous",
+      "quoteText": "Contactez-nous pour un devis"
     },
     "impresionFlyers": {
       "titleLines": [
@@ -539,7 +540,8 @@
           "href": "https://drive.google.com/file/d/14xrt_aH1ARBS0CwfFxMlSH8Lf93WQAxi/view"
         }
       ],
-      "contactCta": "Contactez-nous"
+      "contactCta": "Contactez-nous",
+      "quoteText": "Contactez-nous pour un devis"
     },
     "impresionDipticos": {
       "titleLines": [
@@ -558,7 +560,8 @@
           "href": "https://drive.google.com/file/d/1jfl-dzggoU5JWCahHKnaNk3MQQrTUguB/view"
         }
       ],
-      "contactCta": "Contactez-nous"
+      "contactCta": "Contactez-nous",
+      "quoteText": "Contactez-nous pour un devis"
     },
     "impresionCaballete": {
       "titleLines": [
@@ -574,7 +577,8 @@
         "100 x 70 = 180€",
         "70 x 50 = 130€"
       ],
-      "contactCta": "Contactez-nous"
+      "contactCta": "Contactez-nous",
+      "quoteText": "Contactez-nous pour un devis"
     },
     "reclutamiento": {
       "hero": {

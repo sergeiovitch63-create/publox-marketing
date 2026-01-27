@@ -16,9 +16,9 @@ export default async function ImpresionTarjetasPage({
       titleLines={t.raw('titleLines') as string[]}
       bullets={t.raw('bullets') as string[]}
       conclusion={t('conclusion')}
-      blueActions={t.raw('blueActions') as Array<{ label: string; href: string }>}
       contactCtaLabel={t('contactCta')}
       contactHref={`/${locale}/contacto`}
+      quoteText={t('quoteText')}
       imageRatio="16:9"
       videoSrc="/media/videos/Tarjetas-de-Visita-Profesionales.mp4"
       backButtonHref={`/${locale}/impresion`}

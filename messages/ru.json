@@ -186,18 +186,18 @@
       "heroTitle": "Мульти-ссылка",
       "blockTitle": "Мульти-ссылка",
       "bullets": {
-        "list1": "Одна страница, которая объединяет все ваши важные ссылки",
-        "list2": "Ваши клиенты находят веб-сайт, социальные сети и контакты в одном месте",
-        "list3": "Прямые кнопки на WhatsApp, звонок или бронирование",
-        "list4": "Идеально для Instagram, Google Maps или QR-кода",
-        "list5": "Профессиональный дизайн, внушающий доверие",
-        "list6": "Можно изменить в любое время, без сложностей"
+      "list1": "Одна страница, которая объединяет все ваши важные ссылки",
+      "list2": "Ваши клиенты находят веб-сайт, социальные сети и контакты в одном месте",
+      "list3": "Прямые кнопки на WhatsApp, звонок или бронирование",
+      "list4": "Идеально для Instagram, Google Maps или QR-кода",
+      "list5": "Профессиональный дизайн, внушающий доверие",
+      "list6": "Можно изменить в любое время, без сложностей"
       },
       "cta": "Связаться с нами",
-      "oldPrice": "200€",
-      "newPrice": "100€",
-      "badge": "-50%",
-      "promoText": "-50% в этом месяце",
+      "oldPrice": "",
+      "newPrice": "200€",
+      "badge": "",
+      "promoText": "",
       "faq": {
         "title": "Часто задаваемые вопросы",
         "items": {
@@ -505,7 +505,8 @@
           "href": "https://drive.google.com/file/d/1iYo_93VjWks7JzGsYDu99wNPCeUPpfjW/view"
         }
       ],
-      "contactCta": "Свяжитесь с нами"
+      "contactCta": "Свяжитесь с нами",
+      "quoteText": "Свяжитесь с нами для расчёта стоимости"
     },
     "impresionFlyers": {
       "titleLines": ["Рекламные флаеры"],
@@ -534,7 +535,8 @@
           "href": "https://drive.google.com/file/d/14xrt_aH1ARBS0CwfFxMlSH8Lf93WQAxi/view"
         }
       ],
-      "contactCta": "Свяжитесь с нами"
+      "contactCta": "Свяжитесь с нами",
+      "quoteText": "Свяжитесь с нами для расчёта стоимости"
     },
     "impresionDipticos": {
       "titleLines": ["ПАКЕТ БУКЛЕТОВ / ТРЕХСГИБНЫХ"],
@@ -551,7 +553,8 @@
           "href": "https://drive.google.com/file/d/1jfl-dzggoU5JWCahHKnaNk3MQQrTUguB/view"
         }
       ],
-      "contactCta": "Свяжитесь с нами"
+      "contactCta": "Свяжитесь с нами",
+      "quoteText": "Свяжитесь с нами для расчёта стоимости"
     },
     "impresionCaballete": {
       "titleLines": ["Стенд (Двусторонний)"],
@@ -565,7 +568,8 @@
         "100 x 70 = 180€",
         "70 x 50 = 130€"
       ],
-      "contactCta": "Свяжитесь с нами"
+      "contactCta": "Свяжитесь с нами",
+      "quoteText": "Свяжитесь с нами для расчёта стоимости"
     },
     "reclutamiento": {
       "hero": {

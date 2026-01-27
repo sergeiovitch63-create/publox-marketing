@@ -186,18 +186,18 @@
       "heroTitle": "Multi-link page",
       "blockTitle": "Multi-link page",
       "bullets": {
-        "list1": "One single page that keeps all your important links together",
-        "list2": "Your clients find your website, social media and contacts in one place",
-        "list3": "Direct buttons to WhatsApp, call or booking",
-        "list4": "Perfect for Instagram, Google Maps or a QR code",
-        "list5": "Professional design that builds trust",
-        "list6": "Editable at any time, without complexity"
+      "list1": "One single page that keeps all your important links together",
+      "list2": "Your clients find your website, social media and contacts in one place",
+      "list3": "Direct buttons to WhatsApp, call or booking",
+      "list4": "Perfect for Instagram, Google Maps or a QR code",
+      "list5": "Professional design that builds trust",
+      "list6": "Editable at any time, without complexity"
       },
       "cta": "Contact us",
-      "oldPrice": "200€",
-      "newPrice": "100€",
-      "badge": "-50%",
-      "promoText": "-50% this month",
+      "oldPrice": "",
+      "newPrice": "200€",
+      "badge": "",
+      "promoText": "",
       "faq": {
         "title": "Frequently asked questions",
         "items": {
@@ -508,7 +508,8 @@
           "href": "https://drive.google.com/file/d/1iYo_93VjWks7JzGsYDu99wNPCeUPpfjW/view"
         }
       ],
-      "contactCta": "Contact us"
+      "contactCta": "Contact us",
+      "quoteText": "Contact us for a quote"
     },
     "impresionFlyers": {
       "titleLines": [
@@ -539,7 +540,8 @@
           "href": "https://drive.google.com/file/d/14xrt_aH1ARBS0CwfFxMlSH8Lf93WQAxi/view"
         }
       ],
-      "contactCta": "Contact us"
+      "contactCta": "Contact us",
+      "quoteText": "Contact us for a quote"
     },
     "impresionDipticos": {
       "titleLines": [
@@ -558,7 +560,8 @@
           "href": "https://drive.google.com/file/d/1jfl-dzggoU5JWCahHKnaNk3MQQrTUguB/view"
         }
       ],
-      "contactCta": "Contact us"
+      "contactCta": "Contact us",
+      "quoteText": "Contact us for a quote"
     },
     "impresionCaballete": {
       "titleLines": [
@@ -574,7 +577,8 @@
         "100 x 70 = 180€",
         "70 x 50 = 130€"
       ],
-      "contactCta": "Contact us"
+      "contactCta": "Contact us",
+      "quoteText": "Contact us for a quote"
     },
     "reclutamiento": {
       "hero": {

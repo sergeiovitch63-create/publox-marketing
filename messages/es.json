@@ -186,18 +186,18 @@
       "heroTitle": "Página multi-enlaces",
       "blockTitle": "Página multi-enlaces",
       "bullets": {
-        "list1": "Una sola página que reúne todos tus enlaces importantes",
-        "list2": "Tus clientes encuentran web, redes sociales y contactos en un solo lugar",
-        "list3": "Botones directos a WhatsApp, llamada o reserva",
-        "list4": "Perfecta para Instagram, Google Maps o un código QR",
-        "list5": "Diseño profesional que inspira confianza",
-        "list6": "Se puede modificar en cualquier momento, sin complicaciones"
+      "list1": "Una sola página que reúne todos tus enlaces importantes",
+      "list2": "Tus clientes encuentran web, redes sociales y contactos en un solo lugar",
+      "list3": "Botones directos a WhatsApp, llamada o reserva",
+      "list4": "Perfecta para Instagram, Google Maps o un código QR",
+      "list5": "Diseño profesional que inspira confianza",
+      "list6": "Se puede modificar en cualquier momento, sin complicaciones"
       },
       "cta": "Contáctanos",
-      "oldPrice": "200€",
-      "newPrice": "100€",
-      "badge": "-50%",
-      "promoText": "-50% este mes",
+      "oldPrice": "",
+      "newPrice": "200€",
+      "badge": "",
+      "promoText": "",
       "faq": {
         "title": "Preguntas frecuentes",
         "items": {
@@ -508,7 +508,8 @@
           "href": "https://drive.google.com/file/d/1iYo_93VjWks7JzGsYDu99wNPCeUPpfjW/view"
         }
       ],
-      "contactCta": "Póngase en contacto con nosotros"
+      "contactCta": "Póngase en contacto con nosotros",
+      "quoteText": "Contáctanos para un presupuesto"
     },
     "impresionFlyers": {
       "titleLines": [
@@ -539,7 +540,8 @@
           "href": "https://drive.google.com/file/d/14xrt_aH1ARBS0CwfFxMlSH8Lf93WQAxi/view"
         }
       ],
-      "contactCta": "Póngase en contacto con nosotros"
+      "contactCta": "Póngase en contacto con nosotros",
+      "quoteText": "Contáctanos para un presupuesto"
     },
     "impresionDipticos": {
       "titleLines": [
@@ -558,7 +560,8 @@
           "href": "https://drive.google.com/file/d/1jfl-dzggoU5JWCahHKnaNk3MQQrTUguB/view"
         }
       ],
-      "contactCta": "Póngase en contacto con nosotros"
+      "contactCta": "Póngase en contacto con nosotros",
+      "quoteText": "Contáctanos para un presupuesto"
     },
     "impresionCaballete": {
       "titleLines": [
@@ -574,7 +577,8 @@
         "100 x 70 = 180€",
         "70 x 50 = 130€"
       ],
-      "contactCta": "Póngase en contacto con nosotros"
+      "contactCta": "Póngase en contacto con nosotros",
+      "quoteText": "Contáctanos para un presupuesto"
     },
     "reclutamiento": {
       "hero": {

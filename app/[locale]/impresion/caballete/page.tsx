@@ -19,6 +19,7 @@ export default async function ImpresionCaballetePage({
       extraPricesTextLines={t.raw('extraPricesTextLines') as string[]}
       contactCtaLabel={t('contactCta')}
       contactHref={`/${locale}/contacto`}
+      quoteText={t('quoteText')}
       imageRatio="16:9"
       videoSrc="/media/videos/Caballete-(Doble Cara).mp4"
       backButtonHref={`/${locale}/impresion`}

@@ -20,6 +20,7 @@ interface PrintProductDetailPageProps {
   extraPricesTextLines?: string[];
   contactCtaLabel: string;
   contactHref: string;
+  quoteText?: string;
   imageRatio?: '16:9' | '4:3' | '1:1' | '3:2' | '3:4';
   videoSrc?: string;
   backButtonHref?: string;
@@ -33,6 +34,7 @@ export default function PrintProductDetailPage({
   extraPricesTextLines,
   contactCtaLabel,
   contactHref,
+  quoteText,
   imageRatio = '16:9',
   videoSrc,
   backButtonHref,
@@ -100,23 +102,6 @@ export default function PrintProductDetailPage({
                   {conclusion}
                 </p>
 
-                {/* Blue Actions (Drive links) */}
-                {blueActions && blueActions.length > 0 && (
-                  <div className="space-y-4 pt-6">
-                    {blueActions.map((action, index) => (
-                      <a
-                        key={index}
-                        href={action.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-pill text-center transition-all duration-200 hover:shadow-md"
-                      >
-                        {action.label}
-                      </a>
-                    ))}
-                  </div>
-                )}
-
                 {/* Extra Prices Text (for Caballete) */}
                 {extraPricesTextLines && extraPricesTextLines.length > 0 && (
                   <div className="pt-6 text-center space-y-2">
@@ -131,8 +116,15 @@ export default function PrintProductDetailPage({
                   </div>
                 )}
 
+                {/* Quote Text */}
+                {quoteText && (
+                  <p className="pt-6 text-center text-text-secondary text-base md:text-lg">
+                    {quoteText}
+                  </p>
+                )}
+
                 {/* Contact CTA Button */}
-                <div className="pt-6">
+                <div className="pt-4">
                   <Button href={contactHref} variant="primary" className="w-full">
                     {contactCtaLabel}
                   </Button>
