@@ -33,6 +33,11 @@
         "cta": "Sviluppa la mia attività"
       },
       "solutionsTitle": "Le nostre soluzioni",
+      "reviews": {
+        "title": "Recensioni clienti",
+        "subtitle": "Risultati reali. Clicca per vedere le loro pagine.",
+        "cta": "Vedi tutte le recensioni"
+      },
       "promocionDelMes": {
         "eyebrow": "Promozione del mese",
         "mainTitle": "Pagina multi-link",
@@ -153,6 +158,18 @@
         "conclusion": "Il nostro obiettivo è semplice: più visibilità, più contatti e più vendite.",
         "cta": "Scegli questa opzione"
       },
+      "nfcReviews": {
+        "title": "Carte NFC Google Recensioni",
+        "intro": "Rendi semplice raccogliere recensioni Google nel tuo locale con carte NFC pronte all'uso:",
+        "list1": "Con un semplice tocco del cliente si apre subito la tua pagina recensioni Google",
+        "list2": "Più recensioni positive riducendo gli attriti nell'esperienza cliente",
+        "list3": "Ideali per reception, cassa, tavolo o area d'attesa",
+        "list4": "Configurazione personalizzata con il link esatto della tua scheda Google",
+        "list5": "Design professionale coerente con l'immagine del tuo brand",
+        "list6": "Compatibili anche con QR code come alternativa per tutti i dispositivi",
+        "conclusion": "Una soluzione semplice per aumentare le recensioni, rafforzare la reputazione locale e convertire più clienti.",
+        "cta": "Scegli questa opzione"
+      },
       "sitioWeb": {
         "title": "Sito Web",
         "intro": "",
@@ -211,6 +228,37 @@
           "a4": "Sì, la pagina è completamente responsive e ottimizzata per tutti i dispositivi (mobile, tablet, computer).",
           "q5": "Posso usare un codice QR con questa pagina?",
           "a5": "Assolutamente! La pagina multi-link è perfetta per essere condivisa tramite codice QR, sia sui tuoi materiali stampati, nel tuo locale o sui tuoi social network."
+        }
+      }
+    },
+    "nfcReviewsPage": {
+      "heroTitle": "Carte NFC Google Recensioni",
+      "blockTitle": "Carte NFC Google Recensioni",
+      "intro": "Rendi semplice raccogliere recensioni Google nel tuo locale con carte NFC pronte all'uso:",
+      "bullets": {
+        "list1": "Con un semplice tocco del cliente si apre subito la tua pagina recensioni Google",
+        "list2": "Più recensioni positive riducendo gli attriti nell'esperienza cliente",
+        "list3": "Ideali per reception, cassa, tavolo o area d'attesa",
+        "list4": "Configurazione personalizzata con il link esatto della tua scheda Google",
+        "list5": "Design professionale coerente con l'immagine del tuo brand",
+        "list6": "Compatibili anche con QR code come alternativa per tutti i dispositivi"
+      },
+      "conclusion": "Una soluzione semplice per aumentare le recensioni, rafforzare la reputazione locale e convertire più clienti.",
+      "cta": "Contattaci",
+      "newPrice": "15€",
+      "faq": {
+        "title": "Domande frequenti",
+        "items": {
+          "q1": "Come funziona una carta NFC per le recensioni Google?",
+          "a1": "Il cliente avvicina il telefono alla carta NFC e si apre direttamente la tua pagina recensioni Google, senza digitare link.",
+          "q2": "Tutti i telefoni sono compatibili?",
+          "a2": "La maggior parte degli smartphone moderni supporta NFC. Possiamo aggiungere anche un QR code per coprire tutti i dispositivi.",
+          "q3": "Potete configurarla con la mia scheda Google esatta?",
+          "a3": "Sì. Configuriamo la carta con il tuo link recensioni in modo che ogni tocco porti alla pagina corretta.",
+          "q4": "Dove conviene posizionare le carte NFC?",
+          "a4": "I punti migliori sono cassa, banco reception, tavolo di servizio o area d'attesa.",
+          "q5": "Aiuta a migliorare la visibilità locale?",
+          "a5": "Sì. Più recensioni di qualità aumentano la fiducia e possono migliorare la performance nelle ricerche locali."
         }
       }
     },
@@ -625,6 +673,11 @@
       "title": "Pagina non trovata",
       "description": "La pagina che stai cercando non esiste",
       "backHome": "Torna alla home"
+    },
+    "avisos": {
+      "title": "Tutte le recensioni",
+      "intro": "Scopri cosa dicono i nostri clienti sui nostri servizi. Clicca su ogni scheda per vedere la loro pagina.",
+      "back": "Indietro"
     }
   }
 }

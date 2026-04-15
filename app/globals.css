@@ -195,3 +195,80 @@ body {
   }
 }
 
+/* Reviews Carousel */
+.reviews-carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.reviews-carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  width: fit-content;
+  animation: reviews-scroll 40s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .reviews-carousel-track {
+    gap: 2rem;
+  }
+}
+
+.reviews-carousel-item {
+  flex-shrink: 0;
+}
+
+@keyframes reviews-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (desktop) */
+@media (hover: hover) {
+  .reviews-carousel-container:hover .reviews-carousel-track {
+    animation-play-state: paused;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reviews-carousel-track {
+    animation: none;
+  }
+  
+  .reviews-carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .reviews-carousel-item {
+    scroll-snap-align: start;
+  }
+}
+
+/* Fade In Animation (Pure CSS) */
+.fade-in-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-animation.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-animation {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+

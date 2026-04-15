@@ -33,6 +33,11 @@
         "cta": "Développer mon entreprise"
       },
       "solutionsTitle": "Nos solutions",
+      "reviews": {
+        "title": "Avis clients",
+        "subtitle": "Résultats réels. Cliquez pour voir leurs pages.",
+        "cta": "Voir tous les avis"
+      },
       "promocionDelMes": {
         "eyebrow": "Promotion du mois",
         "mainTitle": "Page multi-lien",
@@ -153,6 +158,18 @@
         "conclusion": "Notre objectif est simple : plus de visibilité, plus de contacts et plus de ventes.",
         "cta": "Choisir cette option"
       },
+      "nfcReviews": {
+        "title": "Cartes NFC Google Avis",
+        "intro": "Facilitez la collecte d'avis Google en magasin grâce à des cartes NFC prêtes à l'emploi :",
+        "list1": "Un simple geste du client avec son téléphone ouvre directement votre page d'avis Google",
+        "list2": "Plus d'avis positifs en réduisant les frictions pendant l'expérience client",
+        "list3": "Support idéal pour comptoir, caisse, table ou zone d'attente",
+        "list4": "Configuration personnalisée avec le lien exact de votre fiche Google",
+        "list5": "Design professionnel cohérent avec votre image de marque",
+        "list6": "Compatible avec QR code en complément pour tous les appareils",
+        "conclusion": "Une solution simple pour augmenter vos avis, renforcer votre réputation locale et convertir plus de prospects.",
+        "cta": "Choisir cette option"
+      },
       "sitioWeb": {
         "title": "Site Web",
         "intro": "",
@@ -211,6 +228,37 @@
           "a4": "Oui, la page est entièrement responsive et optimisée pour tous les appareils (mobile, tablette, ordinateur).",
           "q5": "Puis-je utiliser un QR code avec cette page ?",
           "a5": "Absolument ! La page multi-liens est parfaite pour être partagée via QR code, que ce soit sur vos supports imprimés, dans votre établissement ou sur vos réseaux sociaux."
+        }
+      }
+    },
+    "nfcReviewsPage": {
+      "heroTitle": "Cartes NFC Google Avis",
+      "blockTitle": "Cartes NFC Google Avis",
+      "intro": "Facilitez la collecte d'avis Google en magasin grâce à des cartes NFC prêtes à l'emploi :",
+      "bullets": {
+        "list1": "Un simple geste du client avec son téléphone ouvre directement votre page d'avis Google",
+        "list2": "Plus d'avis positifs en réduisant les frictions pendant l'expérience client",
+        "list3": "Support idéal pour comptoir, caisse, table ou zone d'attente",
+        "list4": "Configuration personnalisée avec le lien exact de votre fiche Google",
+        "list5": "Design professionnel cohérent avec votre image de marque",
+        "list6": "Compatible avec QR code en complément pour tous les appareils"
+      },
+      "conclusion": "Une solution simple pour augmenter vos avis, renforcer votre réputation locale et convertir plus de prospects.",
+      "cta": "Nous contacter",
+      "newPrice": "15€",
+      "faq": {
+        "title": "Questions fréquentes",
+        "items": {
+          "q1": "Comment fonctionne une carte NFC pour les avis Google ?",
+          "a1": "Le client approche son téléphone de la carte NFC et il est redirigé directement vers votre page d'avis Google, sans saisir de lien.",
+          "q2": "Tous les téléphones sont-ils compatibles ?",
+          "a2": "La plupart des smartphones récents sont compatibles NFC. Nous pouvons aussi ajouter un QR code pour couvrir 100% des cas.",
+          "q3": "Pouvez-vous configurer la carte avec ma fiche Google exacte ?",
+          "a3": "Oui. Nous configurons la carte avec votre lien d'avis Google pour que chaque scan mène au bon endroit.",
+          "q4": "Où placer les cartes NFC dans mon entreprise ?",
+          "a4": "Les emplacements les plus efficaces sont la caisse, le comptoir, la table de service ou la zone d'attente.",
+          "q5": "Est-ce utile pour améliorer ma visibilité locale ?",
+          "a5": "Oui. Plus d'avis qualifiés renforcent votre crédibilité et aident votre fiche à mieux performer en recherche locale."
         }
       }
     },
@@ -634,6 +682,11 @@
       "title": "Page non trouvée",
       "description": "La page que vous recherchez n'existe pas",
       "backHome": "Retour à l'accueil"
+    },
+    "avisos": {
+      "title": "Tous les avis",
+      "intro": "Découvrez ce que nos clients disent de nos services. Cliquez sur chaque carte pour voir leur page.",
+      "back": "Retour"
     }
   }
 }

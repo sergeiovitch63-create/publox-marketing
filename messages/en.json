@@ -33,6 +33,11 @@
         "cta": "Develop my business"
       },
       "solutionsTitle": "Our solutions",
+      "reviews": {
+        "title": "Client Reviews",
+        "subtitle": "Real results. Click to see their pages.",
+        "cta": "View all reviews"
+      },
       "promocionDelMes": {
         "eyebrow": "Promotion of the month",
         "mainTitle": "Multi-link page",
@@ -153,6 +158,18 @@
         "conclusion": "Our goal is simple: more visibility, more contacts and more sales.",
         "cta": "Choose this option"
       },
+      "nfcReviews": {
+        "title": "Google Review NFC Cards",
+        "intro": "Make it easy to collect Google reviews in your business with ready-to-use NFC cards:",
+        "list1": "A single tap from the client opens your Google review page instantly",
+        "list2": "Get more positive reviews by reducing friction in the customer journey",
+        "list3": "Ideal support for reception desk, checkout, table or waiting area",
+        "list4": "Custom setup with the exact link to your Google Business profile",
+        "list5": "Professional design aligned with your brand image",
+        "list6": "QR code backup included for full device compatibility",
+        "conclusion": "A simple way to increase reviews, strengthen local reputation and convert more prospects.",
+        "cta": "Choose this option"
+      },
       "sitioWeb": {
         "title": "Website",
         "intro": "",
@@ -211,6 +228,37 @@
           "a4": "Yes, the page is fully responsive and optimized for all devices (mobile, tablet, computer).",
           "q5": "Can I use a QR code with this page?",
           "a5": "Absolutely! The multi-link page is perfect for sharing via QR code, whether on your printed materials, in your establishment or on your social networks."
+        }
+      }
+    },
+    "nfcReviewsPage": {
+      "heroTitle": "Google Review NFC Cards",
+      "blockTitle": "Google Review NFC Cards",
+      "intro": "Make it easy to collect Google reviews in your business with ready-to-use NFC cards:",
+      "bullets": {
+        "list1": "A single tap from the client opens your Google review page instantly",
+        "list2": "Get more positive reviews by reducing friction in the customer journey",
+        "list3": "Ideal support for reception desk, checkout, table or waiting area",
+        "list4": "Custom setup with the exact link to your Google Business profile",
+        "list5": "Professional design aligned with your brand image",
+        "list6": "QR code backup included for full device compatibility"
+      },
+      "conclusion": "A simple way to increase reviews, strengthen local reputation and convert more prospects.",
+      "cta": "Contact us",
+      "newPrice": "15€",
+      "faq": {
+        "title": "Frequently asked questions",
+        "items": {
+          "q1": "How does an NFC card for Google reviews work?",
+          "a1": "The client taps their phone on the NFC card and your Google review page opens directly, with no link typing needed.",
+          "q2": "Are all phones compatible?",
+          "a2": "Most modern smartphones support NFC. We can also add a QR code to cover all devices.",
+          "q3": "Can you configure the card with my exact Google listing?",
+          "a3": "Yes. We set up each card with your exact review link so every tap goes to the right page.",
+          "q4": "Where should I place NFC cards in my business?",
+          "a4": "Best locations are checkout, reception desk, service table or waiting area.",
+          "q5": "Does this help my local visibility?",
+          "a5": "Yes. More quality reviews improve trust and can help your profile perform better in local search."
         }
       }
     },
@@ -634,6 +682,11 @@
       "title": "Page not found",
       "description": "The page you are looking for does not exist",
       "backHome": "Back to home"
+    },
+    "avisos": {
+      "title": "All Reviews",
+      "intro": "Discover what our clients say about our services. Click on each card to see their page.",
+      "back": "Back"
     }
   }
 }

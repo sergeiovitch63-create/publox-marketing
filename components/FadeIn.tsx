@@ -1,7 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 
 interface FadeInProps {
   children: ReactNode;
@@ -10,16 +9,42 @@ interface FadeInProps {
 }
 
 export default function FadeIn({ children, className = '', delay = 0 }: FadeInProps) {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          // Disconnect after first intersection to prevent re-triggering
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '-50px',
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const delayStyle = delay > 0 ? { animationDelay: `${delay}s` } : {};
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.5, delay }}
-      className={className}
+    <div
+      ref={ref}
+      className={`fade-in-animation ${isVisible ? 'fade-in-visible' : ''} ${className}`}
+      style={delayStyle}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
-

@@ -43,7 +43,42 @@ export default async function NecesitasPage({
       {/* CHOICE BLOCKS */}
       <Section className="py-20 md:py-24 lg:py-28">
         <Container>
-          {/* BLOC #1 - Page multi-liens */}
+          {/* BLOC #1 - Cartes NFC Google Avis */}
+          <FadeIn>
+            <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-text-primary">
+                {t('nfcReviews.title')}
+              </h2>
+              <p className="text-text-secondary text-lg mb-6 text-left">
+                {t('nfcReviews.intro')}
+              </p>
+              <ul className="list-disc list-inside space-y-3 mb-6 text-text-secondary text-lg">
+                <li>{t('nfcReviews.list1')}</li>
+                <li>{t('nfcReviews.list2')}</li>
+                <li>{t('nfcReviews.list3')}</li>
+                <li>{t('nfcReviews.list4')}</li>
+                <li>{t('nfcReviews.list5')}</li>
+                <li>{t('nfcReviews.list6')}</li>
+              </ul>
+              <p className="text-text-secondary text-lg mb-8 text-left">
+                {t('nfcReviews.conclusion')}
+              </p>
+              <div className="flex justify-center">
+                <Button href={`/${locale}/cartes-nfc-google-avis`} variant="primary" className="w-full md:w-auto">
+                  {t('nfcReviews.cta')}
+                </Button>
+              </div>
+            </Card>
+          </FadeIn>
+
+          {/* SEPARATOR */}
+          <div className="text-center mb-16">
+            <p className="text-text-secondary opacity-30 text-lg">
+              {t('separator')}
+            </p>
+          </div>
+
+          {/* BLOC #2 - Page multi-liens */}
           <FadeIn>
             <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
               <div className="mb-8">
@@ -80,7 +115,7 @@ export default async function NecesitasPage({
             </p>
           </div>
 
-          {/* BLOC #2 - Site Web */}
+          {/* BLOC #3 - Site Web */}
           <FadeIn>
             <div
               className="max-w-3xl mx-auto rounded-card p-8 md:p-12 mb-16 shadow-soft hover:shadow-soft-lg transition-shadow"
@@ -127,7 +162,7 @@ export default async function NecesitasPage({
             </p>
           </div>
 
-          {/* BLOC #3 - Marketing & Acquisition de Clients */}
+          {/* BLOC #4 - Marketing & Acquisition de Clients */}
           <FadeIn>
             <Card className="max-w-3xl mx-auto p-8 md:p-12 mb-16 hover:shadow-soft-lg transition-shadow">
               <div className="mb-8">
@@ -169,7 +204,7 @@ export default async function NecesitasPage({
             </p>
           </div>
 
-          {/* BLOC #4 - Impresión */}
+          {/* BLOC #5 - Impresión */}
           <FadeIn>
             <div
               className="relative max-w-3xl mx-auto rounded-card p-8 md:p-12 shadow-soft hover:shadow-soft-lg transition-shadow"
