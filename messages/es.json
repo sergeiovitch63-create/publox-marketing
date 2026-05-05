@@ -260,7 +260,31 @@
           "q5": "¿Sirve para mejorar mi visibilidad local?",
           "a5": "Sí. Más reseñas de calidad aumentan tu credibilidad y ayudan a que tu ficha rinda mejor en búsquedas locales."
         }
-      }
+      },
+      "howItWorks": {
+        "title": "¿Cómo funciona?",
+        "step1title": "La tarjeta en el mostrador",
+        "step1desc": "Coloca la tarjeta NFC en tu mostrador, mesa o caja.",
+        "step2title": "El cliente acerca su móvil",
+        "step2desc": "Un simple gesto — el chip NFC se detecta al instante.",
+        "step3title": "Deja su opinión",
+        "step3desc": "La página de Google se abre directamente, sin app ni búsqueda.",
+        "step4title": "La opinión aparece en Google",
+        "step4desc": "Tu valoración sube y tu reputación local mejora."
+      },
+      "offerTitle": "Oferta de lanzamiento",
+      "standardName": "NFC Estándar",
+      "standardDesc": "Diseño limpio con logo oficial de Google, 5 estrellas y QR de respaldo. Listo para usar con el enlace a tu ficha de Google.",
+      "customName": "NFC Personalizado",
+      "customDesc": "Diseño 100% personalizado con tu logo y colores. Enlace configurable a cualquier URL — Google, TripAdvisor, redes sociales...",
+      "customBadge": "Diseño personalizado · Enlace personalizable",
+      "featGoogleLogo": "Logo oficial de Google",
+      "featQrBackup": "QR de respaldo incluido",
+      "featGoogleLink": "Enlace a tu ficha Google",
+      "featStand": "Soporte acrílico incluido",
+      "featCustomDesign": "Diseño con tu logo",
+      "featCustomLink": "Enlace personalizable",
+      "featCustomColors": "Colores e identidad de marca"
     },
     "marketing": {
       "hero": {

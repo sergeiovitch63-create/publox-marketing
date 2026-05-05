@@ -1,0 +1,384 @@
+/* ─────────────────────────────────────────────
+   NFCCard3D.module.css
+   ───────────────────────────────────────────── */
+
+.scene {
+  perspective: 1100px;
+  perspective-origin: 50% 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 48px 0 24px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ─── NFC signal rings (shown on hover) ─── */
+.nfcContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.nfcRing {
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  border: 1.5px solid rgba(66, 133, 244, 0.55);
+  border-radius: 22px;
+  opacity: 0;
+  transform: scale(1);
+  will-change: transform, opacity;
+}
+
+.nfcActive .nfcRing {
+  animation: ringPulse 2.2s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+  animation-delay: calc(var(--i) * 0.48s);
+}
+
+@keyframes ringPulse {
+  0% {
+    opacity: 0.65;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.85);
+  }
+}
+
+/* ─── Floating particles ─── */
+.particle {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(66, 133, 244, 0.75);
+  pointer-events: none;
+  z-index: 20;
+  animation: particleRise 1.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@keyframes particleRise {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(var(--dx), -90px) scale(0.2);
+    opacity: 0;
+  }
+}
+
+/* ─── Card wrapper (receives the rAF transform) ─── */
+.cardWrapper {
+  position: relative;
+  width: 260px;
+  height: 360px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  will-change: transform;
+  z-index: 1;
+}
+
+/* ─── Front & back faces ─── */
+.front,
+.back {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.front {
+  background: #ffffff;
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.24),
+    0 10px 28px rgba(0, 0, 0, 0.14),
+    0 0 0 0.5px rgba(0, 0, 0, 0.06);
+}
+
+.back {
+  background: #f6f6f6;
+  transform: rotateY(180deg);
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.22),
+    0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* ─── Sheen (gloss sweep) ─── */
+.sheen {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    118deg,
+    transparent 22%,
+    rgba(255, 255, 255, 0.62) 44%,
+    rgba(255, 255, 255, 0.62) 50%,
+    transparent 68%
+  );
+  background-size: 300% 100%;
+  background-position: 150% center;
+  animation: sheenSlide 4.5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 10;
+  will-change: background-position, opacity;
+}
+
+@keyframes sheenSlide {
+  0%, 50% {
+    background-position: 150% center;
+    opacity: 0;
+  }
+  62% {
+    opacity: 1;
+  }
+  82%, 100% {
+    background-position: -50% center;
+    opacity: 0;
+  }
+}
+
+/* ─── Front card content ─── */
+.inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 16px 20px 10px;
+  position: relative;
+  z-index: 5;
+}
+
+.tagline {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #444;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.stars {
+  display: flex;
+  gap: 1px;
+}
+
+.star {
+  color: #F9AB00;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.qrBlock {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.tapRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tapItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 10.5px;
+  color: #555;
+  font-weight: 500;
+}
+
+.tapOr {
+  font-size: 10px;
+  color: #bbb;
+}
+
+/* ─── Google color bar ─── */
+.gBar {
+  display: flex;
+  height: 6px;
+  flex-shrink: 0;
+}
+
+.gBar > div {
+  flex: 1;
+}
+
+/* ─── Back face content ─── */
+.backInner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  padding: 24px;
+}
+
+.backWatermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  pointer-events: none;
+}
+
+.backText {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.backSub {
+  font-size: 10px;
+  color: #bbb;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Ripple on click ─── */
+.ripple {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(66, 133, 244, 0.35);
+  transform: translate(-50%, -50%) scale(0);
+  animation: rippleOut 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  pointer-events: none;
+  z-index: 20;
+}
+
+@keyframes rippleOut {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(26);
+    opacity: 0;
+  }
+}
+
+/* ─── Socle / stand acrylique ─── */
+
+/* Surface horizontale du socle (s'étend vers le spectateur) */
+.standTop {
+  position: absolute;
+  top: 100%;                /* ancré au bas de la carte */
+  left: 50%;
+  width: 220px;
+  height: 62px;             /* profondeur du socle */
+  margin-left: -110px;
+  transform-origin: 50% 0%; /* pivot = bord supérieur = bas de la carte */
+  transform: rotateX(90deg);
+  background: linear-gradient(
+    160deg,
+    rgba(255,255,255,0.96) 0%,
+    rgba(234,234,234,0.92) 55%,
+    rgba(215,215,215,0.88) 100%
+  );
+  border-radius: 0 0 12px 12px;
+  box-shadow: inset 0 -3px 10px rgba(0,0,0,0.07);
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+/* Tranche avant visible du socle */
+.standFace {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 220px;
+  height: 11px;
+  margin-left: -110px;
+  background: linear-gradient(to bottom, #eaeaea, #cccccc);
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid rgba(255,255,255,0.85);
+  transform: translateZ(62px); /* face avant au bout du socle */
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+/* Fente centrale simulant le slot où la carte s'insère */
+.standFace::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 100%;
+  margin-left: -4px;
+  background: rgba(0,0,0,0.12);
+  border-radius: 0 0 3px 3px;
+}
+
+/* Tranche gauche du socle */
+.standLeft {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 110px);
+  width: 62px;
+  height: 11px;
+  background: linear-gradient(to right, #d0d0d0, #dcdcdc);
+  transform-origin: 0% 0%;
+  transform: rotateY(90deg);
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+/* Tranche droite du socle */
+.standRight {
+  position: absolute;
+  top: 100%;
+  left: calc(50% + 110px);
+  width: 62px;
+  height: 11px;
+  background: linear-gradient(to left, #d0d0d0, #dcdcdc);
+  transform-origin: 0% 0%;
+  transform: rotateY(-90deg);
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+/* ─── Floor shadow ─── */
+.shadow {
+  width: 200px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.32) 0%, transparent 70%);
+  border-radius: 50%;
+  margin-top: 2px;
+  will-change: transform, opacity;
+}

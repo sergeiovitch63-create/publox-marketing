@@ -260,7 +260,31 @@
           "q5": "Aiuta a migliorare la visibilità locale?",
           "a5": "Sì. Più recensioni di qualità aumentano la fiducia e possono migliorare la performance nelle ricerche locali."
         }
-      }
+      },
+      "howItWorks": {
+        "title": "Come funziona?",
+        "step1title": "La carta sul bancone",
+        "step1desc": "Posiziona la carta NFC sul tuo bancone, tavolo o cassa.",
+        "step2title": "Il cliente avvicina il telefono",
+        "step2desc": "Un semplice gesto — il chip NFC viene rilevato istantaneamente.",
+        "step3title": "Lascia la sua recensione",
+        "step3desc": "La pagina Google si apre direttamente, senza app né ricerca.",
+        "step4title": "La recensione appare su Google",
+        "step4desc": "La tua valutazione cresce e la reputazione locale migliora."
+      },
+      "offerTitle": "Offerta di lancio",
+      "standardName": "NFC Standard",
+      "standardDesc": "Design pulito con logo Google ufficiale, 5 stelle e QR di backup. Pronto all'uso con il link alla tua scheda Google.",
+      "customName": "NFC Personalizzato",
+      "customDesc": "Design 100% personalizzato con il tuo logo e colori. Link configurabile verso qualsiasi URL — Google, TripAdvisor, social...",
+      "customBadge": "Design personalizzato · Link personalizzabile",
+      "featGoogleLogo": "Logo Google ufficiale",
+      "featQrBackup": "QR di backup incluso",
+      "featGoogleLink": "Link alla tua scheda Google",
+      "featStand": "Supporto acrilico incluso",
+      "featCustomDesign": "Design con il tuo logo",
+      "featCustomLink": "Link personalizzabile",
+      "featCustomColors": "Colori e identità visiva"
     },
     "marketing": {
       "hero": {

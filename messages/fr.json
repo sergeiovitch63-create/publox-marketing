@@ -260,7 +260,31 @@
           "q5": "Est-ce utile pour améliorer ma visibilité locale ?",
           "a5": "Oui. Plus d'avis qualifiés renforcent votre crédibilité et aident votre fiche à mieux performer en recherche locale."
         }
-      }
+      },
+      "howItWorks": {
+        "title": "Comment ça marche ?",
+        "step1title": "La carte sur le comptoir",
+        "step1desc": "Posez la carte NFC sur votre comptoir, table ou caisse.",
+        "step2title": "Le client approche son téléphone",
+        "step2desc": "Un simple geste suffit — la puce NFC est détectée instantanément.",
+        "step3title": "Il laisse son avis",
+        "step3desc": "La page Google s'ouvre directement, sans app ni recherche.",
+        "step4title": "L'avis est en ligne",
+        "step4desc": "Votre note remonte et votre réputation locale se renforce."
+      },
+      "offerTitle": "Offre de lancement",
+      "standardName": "NFC Standard",
+      "standardDesc": "Design épuré avec logo Google officiel, 5 étoiles et QR code de secours. Prêt à l'emploi avec le lien vers votre fiche Google.",
+      "customName": "NFC Personnalisé",
+      "customDesc": "Design 100% personnalisé avec votre logo et vos couleurs. Lien configurable vers n'importe quelle URL — Google, TripAdvisor, réseaux sociaux...",
+      "customBadge": "Design personnalisé · Lien personnalisable",
+      "featGoogleLogo": "Logo Google officiel",
+      "featQrBackup": "QR code de secours inclus",
+      "featGoogleLink": "Lien vers votre fiche Google",
+      "featStand": "Socle acrylique inclus",
+      "featCustomDesign": "Design avec votre logo",
+      "featCustomLink": "Lien personnalisable",
+      "featCustomColors": "Couleurs et charte graphique"
     },
     "marketing": {
       "hero": {

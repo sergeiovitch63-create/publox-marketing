@@ -260,7 +260,31 @@
           "q5": "Does this help my local visibility?",
           "a5": "Yes. More quality reviews improve trust and can help your profile perform better in local search."
         }
-      }
+      },
+      "howItWorks": {
+        "title": "How does it work?",
+        "step1title": "Card on the counter",
+        "step1desc": "Place the NFC card at your checkout, table or reception.",
+        "step2title": "Client taps their phone",
+        "step2desc": "One quick tap — the NFC chip is detected instantly.",
+        "step3title": "Client leaves a review",
+        "step3desc": "The Google review page opens directly, no app needed.",
+        "step4title": "Review goes live on Google",
+        "step4desc": "Your rating climbs and your local reputation grows."
+      },
+      "offerTitle": "Launch offer",
+      "standardName": "NFC Standard",
+      "standardDesc": "Clean design with official Google logo, 5 stars and QR backup. Ready to use with your Google listing link.",
+      "customName": "Custom NFC",
+      "customDesc": "100% custom design with your logo and brand colors. Configurable link to any URL — Google, TripAdvisor, social media...",
+      "customBadge": "Custom design · Custom link",
+      "featGoogleLogo": "Official Google logo",
+      "featQrBackup": "QR backup code included",
+      "featGoogleLink": "Link to your Google listing",
+      "featStand": "Acrylic stand included",
+      "featCustomDesign": "Design with your logo",
+      "featCustomLink": "Customizable link",
+      "featCustomColors": "Brand colors & identity"
     },
     "marketing": {
       "hero": {
