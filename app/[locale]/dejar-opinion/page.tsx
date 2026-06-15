@@ -4,7 +4,7 @@ import Container from '@/components/Container';
 import Section from '@/components/Section';
 import FadeIn from '@/components/FadeIn';
 import { useLocale } from 'next-intl';
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 
 interface ReviewFormPayload {
   companyName: string;
@@ -15,13 +15,23 @@ interface ReviewFormPayload {
   pageLink?: string;
   website?: string;
   locale: string;
+  token: string;
 }
 
 export default function DejarOpinionPage() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [token, setToken] = useState<string | null>(null);
+  const [tokenChecked, setTokenChecked] = useState(false);
   const locale = useLocale();
+
+  // The review link is private: read the token from the URL (?token=...).
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setToken(params.get('token'));
+    setTokenChecked(true);
+  }, []);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -38,6 +48,7 @@ export default function DejarOpinionPage() {
       pageLink: String(formData.get('pageLink') || '').trim() || undefined,
       website: String(formData.get('website') || '').trim() || undefined,
       locale: String(locale),
+      token: token ?? '',
     };
 
     // Basic client-side validation (required fields are also enforced by HTML attributes)
@@ -100,11 +111,19 @@ export default function DejarOpinionPage() {
 
           <FadeIn delay={0.1}>
             <div className="bg-offwhite-card rounded-card p-6 md:p-8 shadow-soft">
-              {submitted ? (
+              {!tokenChecked ? null : !token ? (
+                <div className="text-center">
+                  <p className="text-2xl mb-3">🔒</p>
+                  <p className="text-text-secondary">
+                    Este enlace no es válido. Pide a PUBLOX un enlace personal
+                    para dejar tu opinión.
+                  </p>
+                </div>
+              ) : submitted ? (
                 <div className="text-center">
                   <p className="text-2xl mb-3">Gracias 🙌</p>
                   <p className="text-text-secondary">
-                    Tu opinión será revisada y publicada pronto.
+                    Tu opinión se ha publicado correctamente.
                   </p>
                 </div>
               ) : (

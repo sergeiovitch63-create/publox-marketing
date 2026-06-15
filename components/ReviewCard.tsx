@@ -12,6 +12,7 @@ export interface Review {
   location: string;
   service: string;
   quote: string;
+  date?: string;
   href: string;
   verified?: boolean;
   ctaLabel?: string;
@@ -52,9 +53,14 @@ export default function ReviewCard({ review, className = '' }: ReviewCardProps) 
       </h3>
 
       {/* Location and Service */}
-      <p className="text-sm text-text-secondary mb-3">
+      <p className={`text-sm text-text-secondary ${review.date ? 'mb-1' : 'mb-3'}`}>
         {review.location} • {review.service}
       </p>
+
+      {/* Date */}
+      {review.date && (
+        <p className="text-xs text-text-secondary/70 mb-3">{review.date}</p>
+      )}
 
       {/* Quote */}
       <p

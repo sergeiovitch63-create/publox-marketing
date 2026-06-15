@@ -8,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
+        disallow: ['/es/dejar-opinion', '/fr/dejar-opinion', '/en/dejar-opinion', '/it/dejar-opinion', '/ru/dejar-opinion'],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

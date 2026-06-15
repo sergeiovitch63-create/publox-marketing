@@ -38,7 +38,14 @@ export async function POST(req: Request) {
       pageLink,
       website, // honeypot
       locale,
+      token,
     } = body ?? {};
+
+    // Private link: a valid token is required to publish a review.
+    const expectedToken = process.env.REVIEW_TOKEN;
+    if (!expectedToken || token !== expectedToken) {
+      return NextResponse.json({ error: 'Invalid or missing review link.' }, { status: 403 });
+    }
 
     // Honeypot: if filled, accept but do nothing
     if (typeof website === 'string' && website.trim().length > 0) {

@@ -223,6 +223,13 @@ export default async function AvisosPage({
             location: row.location,
             service: row.service_type,
             quote: row.review_text,
+            date: row.created_at
+              ? new Date(row.created_at).toLocaleDateString(locale, {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })
+              : undefined,
             href: row.page_link || `/${locale}`,
             verified: row.verified,
             expandLabel: reviewUi.expandLabel,
