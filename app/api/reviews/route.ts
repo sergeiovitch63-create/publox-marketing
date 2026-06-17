@@ -85,15 +85,16 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Supabase is not configured.' }, { status: 500 });
     }
 
-    const { error } = await supabase.from('reviews').insert({
-      company_name: String(companyName).trim(),
-      location: String(location).trim(),
-      service_type: String(serviceType).trim(),
-      rating,
-      review_text: trimmedReview,
-      page_link: pageLink ? String(pageLink).trim() : null,
-      // No moderation for now: mark as verified / visible immediately
-      verified: true,
+    // Insert via the SECURITY DEFINER function, which re-checks the token
+    // server-side in the database (direct table inserts are blocked by RLS).
+    const { error } = await supabase.rpc('submit_review', {
+      p_company_name: String(companyName).trim(),
+      p_location: String(location).trim(),
+      p_service_type: String(serviceType).trim(),
+      p_rating: rating,
+      p_review_text: trimmedReview,
+      p_page_link: pageLink ? String(pageLink).trim() : null,
+      p_token: token,
     });
 
     if (error) {
