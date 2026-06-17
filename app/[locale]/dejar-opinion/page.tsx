@@ -9,7 +9,13 @@ import { FormEvent, useEffect, useState } from 'react';
 interface ReviewFormPayload {
   companyName: string;
   location: string;
-  serviceType: 'Página multi-enlace' | 'Bloque marketing' | 'Sitio web';
+  serviceType:
+    | 'Página multi-enlace'
+    | 'Bloque marketing'
+    | 'Sitio web'
+    | 'Tarjeta NFC'
+    | 'Impresión'
+    | 'Optimización Google';
   rating: number;
   reviewText: string;
   pageLink?: string;
@@ -184,6 +190,9 @@ export default function DejarOpinionPage() {
                       <option value="Página multi-enlace">Página multi-enlace</option>
                       <option value="Bloque marketing">Bloque marketing</option>
                       <option value="Sitio web">Sitio web</option>
+                      <option value="Tarjeta NFC">Tarjeta NFC</option>
+                      <option value="Impresión">Impresión</option>
+                      <option value="Optimización Google">Optimización Google</option>
                     </select>
                   </div>
 
