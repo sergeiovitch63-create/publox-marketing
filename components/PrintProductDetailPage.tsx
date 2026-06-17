@@ -18,6 +18,7 @@ interface PrintProductDetailPageProps {
   conclusion: string;
   blueActions?: BlueAction[];
   extraPricesTextLines?: string[];
+  priceFromLabel?: string;
   contactCtaLabel: string;
   contactHref: string;
   quoteText?: string;
@@ -32,6 +33,7 @@ export default function PrintProductDetailPage({
   conclusion,
   blueActions,
   extraPricesTextLines,
+  priceFromLabel,
   contactCtaLabel,
   contactHref,
   quoteText,
@@ -101,6 +103,13 @@ export default function PrintProductDetailPage({
                 <p className="text-text-secondary text-lg italic text-center pt-4">
                   {conclusion}
                 </p>
+
+                {/* Starting price */}
+                {priceFromLabel && (
+                  <p className="text-center text-2xl md:text-3xl font-bold text-text-primary pt-2">
+                    {priceFromLabel}
+                  </p>
+                )}
 
                 {/* Extra Prices Text (for Caballete) */}
                 {extraPricesTextLines && extraPricesTextLines.length > 0 && (

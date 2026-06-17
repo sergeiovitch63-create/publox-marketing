@@ -9,6 +9,7 @@ import Button from '@/components/Button';
 import Card from '@/components/Card';
 import AccordionFAQ from '@/components/AccordionFAQ';
 import BackButton from '@/components/BackButton';
+import { priceFromLabel } from '@/lib/printPrices';
 
 export async function generateMetadata({
   params,
@@ -116,8 +117,11 @@ export default async function ImpresionPage({
                   <li key={index}>{bullet}</li>
                 ))}
               </ul>
-              <p className="text-text-secondary text-lg mb-8 text-center italic">
+              <p className="text-text-secondary text-lg mb-4 text-center italic">
                 {t('block1.conclusion')}
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-text-primary mb-8 text-center">
+                {priceFromLabel(locale, 'tarjetas')}
               </p>
               <div className="flex justify-center mb-8">
                 <Button
@@ -153,8 +157,11 @@ export default async function ImpresionPage({
                   <li key={index}>{bullet}</li>
                 ))}
               </ul>
-              <p className="text-text-secondary text-lg mb-8 text-center italic">
+              <p className="text-text-secondary text-lg mb-4 text-center italic">
                 {t('block2.conclusion')}
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-text-primary mb-8 text-center">
+                {priceFromLabel(locale, 'flyers')}
               </p>
               <div className="flex justify-center mb-8">
                 <Button
@@ -190,8 +197,11 @@ export default async function ImpresionPage({
                   <li key={index}>{bullet}</li>
                 ))}
               </ul>
-              <p className="text-text-secondary text-lg mb-8 text-center italic">
+              <p className="text-text-secondary text-lg mb-4 text-center italic">
                 {t('block3.conclusion')}
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-text-primary mb-8 text-center">
+                {priceFromLabel(locale, 'dipticos')}
               </p>
               <div className="flex justify-center mb-8">
                 <Button
@@ -227,8 +237,11 @@ export default async function ImpresionPage({
                   <li key={index}>{bullet}</li>
                 ))}
               </ul>
-              <p className="text-text-secondary text-lg mb-8 text-center italic">
+              <p className="text-text-secondary text-lg mb-4 text-center italic">
                 {t('block4.conclusion')}
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-text-primary mb-8 text-center">
+                {priceFromLabel(locale, 'caballete')}
               </p>
               <div className="flex justify-center mb-8">
                 <Button

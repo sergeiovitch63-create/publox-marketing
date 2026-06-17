@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import PrintProductDetailPage from '@/components/PrintProductDetailPage';
+import { priceFromLabel } from '@/lib/printPrices';
 
 export default async function ImpresionTarjetasPage({
   params,
@@ -16,6 +17,7 @@ export default async function ImpresionTarjetasPage({
       titleLines={t.raw('titleLines') as string[]}
       bullets={t.raw('bullets') as string[]}
       conclusion={t('conclusion')}
+      priceFromLabel={priceFromLabel(locale, 'tarjetas')}
       contactCtaLabel={t('contactCta')}
       contactHref={`/${locale}/contacto`}
       quoteText={t('quoteText')}

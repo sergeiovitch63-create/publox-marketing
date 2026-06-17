@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import PrintProductDetailPage from '@/components/PrintProductDetailPage';
+import { priceFromLabel } from '@/lib/printPrices';
 
 export default async function ImpresionDipticosPage({
   params,
@@ -16,6 +17,7 @@ export default async function ImpresionDipticosPage({
       titleLines={t.raw('titleLines') as string[]}
       bullets={t.raw('bullets') as string[]}
       conclusion={t('conclusion')}
+      priceFromLabel={priceFromLabel(locale, 'dipticos')}
       contactCtaLabel={t('contactCta')}
       contactHref={`/${locale}/contacto`}
       quoteText={t('quoteText')}
