@@ -1,4 +1,6 @@
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/lib/seoContent';
+import { type Locale } from '@/i18n';
 import { setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Container from '@/components/Container';
@@ -7,6 +9,15 @@ import FadeIn from '@/components/FadeIn';
 import Card from '@/components/Card';
 import BackButton from '@/components/BackButton';
 import Button from '@/components/Button';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return getPageMetadata(locale as Locale, 'reclutamiento');
+}
 
 export default async function ReclutamientoPage({
   params,

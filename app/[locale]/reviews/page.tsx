@@ -1,4 +1,6 @@
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/lib/seoContent';
+import { type Locale } from '@/i18n';
 import { setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import Container from '@/components/Container';
@@ -7,6 +9,15 @@ import FadeIn from '@/components/FadeIn';
 import ReviewCard from '@/components/ReviewCard';
 import { getSupabaseServerClient } from '@/src/lib/supabaseServer';
 import { buildReviewList, type ReviewRow } from '@/lib/reviewsContent';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return getPageMetadata(locale as Locale, 'reviews');
+}
 
 export default async function ReviewsPage({
   params,

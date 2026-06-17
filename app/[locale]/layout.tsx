@@ -44,9 +44,37 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const baseUrl = 'https://publox-marketing.com';
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${baseUrl}/#organization`,
+        name: 'PUBLOX',
+        url: baseUrl,
+        logo: `${baseUrl}/media/images/logo-hero.png`,
+        description:
+          'PUBLOX ayuda a negocios a conseguir clientes con sitios web, marketing, impresión y tarjetas NFC.',
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${baseUrl}/#website`,
+        url: baseUrl,
+        name: 'PUBLOX',
+        publisher: { '@id': `${baseUrl}/#organization` },
+        inLanguage: locale,
+      },
+    ],
+  };
+
   return (
     <html lang={locale}>
       <body className="min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main className="flex-1">{children}</main>

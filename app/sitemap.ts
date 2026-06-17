@@ -16,6 +16,10 @@ const routes = [
   'marketing',
   // Sitio Web
   'sitio-web',
+  'sitio-web/tienda-online',
+  // Page multi-liens & cartes NFC
+  'page-multi-liens',
+  'cartes-nfc-google-avis',
   // Impresión
   'impresion',
   'impresion/tarjetas-visita',
@@ -73,6 +77,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority,
       });
     }
+
+    // Reviews page: canonical path is /reviews in English, /avisos elsewhere
+    const reviewsRoute = locale === 'en' ? 'reviews' : 'avisos';
+    sitemapEntries.push({
+      url: `${baseUrl}/${locale}/${reviewsRoute}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    });
   }
 
   return sitemapEntries;

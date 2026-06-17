@@ -1,4 +1,6 @@
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/lib/seoContent';
+import { type Locale } from '@/i18n';
 import { setRequestLocale } from 'next-intl/server';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
@@ -8,6 +10,15 @@ import AccordionFAQ from '@/components/AccordionFAQ';
 import BackButton from '@/components/BackButton';
 import Image from 'next/image';
 import NFCCard3D from '@/components/NFCCard3D';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return getPageMetadata(locale as Locale, 'cartes-nfc-google-avis');
+}
 
 export default async function NfcGoogleReviewsPage({
   params,

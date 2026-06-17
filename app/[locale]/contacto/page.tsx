@@ -1,4 +1,6 @@
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/lib/seoContent';
+import { type Locale } from '@/i18n';
 import { setRequestLocale } from 'next-intl/server';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
@@ -6,6 +8,15 @@ import FadeIn from '@/components/FadeIn';
 import Card from '@/components/Card';
 import Link from 'next/link';
 import BackButton from '@/components/BackButton';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return getPageMetadata(locale as Locale, 'contacto');
+}
 
 export default async function ContactoPage({
   params,

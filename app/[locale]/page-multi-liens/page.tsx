@@ -1,4 +1,6 @@
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/lib/seoContent';
+import { type Locale } from '@/i18n';
 import { setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Container from '@/components/Container';
@@ -8,6 +10,15 @@ import Button from '@/components/Button';
 import Card from '@/components/Card';
 import AccordionFAQ from '@/components/AccordionFAQ';
 import BackButton from '@/components/BackButton';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return getPageMetadata(locale as Locale, 'page-multi-liens');
+}
 
 export default async function PageMultiLiens({
   params,
